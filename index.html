@@ -38,11 +38,9 @@
                 reader = new FileReader();
                 reader.onload = function(event) {
                     holder.value = event.target.result.replace(/\r/g, "");
+                    addMeteorsToMap();
                 };
                 reader.readAsText(file);
-
-                console.log("add meteors to map");
-                addMeteorsToMap();
 
                 return false;
             };
@@ -63,7 +61,7 @@
                 // Deselect all
                 for (selectedMeteorIdIndex in selectedMeteorIds) {
                     console.log(selectedMeteorIds[selectedMeteorIdIndex]);
-                    var selectedFeature = meteorLayer.getLayer(selectedMeteorIds[selectedMeteorIdIndex]);
+                    var selectedFeature = meteorLayer.getLayer(jsonData.data[selectedMeteorIds[selectedMeteorIdIndex]].leafletId);
                     selectedFeature.setStyle({"color": "#ff7800"});
                 }
                 selectedMeteorIds = [];
@@ -73,7 +71,7 @@
                 "color": "red"
             }
 
-            var clickedMeteorId = e.target.feature.geometry.properties.meteorid;
+            var clickedMeteorId = e.target.options.meteorId;
             e.target.setStyle(mySelectedStyle);
             selectedMeteorIds.push(clickedMeteorId);
             alert(jsonData.data[clickedMeteorId]);
@@ -82,6 +80,7 @@
         function addMeteorsToMap() {
             var holder = document.getElementById('holder');
             var csvData = holder.value;
+
             if ((!csvData.includes(';')) && !(csvData.includes(','))) {
                 // Make CAMS format (fixed-width) ;-separated
                 csvData = csvData.replace(/  */g, ";");
@@ -112,40 +111,24 @@
                 console.log("Undetected format, num fields is " + jsonData.data[0].length)
             }
 
-            var trajectoryLines = []
+            if (meteorLayer) {
+                console.log("Removing meteor layer");
+                mymap.removeLayer(meteorLayer);
+            }
+
+            meteorLayer = new L.LayerGroup();
+            meteorLayer.addTo(mymap);
 
             for (meteorIndex in jsonData.data) {
                 var lonBeg = jsonData.data[meteorIndex][lonBegIndex];
                 var latBeg = jsonData.data[meteorIndex][latBegIndex];
                 var lonEnd = jsonData.data[meteorIndex][lonEndIndex];
                 var latEnd = jsonData.data[meteorIndex][latEndIndex];
-                //console.log(lonBeg, latBeg, lonEnd, latEnd);
-                trajectoryLines.push({
-                    "type": "LineString",
-                    "coordinates": [[lonBeg, latBeg], [lonEnd, latEnd]],
-                    "properties": {meteorid: meteorIndex}
-                })
+                meteorFeature = L.polyline([[latBeg, lonBeg], [latEnd, lonEnd]], {color: "#ff7800", meteorId: meteorIndex});
+                meteorFeature.addTo(meteorLayer);
+                meteorFeature.on("click", myonclick);
+                jsonData.data[meteorIndex].leafletId = meteorLayer.getLayerId(meteorFeature);
             }
-
-            var trajectoryStyle = {
-                "color": "#ff7800",
-                "weight": 5
-            };
-
-            function onEachFeature(feature, layer) {
-                layer._leaflet_id = feature.properties.meteorid;
-                layer.on("click", myonclick);
-            }
-
-            if (meteorLayer) {
-                alert("Need to remove");
-                meteorLayer.clearLayers();
-            }
-
-            meteorLayer = L.geoJSON([], {style: trajectoryStyle, onEachFeature: onEachFeature});
-            meteorLayer.addTo(mymap);
-            meteorLayer.addData(trajectoryLines);
-            meteorLayer.clearLayers();
         }
     </script>
 </head>
