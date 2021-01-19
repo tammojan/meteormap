@@ -77,6 +77,15 @@
             alert(jsonData.data[clickedMeteorId]);
         }
 
+        function getDataFromURL() {
+            url = "https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt";
+            $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url), function (data) {
+                var holder = document.getElementById('holder');
+                holder.value = data.contents.replace(/\r/g, '');
+                addMeteorsToMap();
+            });
+        }
+
         function addMeteorsToMap() {
             var holder = document.getElementById('holder');
             var csvData = holder.value;
@@ -134,11 +143,11 @@
 </head>
 
 <body>
-    <h1>Test</h1>
-    <textarea id="holder">Copy-paste trajectories here, or drop a file on it</textarea>
-    <p>Drag a text file from your desktop on to the drop zone above to see the browser read the contents of the file - without uploading the file to any servers.</p>
+    <h1>Meteor viewer</h1>
+    <textarea id="holder" onchange="addMeteorsToMap">Drop a file on this area (the fill will not be uploaded to any server). Or copy-paste the data here.</textarea>
+    <p>Drag a SummaryMeteorLog file or a traj_summary file onto the text area above to view the meteors on the map. Or click below to load meteors from the Global Meteor Network.</p>
 
-    <button onclick="addMeteorsToMap()">Do stuff</button>
+    <button onclick="getDataFromURL()">Get latest data from globalmeteornetwork</button>
 
     <div id="mapid"></div>
 </body>
