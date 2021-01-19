@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Meteor trajactory viewer</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="papaparse.min.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script>
+        var mymap;
+        var meteorLayer;
+        var selectedMeteorIds = [];
+        var jsonData;
+
+        $(function () {
+            // modified from http://html5demos.com/file-api
+            var holder = document.getElementById('holder');
+
+            holder.ondragover = function() {
+                this.className = 'hover';
+                return false;
+            };
+            holder.ondragend = function() {
+                this.className = '';
+                return false;
+            };
+            holder.ondrop = function(e) {
+                this.className = '';
+                e.preventDefault();
+
+                var file = e.dataTransfer.files[0],
+                reader = new FileReader();
+                reader.onload = function(event) {
+                    holder.value = event.target.result.replace(/\r/g, "");
+                };
+                reader.readAsText(file);
+
+                console.log("add meteors to map");
+                addMeteorsToMap();
+
+                return false;
+            };
+
+            mymap = L.map('mapid').setView([52.3, 5], 8);
+            var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            });
+            CartoDB_DarkMatter.addTo(mymap);
+
+        });
+
+        function myonclick(e) {
+            if (true) {
+                // Todo: IF NOT CONTROL OR SHIFT PRESSED
+                // Deselect all
+                for (selectedMeteorIdIndex in selectedMeteorIds) {
+                    console.log(selectedMeteorIds[selectedMeteorIdIndex]);
+                    var selectedFeature = meteorLayer.getLayer(selectedMeteorIds[selectedMeteorIdIndex]);
+                    selectedFeature.setStyle({"color": "#ff7800"});
+                }
+                selectedMeteorIds = [];
+            }
+
+            var mySelectedStyle = {
+                "color": "red"
+            }
+
+            var clickedMeteorId = e.target.feature.geometry.properties.meteorid;
+            e.target.setStyle(mySelectedStyle);
+            selectedMeteorIds.push(clickedMeteorId);
+            alert(jsonData.data[clickedMeteorId]);
+        }
+
+        function addMeteorsToMap() {
+            var holder = document.getElementById('holder');
+            var csvData = holder.value;
+            if ((!csvData.includes(';')) && !(csvData.includes(','))) {
+                // Make CAMS format (fixed-width) ;-separated
+                csvData = csvData.replace(/  */g, ";");
+                csvData = csvData.replace(/^Ver.*/, "");
+                csvData = csvData.replace(/Number.*/, "");
+                csvData = csvData.replace(/^\n*-----[-;\n]*/, "");
+            }
+            jsonData = Papa.parse(csvData, {
+                comments: "#",
+                delimiter: ';',
+                dynamicTyping: false,
+                skipEmptyLines: true
+            });
+
+            if (jsonData.data[0].length == 83) {
+                console.log("RMS format detected");
+                var lonBegIndex = 62;
+                var latBegIndex = 60;
+                var lonEndIndex = 68;
+                var latEndIndex = 66;
+            } else if (jsonData.data[0].length == 35) {
+                console.log("CAMS format detected");
+                var lonBegIndex = 17;
+                var latBegIndex = 15;
+                var lonEndIndex = 23;
+                var latEndIndex = 21;
+            } else {
+                console.log("Undetected format, num fields is " + jsonData.data[0].length)
+            }
+
+            var trajectoryLines = []
+
+            for (meteorIndex in jsonData.data) {
+                var lonBeg = jsonData.data[meteorIndex][lonBegIndex];
+                var latBeg = jsonData.data[meteorIndex][latBegIndex];
+                var lonEnd = jsonData.data[meteorIndex][lonEndIndex];
+                var latEnd = jsonData.data[meteorIndex][latEndIndex];
+                //console.log(lonBeg, latBeg, lonEnd, latEnd);
+                trajectoryLines.push({
+                    "type": "LineString",
+                    "coordinates": [[lonBeg, latBeg], [lonEnd, latEnd]],
+                    "properties": {meteorid: meteorIndex}
+                })
+            }
+
+            var trajectoryStyle = {
+                "color": "#ff7800",
+                "weight": 5
+            };
+
+            function onEachFeature(feature, layer) {
+                layer._leaflet_id = feature.properties.meteorid;
+                layer.on("click", myonclick);
+            }
+
+            if (meteorLayer) {
+                alert("Need to remove");
+                meteorLayer.clearLayers();
+            }
+
+            meteorLayer = L.geoJSON([], {style: trajectoryStyle, onEachFeature: onEachFeature});
+            meteorLayer.addTo(mymap);
+            meteorLayer.addData(trajectoryLines);
+            meteorLayer.clearLayers();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Test</h1>
+    <textarea id="holder">Copy-paste trajectories here, or drop a file on it</textarea>
+    <p>Drag a text file from your desktop on to the drop zone above to see the browser read the contents of the file - without uploading the file to any servers.</p>
+
+    <button onclick="addMeteorsToMap()">Do stuff</button>
+
+    <div id="mapid"></div>
+</body>
+</html>
