@@ -69,7 +69,12 @@
             });
             CartoDB_DarkMatter.addTo(mymap);
 
-            addStationsToMap();
+            meteorLayer = new L.LayerGroup();
+            meteorLayer.addTo(mymap);
+
+            stationsLayer = addStationsToMap();
+            stationsLayer.addTo(mymap);
+            L.control.layers({}, {"CAMS cameras": stationsLayer, "Meteors": meteorLayer}).addTo(mymap);
         });
 
         function myonclick(e) {
@@ -90,7 +95,8 @@
             var clickedMeteorId = e.target.options.meteorId;
             e.target.setStyle(mySelectedStyle);
             selectedMeteorIds.push(clickedMeteorId);
-            alert(jsonData.data[clickedMeteorId]);
+            console.log(jsonData.data[clickedMeteorId]);
+            alert(jsonData.data[clickedMeteorId].stations);
         }
 
         function getDataFromURL() {
@@ -120,9 +126,7 @@
                 locations.addTo(camsStationLayer);
             });
 
-            camsStationLayer.addTo(mymap);
-
-            L.control.layers({}, {"CAMS cameras": camsStationLayer}).addTo(mymap);
+            return camsStationLayer;
         }
 
         function addMeteorsToMap() {
@@ -149,29 +153,30 @@
                 var latBegIndex = 60;
                 var lonEndIndex = 68;
                 var latEndIndex = 66;
+                var stationsIndex = 82;
             } else if (jsonData.data[0].length == 35) {
                 console.log("CAMS format detected");
                 var lonBegIndex = 17;
                 var latBegIndex = 15;
                 var lonEndIndex = 23;
                 var latEndIndex = 21;
+                var stationsIndex = 34;
             } else {
                 console.log("Undetected format, num fields is " + jsonData.data[0].length)
             }
 
-            if (meteorLayer) {
-                console.log("Removing meteor layer");
-                mymap.removeLayer(meteorLayer);
-            }
-
-            meteorLayer = new L.LayerGroup();
-            meteorLayer.addTo(mymap);
+            console.log("Removing meteors");
+            meteorLayer.eachLayer(function (layer) {
+                meteorLayer.removeLayer(layer);
+            });
 
             for (meteorIndex in jsonData.data) {
                 var lonBeg = jsonData.data[meteorIndex][lonBegIndex];
                 var latBeg = jsonData.data[meteorIndex][latBegIndex];
                 var lonEnd = jsonData.data[meteorIndex][lonEndIndex];
                 var latEnd = jsonData.data[meteorIndex][latEndIndex];
+                var stations = jsonData.data[meteorIndex][stationsIndex].split(/[,_]/);
+                jsonData.data[meteorIndex].stations = stations;
                 meteorFeature = L.polyline([[latBeg, lonBeg], [latEnd, lonEnd]], {color: "#ff7800", meteorId: meteorIndex});
                 meteorFeature.addTo(meteorLayer);
                 meteorFeature.on("click", myonclick);
