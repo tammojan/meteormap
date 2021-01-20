@@ -95,7 +95,7 @@
 
         function getDataFromURL() {
             url = "https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt";
-            $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url), function (data) {
+            $.getJSON('http://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var holder = document.getElementById('holder');
                 holder.value = data.contents.replace(/\r/g, '');
                 addMeteorsToMap();
