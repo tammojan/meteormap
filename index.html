@@ -53,6 +53,7 @@
             });
             CartoDB_DarkMatter.addTo(mymap);
 
+            addStationsToMap();
         });
 
         function myonclick(e) {
@@ -84,6 +85,30 @@
                 holder.value = data.contents.replace(/\r/g, '');
                 addMeteorsToMap();
             });
+        }
+
+        function forEachStation(feature, layer) {
+            console.log(feature);
+            var popupContent = "<p> <b>" + feature.properties.name + "</b> (" + feature.properties.id + ")</p>";
+            layer.bindPopup(popupContent);
+        }
+
+        function addStationsToMap() {
+            var camsStationLayer = new L.LayerGroup();
+            $.getJSON("cams-sites.json", function (data) {
+                locations = L.geoJson(data, {
+                    onEachFeature: forEachStation,
+                    pointToLayer: function (feature, latlng) {
+                        return L.marker(latlng)
+                    }
+                });
+
+                locations.addTo(camsStationLayer);
+            });
+
+            camsStationLayer.addTo(mymap);
+
+            L.control.layers({}, {"CAMS cameras": camsStationLayer}).addTo(mymap);
         }
 
         function addMeteorsToMap() {
