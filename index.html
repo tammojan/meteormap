@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Meteor trajactory viewer</title>
+    <title>Meteor trajectory viewer</title>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
     <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"
@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
     integrity="sha384-lPzjPsFQL6te2x+VxmV6q1DpRxpRk0tmnl2cpwAO5y04ESyc752tnEWPKDfl1olr"
     crossorigin="" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
     integrity="sha384-5kMSQJ6S4Qj5i09mtMNrWpSi8iXw230pKU76xTmrpezGnNJQzj0NzXjQLLg+jE7k"
-    crossorigin="" />
+    crossorigin="" />-->
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"
     integrity="sha384-N9K+COcUk7tr9O2uHZVp6jl7ueGhWsT+LUKUhd/VpA0svQrQMGArhY8r/u/Pkwih"
     crossorigin=""></script>
@@ -77,7 +77,11 @@
             L.control.layers({}, {"CAMS cameras": stationsLayer, "Meteors": meteorLayer}).addTo(mymap);
         });
 
-        function myonclick(e) {
+        function onclickStation(e) {
+            console.log("Hoi");
+        }
+
+        function onclickMeteor(e) {
             if (true) {
                 // Todo: IF NOT CONTROL OR SHIFT PRESSED
                 // Deselect all
@@ -95,7 +99,6 @@
             var clickedMeteorId = e.target.options.meteorId;
             e.target.setStyle(mySelectedStyle);
             selectedMeteorIds.push(clickedMeteorId);
-            console.log(jsonData.data[clickedMeteorId]);
             alert(jsonData.data[clickedMeteorId].stations);
         }
 
@@ -108,13 +111,14 @@
             });
         }
 
-        function forEachStation(feature, layer) {
-            var popupContent = "<p> <b>" + feature.properties.name + "</b> (" + feature.properties.id + ")</p>";
+        function forEachStation(stationFeature, layer) {
+            layer.on("click", onclickStation);
+            var popupContent = "<p> <b>" + stationFeature.properties.name + "</b> (" + stationFeature.properties.id + ")</p>";
             layer.bindPopup(popupContent);
         }
 
         function addStationsToMap() {
-            var camsStationLayer = new L.markerClusterGroup();
+            var camsStationLayer = new L.markerClusterGroup({showCoverageOnHover: false, zoomToBoundsOnClick: false});
             $.getJSON("cams-sites.json", function (data) {
                 locations = L.geoJson(data, {
                     onEachFeature: forEachStation,
@@ -179,7 +183,7 @@
                 jsonData.data[meteorIndex].stations = stations;
                 meteorFeature = L.polyline([[latBeg, lonBeg], [latEnd, lonEnd]], {color: "#ff7800", meteorId: meteorIndex});
                 meteorFeature.addTo(meteorLayer);
-                meteorFeature.on("click", myonclick);
+                meteorFeature.on("click", onclickMeteor);
                 jsonData.data[meteorIndex].leafletId = meteorLayer.getLayerId(meteorFeature);
             }
         }

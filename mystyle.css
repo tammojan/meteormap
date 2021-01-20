@@ -1,4 +1,25 @@
 
-#holder { border: 3px dashed #ccc; width: 80%; height: 100px; margin: 20px auto; white-space: pre;}
+#holder { border: 3px dashed #ccc; width: 80%; height: 100px; margin: 20px auto; white-space: pre; }
 #holder.hover { border: 3px dashed #333; }
 #mapid { height: 800px; }
+
+.marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px;
+    background-color: rgba(181, 226, 140, 0.6);
+}
+.marker-cluster div {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    background-color: rgba(181, 226, 140, 0.6);
+
+    text-align: center;
+    border-radius: 15px;
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.marker-cluster span {
+    line-height: 30px;
+}
