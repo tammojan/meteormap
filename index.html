@@ -6,12 +6,24 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="papaparse.min.js"></script>
     <link rel="stylesheet" href="mystyle.css">
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
+    integrity="sha384-lPzjPsFQL6te2x+VxmV6q1DpRxpRk0tmnl2cpwAO5y04ESyc752tnEWPKDfl1olr"
+    crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+    integrity="sha384-5kMSQJ6S4Qj5i09mtMNrWpSi8iXw230pKU76xTmrpezGnNJQzj0NzXjQLLg+jE7k"
+    crossorigin="" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"
+    integrity="sha384-N9K+COcUk7tr9O2uHZVp6jl7ueGhWsT+LUKUhd/VpA0svQrQMGArhY8r/u/Pkwih"
+    crossorigin=""></script>
+
     <script>
         var mymap;
         var meteorLayer;
@@ -61,7 +73,6 @@
                 // Todo: IF NOT CONTROL OR SHIFT PRESSED
                 // Deselect all
                 for (selectedMeteorIdIndex in selectedMeteorIds) {
-                    console.log(selectedMeteorIds[selectedMeteorIdIndex]);
                     var selectedFeature = meteorLayer.getLayer(jsonData.data[selectedMeteorIds[selectedMeteorIdIndex]].leafletId);
                     selectedFeature.setStyle({"color": "#ff7800"});
                 }
@@ -88,13 +99,12 @@
         }
 
         function forEachStation(feature, layer) {
-            console.log(feature);
             var popupContent = "<p> <b>" + feature.properties.name + "</b> (" + feature.properties.id + ")</p>";
             layer.bindPopup(popupContent);
         }
 
         function addStationsToMap() {
-            var camsStationLayer = new L.LayerGroup();
+            var camsStationLayer = new L.markerClusterGroup();
             $.getJSON("cams-sites.json", function (data) {
                 locations = L.geoJson(data, {
                     onEachFeature: forEachStation,
