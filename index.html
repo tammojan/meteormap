@@ -21,18 +21,21 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
     integrity="sha384-lPzjPsFQL6te2x+VxmV6q1DpRxpRk0tmnl2cpwAO5y04ESyc752tnEWPKDfl1olr"
     crossorigin="" />
-    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
-    integrity="sha384-5kMSQJ6S4Qj5i09mtMNrWpSi8iXw230pKU76xTmrpezGnNJQzj0NzXjQLLg+jE7k"
-    crossorigin="" />-->
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"
     integrity="sha384-N9K+COcUk7tr9O2uHZVp6jl7ueGhWsT+LUKUhd/VpA0svQrQMGArhY8r/u/Pkwih"
     crossorigin=""></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <link href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
 
     <script>
         var mymap;
         var meteorLayer;
         var selectedMeteorIds = [];
         var jsonData;
+        var meteorTable;
 
         $(function () {
             // modified from http://html5demos.com/file-api
@@ -73,8 +76,30 @@
             meteorLayer.addTo(mymap);
 
             stationsLayer = addStationsToMap();
-            stationsLayer.addTo(mymap);
-            L.control.layers({}, {"CAMS cameras": stationsLayer, "Meteors": meteorLayer}).addTo(mymap);
+            stationsLayer[0].addTo(mymap);
+            stationsLayer[1].addTo(mymap);
+            L.control.layers({}, {"CAMS cameras": stationsLayer[0], "CAMS sites": stationsLayer[1], "Meteors": meteorLayer}).addTo(mymap);
+
+            tabledata = [
+            {id:1, 0:"Oli Bob", age:"12", col:"red", 1:""},
+            {id:2, 0:"Mary May", age:"1", col:"blue", 1:"14/05/1982"},
+            {id:3, 0:"Christine Lobowski", age:"42", col:"green", 1:"22/05/1982"},
+            {id:4, 0:"Brendon Philips", age:"125", col:"orange", 1:"01/08/1980"},
+            {id:5, 0:"Margret Marmajuke", age:"16", col:"yellow", 1:"31/01/1999"},
+            ];
+
+            meteorTable = new Tabulator("#meteortable", {
+                data:tabledata, //assign data to table
+                columns:[ //Define Table Columns
+                {title:"Name", field:0, width:150},
+                {title:"Age", field:"age", hozAlign:"left", formatter:"progress"},
+                {title:"Favourite Color", field:"col"},
+                {title:"Beginning", field:"1", hozAlign:"center", formatter:"datetime", formatterParams:{inputFormat:"YYYY-MM-DD HH:mm:ss.SSSSSS", outputFormat:"YYYY-MM-DD HH:mm:ss.SSS"}},
+                ],
+                rowClick:function(e, row){ //trigger an alert message when the row is clicked
+                    console.log(row.getData());
+                },
+            });
         });
 
         function onclickStation(e) {
@@ -130,7 +155,19 @@
                 locations.addTo(camsStationLayer);
             });
 
-            return camsStationLayer;
+            var camsStationLayerDedup = new L.LayerGroup();
+            $.getJSON("cams-sites-dedup.json", function (data) {
+                locations = L.geoJson(data, {
+                    onEachFeature: forEachStation,
+                    pointToLayer: function (feature, latlng) {
+                        return L.marker(latlng)
+                    }
+                });
+
+                locations.addTo(camsStationLayerDedup);
+            });
+
+            return [camsStationLayer, camsStationLayerDedup];
         }
 
         function addMeteorsToMap() {
@@ -186,6 +223,8 @@
                 meteorFeature.on("click", onclickMeteor);
                 jsonData.data[meteorIndex].leafletId = meteorLayer.getLayerId(meteorFeature);
             }
+
+            meteorTable.setData(jsonData.data);
         }
     </script>
 </head>
@@ -196,7 +235,10 @@
     <p>Drag a SummaryMeteorLog file or a traj_summary file onto the text area above to view the meteors on the map. Or click below to load meteors from the Global Meteor Network.</p>
 
     <button onclick="getDataFromURL()">Get latest data from globalmeteornetwork</button>
-
+    <br />
+    <br />
     <div id="mapid"></div>
+
+    <div id="meteortable"></div>
 </body>
 </html>
