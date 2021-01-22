@@ -92,19 +92,22 @@
             }).addTo(mymap);
 
             tabledata = [
-            {id:1, 0:"", 82:""}
             ];
 
             meteorTable = new Tabulator("#meteortable", {
-                data:tabledata, //assign data to table
-                columns:[ //Define Table Columns
-                {title:"Beginning", field:"1", width: 200, hozAlign:"left", formatter:"datetime", formatterParams:{inputFormat:"YYYY-MM-DD HH:mm:ss.SSSSSS", outputFormat:"YYYY-MM-DD HH:mm:ss.SSS"}},
-                {title:"Stations", field:"82", width:150},
-                ],
-                rowClick:function(e, row){ //trigger an alert message when the row is clicked
-                    alert(row.getData());
+                data: tabledata, //assign data to table
+                index: "0", // use first column as index
+                columns: getColumnDefinitions(false),
+                rowClick:function(e, row) {
+                    var meteorId = row.getPosition();
+                    selectMeteor(meteorId);
+                    var leafletId = jsonData.data[meteorId].leafletId;
+                    var selectedFeature = meteorLayer.getLayer(leafletId);
+                    mymap.flyTo(selectedFeature.getBounds().getCenter(), 8);
                 },
-                selectable: 1
+                selectable: 1,
+                layout: "fitData",
+                layoutColumnsOnNewData:true
             });
 
             getMeteorsFromUrl("https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt");
@@ -115,11 +118,15 @@
         }
 
         function onclickMeteor(e) {
+            var clickedMeteorId = e.target.options.meteorId;
+            selectMeteor(clickedMeteorId);
+        }
+
+        function selectMeteor(meteorId) {
             if (true) {
                 // Todo: IF NOT CONTROL OR SHIFT PRESSED
                 // Deselect all
                 for (selectedMeteorIdIndex in selectedMeteorIds) {
-                    console.log(selectedMeteorIds);
                     var selectedFeature = meteorLayer.getLayer(jsonData.data[selectedMeteorIds[selectedMeteorIdIndex]].leafletId);
                     selectedFeature.setStyle({"color": "#ff7800"});
                 }
@@ -130,12 +137,11 @@
                 "color": "red"
             }
 
-            var clickedMeteorId = e.target.options.meteorId;
-            e.target.setStyle(mySelectedStyle);
-            selectedMeteorIds.push(clickedMeteorId * 1);
-            console.log("Clicked meteor id: " + clickedMeteorId);
+            meteorLayer.getLayer(jsonData.data[meteorId].leafletId).setStyle(mySelectedStyle);
+            selectedMeteorIds.push(meteorId * 1);
             meteorTable.deselectRow();
-            meteorTable.selectRow(clickedMeteorId);
+            meteorTable.selectRow(jsonData.data[meteorId][0]);
+            meteorTable.getSelectedRows()[0].scrollTo();
             //alert(jsonData.data[clickedMeteorId].stations);
         }
 
@@ -180,6 +186,31 @@
             return [camsStationLayer, camsStationLayerDedup];
         }
 
+        function getColumnDefinitions(isCams) {
+            if (isCams) {
+                var dateConcatMutator = function(value, data, type, params, component){
+                  //value - original value of the cell
+                  //data - the data for the row
+                  //type - the type of mutation occurring  (data|edit)
+                  //params - the mutatorParams object from the column definition
+                  //component - when the "type" argument is "edit", this contains the cell component for the edited cell, otherwise it is the column component for the column
+                  return data[1] + " " + data[2] ; //return the sum of the other two columns.
+                }
+
+                return [
+                    {title: "Number", field: "0"},
+                    {title: "Start", field: "sumcol", mutator: dateConcatMutator},
+                    {title: "Stations", field: "34"}
+                ]
+            } else {
+                return [
+                    {title:"Number", field:"0"},
+                    {title:"Start", field:"1", hozAlign:"left", formatter:"datetime", formatterParams:{inputFormat:"YYYY-MM-DD HH:mm:ss.SSSSSS", outputFormat:"YYYY-MM-DD HH:mm:ss.SSS"}},
+                    {title:"Stations", field:"82"}
+                    ]
+            }
+        }
+
         function addMeteorsToMap() {
             if ((!csvData.includes(';')) && !(csvData.includes(','))) {
                 // Make CAMS format (fixed-width) ;-separated
@@ -202,6 +233,7 @@
                 var lonEndIndex = 68;
                 var latEndIndex = 66;
                 var stationsIndex = 82;
+                var isCams = false;
             } else if (jsonData.data[0].length == 35) {
                 console.log("CAMS format detected");
                 var lonBegIndex = 17;
@@ -209,6 +241,7 @@
                 var lonEndIndex = 23;
                 var latEndIndex = 21;
                 var stationsIndex = 34;
+                var isCams = true;
             } else {
                 console.log("Undetected format, num fields is " + jsonData.data[0].length)
             }
@@ -231,6 +264,7 @@
                 jsonData.data[meteorIndex].leafletId = meteorLayer.getLayerId(meteorFeature);
             }
 
+            meteorTable.setColumns(getColumnDefinitions(isCams));
             meteorTable.setData(jsonData.data);
         }
     </script>
