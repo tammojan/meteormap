@@ -27,19 +27,20 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
-    <link href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator.min.css" rel="stylesheet" />
     <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
 
     <script>
         var mymap;
         var meteorLayer;
         var selectedMeteorIds = [];
+        var csvData;
         var jsonData;
         var meteorTable;
 
         $(function () {
             // modified from http://html5demos.com/file-api
-            var holder = document.getElementById('holder');
+            var holder = document.getElementById('mapid');
 
             holder.ondragover = function() {
                 this.className = 'hover';
@@ -56,7 +57,7 @@
                 var file = e.dataTransfer.files[0],
                 reader = new FileReader();
                 reader.onload = function(event) {
-                    holder.value = event.target.result.replace(/\r/g, "");
+                    csvData = event.target.result.replace(/\r/g, "");
                     addMeteorsToMap();
                 };
                 reader.readAsText(file);
@@ -76,9 +77,22 @@
             meteorLayer.addTo(mymap);
 
             stationsLayer = addStationsToMap();
-            stationsLayer[0].addTo(mymap);
-            stationsLayer[1].addTo(mymap);
-            L.control.layers({}, {"CAMS cameras": stationsLayer[0], "CAMS sites": stationsLayer[1], "Meteors": meteorLayer}).addTo(mymap);
+            emptyLayer = new L.LayerGroup();
+            emptyLayer.addTo(mymap);
+
+            var stationLayers = {
+                "CAMS cameras": {
+                    "Cameras": stationsLayer[0],
+                    "Sites": stationsLayer[1]
+                },
+                "Meteors": {
+                    "Meteors": meteorLayer
+                }
+            };
+
+            L.control.layers({"No cameras": emptyLayer, "CAMS cameras (grouped)": stationsLayer[0], "CAMS stations": stationsLayer[1]}, {
+                "Meteors": meteorLayer
+            }).addTo(mymap);
 
             tabledata = [
             {id:1, 0:"Oli Bob", age:"12", col:"red", 1:""},
@@ -100,6 +114,8 @@
                     console.log(row.getData());
                 },
             });
+
+            getMeteorsFromUrl("https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt");
         });
 
         function onclickStation(e) {
@@ -127,11 +143,9 @@
             alert(jsonData.data[clickedMeteorId].stations);
         }
 
-        function getDataFromURL() {
-            url = "https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt";
+        function getMeteorsFromUrl(url) {
             $.getJSON('http://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
-                var holder = document.getElementById('holder');
-                holder.value = data.contents.replace(/\r/g, '');
+                csvData = data.contents.replace(/\r/g, '');
                 addMeteorsToMap();
             });
         }
@@ -171,9 +185,6 @@
         }
 
         function addMeteorsToMap() {
-            var holder = document.getElementById('holder');
-            var csvData = holder.value;
-
             if ((!csvData.includes(';')) && !(csvData.includes(','))) {
                 // Make CAMS format (fixed-width) ;-separated
                 csvData = csvData.replace(/  */g, ";");
@@ -231,10 +242,9 @@
 
 <body>
     <h1>Meteor viewer</h1>
-    <textarea id="holder" onchange="addMeteorsToMap">Drop a file on this area (the fill will not be uploaded to any server). Or copy-paste the data here.</textarea>
-    <p>Drag a SummaryMeteorLog file or a traj_summary file onto the text area above to view the meteors on the map. Or click below to load meteors from the Global Meteor Network.</p>
+    <p>Drag a SummaryMeteorLog file or a traj_summary file onto the map to view them. Or click below to load meteors from the Global Meteor Network.</p>
 
-    <button onclick="getDataFromURL()">Get latest data from globalmeteornetwork</button>
+    <button onclick="getMeteorsFromUrl()">Get latest data from globalmeteornetwork</button>
     <br />
     <br />
     <div id="mapid"></div>
