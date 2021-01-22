@@ -1,8 +1,8 @@
 
 #holder { border: 3px dashed #ccc; width: 80%; height: 100px; margin: 20px auto; white-space: pre; }
-#holder.hover { border: 3px dashed #333; }
 #mapid { height: 800px; }
 #meteortable {height: 300px; }
+#data-url {width: 600px; }
 
 .marker-cluster {
     background-clip: padding-box;

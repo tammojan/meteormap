@@ -9,7 +9,7 @@
     integrity="sha384-fU3JmTM3BACOkkqkyvCkZsp5gC4snA8QP4b7tOxoRl8duHf6pxMO0g/YlxM4izL3"
     crossorigin=""></script>
 
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="mystyle.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -43,15 +43,12 @@
             var holder = document.getElementById('mapid');
 
             holder.ondragover = function() {
-                this.className = 'hover';
                 return false;
             };
             holder.ondragend = function() {
-                this.className = '';
                 return false;
             };
             holder.ondrop = function(e) {
-                this.className = '';
                 e.preventDefault();
 
                 var file = e.dataTransfer.files[0],
@@ -95,24 +92,19 @@
             }).addTo(mymap);
 
             tabledata = [
-            {id:1, 0:"Oli Bob", age:"12", col:"red", 1:""},
-            {id:2, 0:"Mary May", age:"1", col:"blue", 1:"14/05/1982"},
-            {id:3, 0:"Christine Lobowski", age:"42", col:"green", 1:"22/05/1982"},
-            {id:4, 0:"Brendon Philips", age:"125", col:"orange", 1:"01/08/1980"},
-            {id:5, 0:"Margret Marmajuke", age:"16", col:"yellow", 1:"31/01/1999"},
+            {id:1, 0:"", 82:""}
             ];
 
             meteorTable = new Tabulator("#meteortable", {
                 data:tabledata, //assign data to table
                 columns:[ //Define Table Columns
-                {title:"Name", field:0, width:150},
-                {title:"Age", field:"age", hozAlign:"left", formatter:"progress"},
-                {title:"Favourite Color", field:"col"},
-                {title:"Beginning", field:"1", hozAlign:"center", formatter:"datetime", formatterParams:{inputFormat:"YYYY-MM-DD HH:mm:ss.SSSSSS", outputFormat:"YYYY-MM-DD HH:mm:ss.SSS"}},
+                {title:"Beginning", field:"1", width: 200, hozAlign:"left", formatter:"datetime", formatterParams:{inputFormat:"YYYY-MM-DD HH:mm:ss.SSSSSS", outputFormat:"YYYY-MM-DD HH:mm:ss.SSS"}},
+                {title:"Stations", field:"82", width:150},
                 ],
                 rowClick:function(e, row){ //trigger an alert message when the row is clicked
-                    console.log(row.getData());
+                    alert(row.getData());
                 },
+                selectable: 1
             });
 
             getMeteorsFromUrl("https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt");
@@ -127,6 +119,7 @@
                 // Todo: IF NOT CONTROL OR SHIFT PRESSED
                 // Deselect all
                 for (selectedMeteorIdIndex in selectedMeteorIds) {
+                    console.log(selectedMeteorIds);
                     var selectedFeature = meteorLayer.getLayer(jsonData.data[selectedMeteorIds[selectedMeteorIdIndex]].leafletId);
                     selectedFeature.setStyle({"color": "#ff7800"});
                 }
@@ -139,8 +132,11 @@
 
             var clickedMeteorId = e.target.options.meteorId;
             e.target.setStyle(mySelectedStyle);
-            selectedMeteorIds.push(clickedMeteorId);
-            alert(jsonData.data[clickedMeteorId].stations);
+            selectedMeteorIds.push(clickedMeteorId * 1);
+            console.log("Clicked meteor id: " + clickedMeteorId);
+            meteorTable.deselectRow();
+            meteorTable.selectRow(clickedMeteorId);
+            //alert(jsonData.data[clickedMeteorId].stations);
         }
 
         function getMeteorsFromUrl(url) {
@@ -217,10 +213,10 @@
                 console.log("Undetected format, num fields is " + jsonData.data[0].length)
             }
 
-            console.log("Removing meteors");
             meteorLayer.eachLayer(function (layer) {
                 meteorLayer.removeLayer(layer);
             });
+            selectedMeteorIds = [];
 
             for (meteorIndex in jsonData.data) {
                 var lonBeg = jsonData.data[meteorIndex][lonBegIndex];
@@ -244,11 +240,11 @@
     <h1>Meteor viewer</h1>
     <p>Drag a SummaryMeteorLog file or a traj_summary file onto the map to view them. Or click below to load meteors from the Global Meteor Network.</p>
 
-    <button onclick="getMeteorsFromUrl()">Get latest data from globalmeteornetwork</button>
+    <input type="text" id="data-url"></input><button onclick="getMeteorsFromUrl(document.getElementById('data-url').value)">Get data from globalmeteornetwork</button>
     <br />
     <br />
     <div id="mapid"></div>
-
+    <br />
     <div id="meteortable"></div>
 </body>
 </html>
