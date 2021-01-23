@@ -18,6 +18,14 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
 
+    <script src="https://unpkg.com/leaflet.locatecontrol@0.72.0/src/L.Control.Locate.js"
+    integrity="sha384-PSVTmppejJh0R+0VYiO5WfFwPwEhGaGi+vAg+amhVMPBgQIEynPFz44Qw/CzyAgA"
+    crossorigin=""></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.72.0/dist/L.Control.Locate.min.css"
+    integrity="sha384-vPNGCZwbWwO+u7VXCcmLEJRcz/YmtXGdC3LOF8O4/IvddhfpYZI1O0tJszYkbsD2"
+    crossorigin="" />
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
     integrity="sha384-lPzjPsFQL6te2x+VxmV6q1DpRxpRk0tmnl2cpwAO5y04ESyc752tnEWPKDfl1olr"
     crossorigin="" />
@@ -70,6 +78,9 @@
                 maxZoom: 19
             });
             CartoDB_DarkMatter.addTo(mymap);
+            L.control.locate({drawCircle: false, drawMarker: false, locateOptions: {
+                maxZoom: 10
+            }}).addTo(mymap);
 
             meteorLayer = new L.LayerGroup({attribution: '&copy; hoi'});
             meteorLayer.addTo(mymap);
