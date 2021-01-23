@@ -199,13 +199,21 @@
 
                 return [
                     {title: "Number", field: "0"},
-                    {title: "Start", field: "sumcol", mutator: dateConcatMutator},
+                    {title: "Start (UTC)", field: "sumcol", mutator: dateConcatMutator},
+                    {title:"Vinf (km/s)", align:"right", field: "9"},
+                    {title:"Int-mV (mag)", align:"right", field: "31"},
+                    {title:"Ht_beg (km)", align:"right", field: "19"},
+                    {title:"Ht_end (km)", align:"right", field: "25"},
                     {title: "Stations", field: "34"}
                 ]
             } else {
                 return [
-                    {title:"Number", field:"0"},
-                    {title:"Start", field:"1", hozAlign:"left", formatter:"datetime", formatterParams:{inputFormat:"YYYY-MM-DD HH:mm:ss.SSSSSS", outputFormat:"YYYY-MM-DD HH:mm:ss.SSS"}},
+                    {title:"Start (UTC)", field:"1"},
+                    {title:"V_avg (km/s)", align:"right", field: "58"},
+                    {title:"Ht_beg (km)", align:"right", field: "64"},
+                    {title:"Ht_end (km)", align:"right", field: "70"},
+                    {title:"Duration (s)", align:"right", field: "72"},
+                    {title:"Peak (abs mag)", align:"right", field: "73"},
                     {title:"Stations", field:"82"}
                     ]
             }
