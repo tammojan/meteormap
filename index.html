@@ -149,21 +149,16 @@
                 // Deselect all
                 for (selectedMeteorIdIndex in selectedMeteorIds) {
                     var selectedFeature = meteorLayer.getLayer(jsonData.data[selectedMeteorIds[selectedMeteorIdIndex]].leafletId);
-                    selectedFeature.setStyle({"color": "#ff7800"});
+                    L.DomUtil.removeClass(selectedFeature._path, 'selected-meteor');
                 }
                 selectedMeteorIds = [];
             }
 
-            var mySelectedStyle = {
-                "color": "red"
-            }
-
-            meteorLayer.getLayer(jsonData.data[meteorId].leafletId).setStyle(mySelectedStyle);
+            L.DomUtil.addClass(meteorLayer.getLayer(jsonData.data[meteorId].leafletId)._path, 'selected-meteor');
             selectedMeteorIds.push(meteorId * 1);
             meteorTable.deselectRow();
             meteorTable.selectRow(jsonData.data[meteorId][0]);
             meteorTable.getSelectedRows()[0].scrollTo();
-            //alert(jsonData.data[clickedMeteorId].stations);
         }
 
         function getMeteorsFromUrl(url) {
@@ -307,7 +302,7 @@
                 var latEnd = jsonData.data[meteorIndex][latEndIndex];
                 var stations = jsonData.data[meteorIndex][stationsIndex].split(/[,_]/);
                 jsonData.data[meteorIndex].stations = stations;
-                meteorFeature = L.polyline([[latBeg, lonBeg], [latEnd, lonEnd]], {color: "#ff7800", meteorId: meteorIndex});
+                meteorFeature = L.polyline([[latBeg, lonBeg], [latEnd, lonEnd]], {className: 'unselected-meteor', meteorId: meteorIndex});
                 meteorFeature.addTo(meteorLayer);
                 meteorFeature.on("click", onclickMeteor);
                 jsonData.data[meteorIndex].leafletId = meteorLayer.getLayerId(meteorFeature);

@@ -24,3 +24,11 @@
 .marker-cluster span {
     line-height: 30px;
 }
+
+.unselected-meteor {
+    stroke: #ff7800;
+}
+
+.selected-meteor {
+    stroke: red;
+}
