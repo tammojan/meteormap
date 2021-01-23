@@ -26,9 +26,10 @@
 }
 
 .unselected-meteor {
-    stroke: #ff7800;
+    /*stroke: #ff7800;*/
+    stroke: url(#GradientUnselected);
 }
 
 .selected-meteor {
-    stroke: red;
+    stroke: url(#GradientSelected);
 }
