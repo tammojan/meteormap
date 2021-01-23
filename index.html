@@ -146,7 +146,7 @@
         }
 
         function getMeteorsFromUrl(url) {
-            $.getJSON('http://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
+            $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 csvData = data.contents.replace(/\r/g, '');
                 addMeteorsToMap();
             });
