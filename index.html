@@ -39,7 +39,6 @@
         var meteorTable;
 
         $(function () {
-            // modified from http://html5demos.com/file-api
             var holder = document.getElementById('mapid');
 
             holder.ondragover = function() {
@@ -64,13 +63,15 @@
 
             mymap = L.map('mapid').setView([52.3, 5], 8);
             var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
+                             '&copy; <a href="https://carto.com/attributions">CARTO</a>; ' +
+                             '&copy; CC-BY 4.0 <a href="https://globalmeteornetwork.org/data/">Global Meteor Network</a>',
                 subdomains: 'abcd',
                 maxZoom: 19
             });
             CartoDB_DarkMatter.addTo(mymap);
 
-            meteorLayer = new L.LayerGroup();
+            meteorLayer = new L.LayerGroup({attribution: '&copy; hoi'});
             meteorLayer.addTo(mymap);
 
             stationsLayer = addStationsToMap();
@@ -110,16 +111,22 @@
                 layoutColumnsOnNewData:true
             });
 
+            populateDropdown();
             getMeteorsFromUrl("https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt");
         });
 
         function onclickStation(e) {
-            console.log("Hoi");
+            console.log("Station clicked, something should happen here.");
         }
 
         function onclickMeteor(e) {
             var clickedMeteorId = e.target.options.meteorId;
             selectMeteor(clickedMeteorId);
+        }
+
+        function loadDataFromGMN() {
+            var select = document.getElementById("datasetDropdown");
+            getMeteorsFromUrl(select.value);
         }
 
         function selectMeteor(meteorId) {
@@ -149,6 +156,26 @@
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 csvData = data.contents.replace(/\r/g, '');
                 addMeteorsToMap();
+            });
+        }
+
+        function populateDropdown() {
+            url = "https://globalmeteornetwork.org/data/traj_summary_data/daily/";
+            $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(data.contents, "text/html");
+                var docfrag = document.createDocumentFragment();
+
+                for(var i = 1, l=doc.links.length; i<l; i++) {
+                    var base_address = "https://globalmeteornetwork.org/data/traj_summary_data/daily/";
+                    var filename = base_address + doc.links[i].getAttribute('href');
+                    var prettyname = filename.substr(74, filename.length - 78);
+                    docfrag.appendChild(new Option(prettyname, filename));
+                }
+
+                var select = document.getElementById("datasetDropdown");
+                select.appendChild(docfrag);
+                select.selectedIndex = select.options.length-2;
             });
         }
 
@@ -200,20 +227,20 @@
                 return [
                     {title: "Number", field: "0"},
                     {title: "Start (UTC)", field: "sumcol", mutator: dateConcatMutator},
-                    {title:"Vinf (km/s)", align:"right", field: "9"},
-                    {title:"Int-mV (mag)", align:"right", field: "31"},
-                    {title:"Ht_beg (km)", align:"right", field: "19"},
-                    {title:"Ht_end (km)", align:"right", field: "25"},
+                    {title:"Vinf (km/s)", hozAlign:"right", field: "9"},
+                    {title:"Int-mV (mag)", hozAlign:"right", field: "31"},
+                    {title:"Ht_beg (km)", hozAlign:"right", field: "19"},
+                    {title:"Ht_end (km)", hozAlign:"right", field: "25"},
                     {title: "Stations", field: "34"}
                 ]
             } else {
                 return [
                     {title:"Start (UTC)", field:"1"},
-                    {title:"V_avg (km/s)", align:"right", field: "58"},
-                    {title:"Ht_beg (km)", align:"right", field: "64"},
-                    {title:"Ht_end (km)", align:"right", field: "70"},
-                    {title:"Duration (s)", align:"right", field: "72"},
-                    {title:"Peak (abs mag)", align:"right", field: "73"},
+                    {title:"V_avg (km/s)", hozAlign:"right", field: "58"},
+                    {title:"Ht_beg (km)", hozAlign:"right", field: "64"},
+                    {title:"Ht_end (km)", hozAlign:"right", field: "70"},
+                    {title:"Duration (s)", hozAlign:"right", field: "72"},
+                    {title:"Peak (abs mag)", hozAlign:"right", field: "73"},
                     {title:"Stations", field:"82"}
                     ]
             }
@@ -280,9 +307,13 @@
 
 <body>
     <h1>Meteor viewer</h1>
-    <p>Drag a SummaryMeteorLog file or a traj_summary file onto the map to view them. Or click below to load meteors from the Global Meteor Network.</p>
+    <p>Drag a SummaryMeteorLog file or a traj_summary file onto the map to view them. Or click below to load meteors
+        from the Global Meteor Network. The data from the <a href="https://globalmeteornetwork.org/data/">Global Meteor
+            Network</a> is used under a CC-BY 4.0 license.
+        The maps on this website are therefore also licensed CC-BY 4.0.
+    </p>
 
-    <input type="text" id="data-url"></input><button onclick="getMeteorsFromUrl(document.getElementById('data-url').value)">Get data from globalmeteornetwork</button>
+    <select id="datasetDropdown" onChange="loadDataFromGMN()"></select>
     <br />
     <br />
     <div id="mapid"></div>
