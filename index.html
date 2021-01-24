@@ -312,7 +312,12 @@
             meteorTable.setData(jsonData.data);
         }
     </script>
-    <svg width="100" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+</head>
+
+<body>
+
+    <h1>Meteor trajectory viewer</h1>
+    <svg height="0" width="0" version="1.1" xmlns="http://www.w3.org/2000/svg" style="height:0; position:absolute; width:0">
         <defs>
           <linearGradient id="GradientUnselected">
             <stop offset="5%" stop-color="#FFF" />
@@ -324,10 +329,7 @@
           </linearGradient>
         </defs>
       </svg>
-</head>
 
-<body>
-    <h1>Meteor trajectory viewer</h1>
     <p>Drag a SummaryMeteorLog file or a traj_summary file onto the map to view them. Or click below to load meteors
         from the Global Meteor Network. The data from the <a href="https://globalmeteornetwork.org/data/">Global Meteor
             Network</a> is used under a CC-BY 4.0 license.
