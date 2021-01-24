@@ -45,7 +45,6 @@
         var mymap;
         var meteorLayer;
         var selectedMeteorIds = [];
-        var csvData;
         var jsonData;
         var meteorTable;
 
@@ -64,8 +63,8 @@
                 var file = e.dataTransfer.files[0],
                 reader = new FileReader();
                 reader.onload = function(event) {
-                    csvData = event.target.result.replace(/\r/g, "");
-                    addMeteorsToMap();
+                    var csvData = event.target.result.replace(/\r/g, "");
+                    addMeteorsToMap(csvData);
                 };
                 reader.readAsText(file);
 
@@ -163,8 +162,8 @@
 
         function getMeteorsFromUrl(url) {
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
-                csvData = data.contents.replace(/\r/g, '');
-                addMeteorsToMap();
+                var csvData = data.contents.replace(/\r/g, '');
+                addMeteorsToMap(csvData);
             });
         }
 
@@ -255,7 +254,7 @@
             }
         }
 
-        function addMeteorsToMap() {
+        function addMeteorsToMap(csvData) {
             if ((!csvData.includes(';')) && !(csvData.includes(','))) {
                 // Make CAMS format (fixed-width) ;-separated
                 csvData = csvData.replace(/  */g, ";");
