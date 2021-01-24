@@ -47,6 +47,7 @@
         var selectedMeteorIds = [];
         var jsonData;
         var meteorTable;
+        var stationsIndex; // Differs between CAMS and RMS; shouldn't be a global
 
         $(function () {
             var holder = document.getElementById('mapid');
@@ -123,10 +124,35 @@
                 layout: "fitData",
                 layoutColumnsOnNewData:true
             });
+            updateFilter();
+
+            $("#stationsFilter").change(updateFilter);
+            $("#stationsFilter").keyup(updateFilter);
 
             populateDropdown();
             getMeteorsFromUrl("https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt");
         });
+
+        function updateFilter() {
+            var stationliststr = document.getElementById("stationsFilter").value;
+            var stationlist = stationliststr.split(/, */)
+            meteorTable.setFilter(customFilter, {stationlist: stationlist});
+        }
+
+        function customFilter(data, filterParams){
+            if (filterParams.stationlist[0]==[""]) {
+                return true;
+            } else {
+                // rowstations contains any of the filterparams.stationlist
+                var rowstations = data[stationsIndex];
+                for (i=0; i<filterParams.stationlist.length; i++) {
+                    if (rowstations.includes(filterParams.stationlist[i])) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        }
 
         function onclickStation(e) {
             console.log("Station clicked, something should happen here.");
@@ -275,7 +301,7 @@
                 var latBegIndex = 60;
                 var lonEndIndex = 68;
                 var latEndIndex = 66;
-                var stationsIndex = 82;
+                stationsIndex = 82;
                 var isCams = false;
             } else if (jsonData.data[0].length == 35) {
                 console.log("CAMS format detected");
@@ -283,7 +309,7 @@
                 var latBegIndex = 15;
                 var lonEndIndex = 23;
                 var latEndIndex = 21;
-                var stationsIndex = 34;
+                stationsIndex = 34;
                 var isCams = true;
             } else {
                 console.log("Undetected format, num fields is " + jsonData.data[0].length)
@@ -340,6 +366,7 @@
     <br />
     <div id="mapid"></div>
     <br />
+    Filter stations: <input type="text" id="stationsFilter"></input>
     <div id="meteortable"></div>
 </body>
 </html>
