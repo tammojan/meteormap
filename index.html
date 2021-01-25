@@ -102,7 +102,10 @@
                 }
             };
 
-            L.control.layers({"No cameras": emptyLayer, "CAMS cameras (grouped)": stationsLayer[0], "CAMS stations": stationsLayer[1]}, {
+            L.control.layers({"No cameras": emptyLayer,
+                              "CAMS cameras (grouped)": stationsLayer[0],
+                              "CAMS stations": stationsLayer[1],
+                              "RMS stations": stationsLayer[2]}, {
                 "Meteors": meteorLayer
             }).addTo(mymap);
 
@@ -267,7 +270,19 @@
                 locations.addTo(camsStationLayerDedup);
             });
 
-            return [camsStationLayer, camsStationLayerDedup];
+            var rmsStationLayer = new L.LayerGroup();
+            $.getJSON("rms-sites.json", function (data) {
+                locations = L.geoJson(data, {
+                    onEachFeature: forEachStation,
+                    pointToLayer: function (feature, latlng) {
+                        return L.marker(latlng)
+                    }
+                });
+
+                locations.addTo(rmsStationLayer);
+            });
+
+            return [camsStationLayer, camsStationLayerDedup, rmsStationLayer];
         }
 
         function getColumnDefinitions(isCams) {
