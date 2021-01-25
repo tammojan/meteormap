@@ -111,9 +111,13 @@
 
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            urlStations = urlParams.get("stations");
+            var urlStations = urlParams.get("stations");
             if (urlStations) {
                 document.getElementById("stationsFilter").value = urlStations;
+            }
+            var initialDataset = urlParams.get("data");
+            if (!initialDataset) {
+                initialDataset = "latest_daily"
             }
 
             meteorTable = new Tabulator("#meteortable", {
@@ -137,7 +141,7 @@
             $("#stationsFilter").keyup(updateFilter);
 
             populateDropdown();
-            getMeteorsFromUrl("https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_latest_daily.txt");
+            getMeteorsFromUrl("https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_" + initialDataset + ".txt");
         });
 
         function updateFilter() {
