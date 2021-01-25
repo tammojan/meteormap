@@ -106,12 +106,16 @@
                 "Meteors": meteorLayer
             }).addTo(mymap);
 
-            tabledata = [
-            ];
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            urlStations = urlParams.get("stations");
+            if (urlStations) {
+                document.getElementById("stationsFilter").value = urlStations;
+            }
 
             meteorTable = new Tabulator("#meteortable", {
-                data: tabledata, //assign data to table
-                index: "0", // use first column as index
+                data: [],
+                index: "0",
                 columns: getColumnDefinitions(false),
                 rowClick:function(e, row) {
                     var meteorId = row.getPosition();
@@ -160,7 +164,17 @@
         }
 
         function onclickStation(e) {
-            console.log("Station clicked, something should happen here.");
+            var append = false;
+            if (e.originalEvent.ctrlKey || e.originalEvent.metaKey || e.originalEvent.shiftKey) {
+                append = true;
+            }
+            var stationsFilterBox = document.getElementById("stationsFilter");
+            if (append) {
+                stationsFilterBox.value = stationsFilterBox.value + "," + e.target.feature.properties.id;
+            } else {
+                stationsFilterBox.value = e.target.feature.properties.id;
+            }
+            updateFilter();
         }
 
         function onclickMeteor(e) {
@@ -220,8 +234,11 @@
 
         function forEachStation(stationFeature, layer) {
             layer.on("click", onclickStation);
+            var icon = layer.options.icon;
+            icon.options.iconSize = [12.5, 20.5];
+            layer.setIcon(icon);
             var popupContent = "<p> <b>" + stationFeature.properties.name + "</b> (" + stationFeature.properties.id + ")</p>";
-            layer.bindPopup(popupContent);
+            //layer.bindPopup(popupContent);
         }
 
         function addStationsToMap() {
