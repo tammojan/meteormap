@@ -237,6 +237,7 @@
 
         function forEachStation(stationFeature, layer) {
             layer.on("click", onclickStation);
+            layer.options.title = stationFeature.properties.name + "(" + stationFeature.properties.id + ")";
             var icon = layer.options.icon;
             icon.options.iconSize = [12.5, 20.5];
             layer.setIcon(icon);
