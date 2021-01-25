@@ -1,0 +1,101 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.36, 52.84]
+    },
+    "properties": {
+      "name": "Dwingeloo",
+      "id": "NL000D"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-72.46, 48.50]
+    },
+    "properties": {
+      "name": "Canada",
+      "id": "CA000C,CA000D"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.40, 49.82]
+    },
+    "properties": {
+      "name": "Grapfontaine",
+      "id": "BE0001"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.48, 51.01]
+    },
+    "properties": {
+      "name": "Mechelen",
+      "id": "BE0002,BE0004"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.54, 50.96]
+    },
+    "properties": {
+      "name": "Genk",
+      "id": "BE0003"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.97, 51.11]
+    },
+    "properties": {
+      "name": "Langenfeld",
+      "id": "DE0001"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.79, 50.38]
+    },
+    "properties": {
+      "name": "Lesve",
+      "id": "BE0006"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-0.45, 54.32]
+    },
+    "properties": {
+      "name": "UK0008",
+      "id": "UK0008"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [3.95, 51.53]
+    },
+    "properties": {
+      "name": "Kattendijke",
+      "id": "NL0001, NL0009"
+    }
+  }
+]

@@ -1,0 +1,494 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-4.59, 36.92]
+    },
+    "properties": {
+      "name": "Villanueva",
+      "id": "304,305",
+      "Code": "VN"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-4.31, 37.42]
+    },
+    "properties": {
+      "name": "Carcabuey",
+      "id": "306,307",
+      "Code": "CB"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.16, 43.91]
+    },
+    "properties": {
+      "name": "La Blache",
+      "id": "302,303",
+      "Code": "LB"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.55, 44.06]
+    },
+    "properties": {
+      "name": "Revest du Bion",
+      "id": "300,301",
+      "Code": "RB"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.16, 48.66]
+    },
+    "properties": {
+      "name": "Nancy",
+      "id": "3900,3901",
+      "Code": "NC"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.40, 49.81]
+    },
+    "properties": {
+      "name": "Grapfontaine",
+      "id": "814,815,3814",
+      "Code": "GF"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.14, 50.82]
+    },
+    "properties": {
+      "name": "Wilderen",
+      "id": "379,380,381,382",
+      "Code": "WD"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.93, 50.91]
+    },
+    "properties": {
+      "name": "Langemark",
+      "id": "386",
+      "Code": "LM"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.36, 50.80]
+    },
+    "properties": {
+      "name": "Ukkel",
+      "id": "393",
+      "Code": "UK"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.59, 50.09]
+    },
+    "properties": {
+      "name": "Dourbes",
+      "id": "394,395",
+      "Code": "DB"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.25, 50.19]
+    },
+    "properties": {
+      "name": "Humain",
+      "id": "816",
+      "Code": "HM"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.54, 50.96]
+    },
+    "properties": {
+      "name": "Genk",
+      "id": "3815",
+      "Code": "GK"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.79, 50.38]
+    },
+    "properties": {
+      "name": "Lesve",
+      "id": "3816",
+      "Code": "LV"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.91, 50.82]
+    },
+    "properties": {
+      "name": "Zillebeke",
+      "id": "3850,3852",
+      "Code": "ZB"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.35, 51.68]
+    },
+    "properties": {
+      "name": "Ooltgensplaat",
+      "id": "340,341,342,343,344,345,349,840",
+      "Code": "OP"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.54, 51.73]
+    },
+    "properties": {
+      "name": "Heesh",
+      "id": "347,348",
+      "Code": "HE"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.58, 51.51]
+    },
+    "properties": {
+      "name": "Lieshout",
+      "id": "356,357",
+      "Code": "LH"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [3.95, 51.53]
+    },
+    "properties": {
+      "name": "Kattendijke",
+      "id": "378",
+      "Code": "KD"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.48, 51.01]
+    },
+    "properties": {
+      "name": "Mechelen",
+      "id": "383,384,388,389,399,809,3830,8381,3890,3891,3892,3893,3894,3895,3896,3897",
+      "Code": "ML"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [3.74, 51.06]
+    },
+    "properties": {
+      "name": "Gent",
+      "id": "396",
+      "Code": "GT"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.65, 51.27]
+    },
+    "properties": {
+      "name": "Zoersel",
+      "id": "397,398,804,805,806,888",
+      "Code": "ZS"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.20, 51.20]
+    },
+    "properties": {
+      "name": "Niederkruechten",
+      "id": "803",
+      "Code": "NK"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [3.54, 51.57]
+    },
+    "properties": {
+      "name": "Oostkapelle",
+      "id": "3030,3031,3032,3033,3034,3035,3036,3037",
+      "Code": "OK"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.67, 51.92]
+    },
+    "properties": {
+      "name": "Winterswijk Woold",
+      "id": "3071,3072,3073",
+      "Code": "WW"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.97, 51.11]
+    },
+    "properties": {
+      "name": "Langenfeld",
+      "id": "3800",
+      "Code": "LF"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [7.01, 52.21]
+    },
+    "properties": {
+      "name": "Gronau",
+      "id": "311,312,313,314,315,316,317,318",
+      "Code": "GN"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.79, 52.26]
+    },
+    "properties": {
+      "name": "Hengelo",
+      "id": "320,321,322,323,324,325,326,327,328,329",
+      "Code": "HL"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.38, 52.83]
+    },
+    "properties": {
+      "name": "Dwingeloo",
+      "id": "346",
+      "Code": "DW"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.61, 52.29]
+    },
+    "properties": {
+      "name": "Ermelo",
+      "id": "351,352,353,354",
+      "Code": "EM"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.03, 52.70]
+    },
+    "properties": {
+      "name": "Benningbroek",
+      "id": "358,359",
+      "Code": "BB"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.49, 52.15]
+    },
+    "properties": {
+      "name": "Leiden centrum",
+      "id": "366",
+      "Code": "LC"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.12, 52.09]
+    },
+    "properties": {
+      "name": "Utrecht",
+      "id": "376,377",
+      "Code": "UT"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [7.01, 52.21]
+    },
+    "properties": {
+      "name": "Gronau",
+      "id": "3000,3001,3002,3003,3004,3005",
+      "Code": "GN"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.92, 52.23]
+    },
+    "properties": {
+      "name": "Enschede",
+      "id": "3110,3111",
+      "Code": "EN"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.67, 52.15]
+    },
+    "properties": {
+      "name": "Alphen a/d Rijn",
+      "id": "3160,3161,3162,3163,3164,3165,3166,3167",
+      "Code": "AR"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [6.36, 52.84]
+    },
+    "properties": {
+      "name": "Dwingeloo",
+      "id": "3199",
+      "Code": "DW"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [10.55, 53.98]
+    },
+    "properties": {
+      "name": "Lebatz",
+      "id": "111,112,113,114",
+      "Code": "LZ"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [7.55, 53.05]
+    },
+    "properties": {
+      "name": "Burlage",
+      "id": "801,802,821,822",
+      "Code": "BL"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [4.74, 53.08]
+    },
+    "properties": {
+      "name": "Texel",
+      "id": "810,811,812,813",
+      "Code": "TX"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [5.37, 53.40]
+    },
+    "properties": {
+      "name": "Terschelling",
+      "id": "841,842,843,844",
+      "Code": "TS"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [11.77, 54.12]
+    },
+    "properties": {
+      "name": "Kuehlungsborn",
+      "id": "81,82,83,84",
+      "Code": "KB"
+    }
+  }
+]
