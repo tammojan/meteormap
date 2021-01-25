@@ -242,6 +242,9 @@
         }
 
         function panToExtent() {
+            if (document.getElementById("stationsFilter").value=="") {
+                return;
+            }
             var tempLayer = new L.FeatureGroup();
             var meteors = meteorLayer.getLayers();
             for (var i=0; i<meteors.length; i++) {
@@ -250,7 +253,7 @@
                 }
             }
             if (tempLayer.getLayers().length > 0) {
-                mymap.panTo(tempLayer.getBounds().getCenter(), 8);
+                mymap.panTo(tempLayer.getBounds().getCenter(), 7);
             }
         }
 
