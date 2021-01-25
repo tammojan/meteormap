@@ -73,13 +73,13 @@
                 return false;
             };
 
-            mymap = L.map('mapid').setView([52.3, 5], 8);
+            mymap = L.map('mapid', {maxZoom: 12}).setView([52.3, 5], 8);
             var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
                              '&copy; <a href="https://carto.com/attributions">CARTO</a>; ' +
                              '&copy; CC-BY 4.0 <a href="https://globalmeteornetwork.org/data/">Global Meteor Network</a>',
                 subdomains: 'abcd',
-                maxZoom: 19
+                maxZoom: 18
             });
             CartoDB_DarkMatter.addTo(mymap);
             L.control.locate({drawCircle: false, drawMarker: false, locateOptions: {
@@ -280,6 +280,7 @@
             layer.options.title = stationFeature.properties.name + "(" + stationFeature.properties.id + ")";
             var icon = layer.options.icon;
             icon.options.iconSize = [12.5, 20.5];
+            icon.options.iconAnchor = [5, 20.5];
             layer.setIcon(icon);
             var popupContent = "<p> <b>" + stationFeature.properties.name + "</b> (" + stationFeature.properties.id + ")</p>";
         }
