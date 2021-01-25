@@ -242,7 +242,8 @@
         }
 
         function addStationsToMap() {
-            var camsStationLayer = new L.markerClusterGroup({showCoverageOnHover: false, zoomToBoundsOnClick: false});
+            var camsStationLayer = new L.markerClusterGroup({showCoverageOnHover: false,
+                 zoomToBoundsOnClick: false, maxClusterRadius:1});
             $.getJSON("cams-sites.json", function (data) {
                 locations = L.geoJson(data, {
                     onEachFeature: forEachStation,
