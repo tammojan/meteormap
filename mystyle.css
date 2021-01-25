@@ -4,6 +4,14 @@
 #meteortable {height: 300px; }
 #data-url {width: 600px; }
 
+body {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+select {
+    font-size: 120%;
+}
+
 .marker-cluster {
     background-clip: padding-box;
     border-radius: 20px;
@@ -21,15 +29,22 @@
     border-radius: 15px;
     font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+
 .marker-cluster span {
     line-height: 30px;
 }
 
 .unselected-meteor {
-    /*stroke: #ff7800;*/
     stroke: url(#GradientUnselected);
+    stroke-width: 3px;
 }
 
 .selected-meteor {
     stroke: url(#GradientSelected);
+    stroke-width: 3px;
+}
+
+.filteredout-meteor {
+    stroke: url(#GradientFilteredOut);
+    stroke-width: 1.5px;
 }

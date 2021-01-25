@@ -140,16 +140,21 @@
         }
 
         function customFilter(data, filterParams){
+            var leafletId = data.leafletId;
+            var selectedFeature = meteorLayer.getLayer(leafletId);
             if (filterParams.stationlist[0]==[""]) {
+                L.DomUtil.removeClass(selectedFeature._path, 'filteredout-meteor');
                 return true;
             } else {
                 // rowstations contains any of the filterparams.stationlist
                 var rowstations = data[stationsIndex];
                 for (i=0; i<filterParams.stationlist.length; i++) {
                     if (rowstations.includes(filterParams.stationlist[i])) {
+                        L.DomUtil.removeClass(selectedFeature._path, 'filteredout-meteor');
                         return true;
                     }
                 }
+                L.DomUtil.addClass(selectedFeature._path, 'filteredout-meteor');
                 return false;
             }
         }
@@ -351,6 +356,10 @@
           <linearGradient id="GradientSelected">
             <stop offset="5%" stop-color="#FFF" />
             <stop offset="95%" stop-color="#04A" />
+          </linearGradient>
+          <linearGradient id="GradientFilteredOut">
+            <stop offset="5%" stop-color="#888" />
+            <stop offset="95%" stop-color="#333" />
           </linearGradient>
         </defs>
       </svg>
