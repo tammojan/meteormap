@@ -66,6 +66,7 @@
                 reader.onload = function(event) {
                     var csvData = event.target.result.replace(/\r/g, "");
                     addMeteorsToMap(csvData);
+                    panToExtent();
                 };
                 reader.readAsText(file);
 
@@ -85,11 +86,11 @@
                 maxZoom: 10
             }}).addTo(mymap);
 
-            meteorLayer = new L.LayerGroup({attribution: '&copy; hoi'});
+            meteorLayer = new L.FeatureGroup();
             meteorLayer.addTo(mymap);
 
             stationsLayer = addStationsToMap();
-            emptyLayer = new L.LayerGroup();
+            emptyLayer = new L.FeatureGroup();
             emptyLayer.addTo(mymap);
 
             var stationLayers = {
@@ -216,6 +217,7 @@
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var csvData = data.contents.replace(/\r/g, '');
                 addMeteorsToMap(csvData);
+                panToExtent();
             });
         }
 
@@ -239,6 +241,19 @@
             });
         }
 
+        function panToExtent() {
+            var tempLayer = new L.FeatureGroup();
+            var meteors = meteorLayer.getLayers();
+            for (var i=0; i<meteors.length; i++) {
+                if (!L.DomUtil.hasClass(meteors[i]._path, 'filteredout-meteor')) {
+                    tempLayer.addLayer(meteors[i]);
+                }
+            }
+            if (tempLayer.getLayers().length > 0) {
+                mymap.panTo(tempLayer.getBounds().getCenter(), 8);
+            }
+        }
+
         function forEachStation(stationFeature, layer) {
             layer.on("click", onclickStation);
             layer.options.title = stationFeature.properties.name + "(" + stationFeature.properties.id + ")";
@@ -246,7 +261,6 @@
             icon.options.iconSize = [12.5, 20.5];
             layer.setIcon(icon);
             var popupContent = "<p> <b>" + stationFeature.properties.name + "</b> (" + stationFeature.properties.id + ")</p>";
-            //layer.bindPopup(popupContent);
         }
 
         function addStationsToMap() {
@@ -263,7 +277,7 @@
                 locations.addTo(camsStationLayer);
             });
 
-            var camsStationLayerDedup = new L.LayerGroup();
+            var camsStationLayerDedup = new L.FeatureGroup();
             $.getJSON("cams-sites-dedup.json", function (data) {
                 locations = L.geoJson(data, {
                     onEachFeature: forEachStation,
@@ -275,7 +289,7 @@
                 locations.addTo(camsStationLayerDedup);
             });
 
-            var rmsStationLayer = new L.LayerGroup();
+            var rmsStationLayer = new L.FeatureGroup();
             $.getJSON("rms-sites.json", function (data) {
                 locations = L.geoJson(data, {
                     onEachFeature: forEachStation,
