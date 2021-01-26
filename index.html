@@ -97,7 +97,8 @@
                              '&copy; <a href="https://carto.com/attributions">CARTO</a>; ' +
                              '&copy; CC-BY 4.0 <a href="https://globalmeteornetwork.org/data/">Global Meteor Network</a>',
                 subdomains: 'abcd',
-                maxZoom: 18
+                maxZoom: 18,
+                minZoom: 3
             });
             CartoDB_DarkMatter.addTo(mymap);
             L.control.locate({drawCircle: false, drawMarker: false, locateOptions: {
