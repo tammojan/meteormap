@@ -303,6 +303,18 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
+      "coordinates": [4.50, 52.18]
+    },
+    "properties": {
+      "name": "Leiden",
+      "id": "371,372,373",
+      "Code": ""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
       "coordinates": [7.01, 52.21]
     },
     "properties": {
