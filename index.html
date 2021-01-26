@@ -222,9 +222,9 @@
             if (append) {
                 stationsFilterBox.value = stationsFilterBox.value + "," + e.target.feature.properties.id;
             } else {
+                deselectAllStations();
                 stationsFilterBox.value = e.target.feature.properties.id;
             }
-            deselectAllStations();
             selectStations(e.target.feature.properties.id.split(","), true);
             updateFilter();
         }
