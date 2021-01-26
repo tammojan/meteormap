@@ -110,7 +110,8 @@
 
             stationsLayer = addStationsToMap();
             emptyLayer = new L.FeatureGroup();
-            emptyLayer.addTo(mymap);
+            //emptyLayer.addTo(mymap);
+            stationsLayer[2].addTo(mymap);
 
             var stationLayers = {
                 "CAMS cameras": {
