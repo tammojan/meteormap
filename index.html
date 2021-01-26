@@ -410,6 +410,7 @@
         }
 
         function addMeteorsToMap(csvData) {
+            deselectMeteors();
             if ((!csvData.includes(';')) && !(csvData.includes(','))) {
                 // Make CAMS format (fixed-width) ;-separated
                 csvData = csvData.replace(/  */g, ";");
@@ -447,7 +448,6 @@
             meteorLayer.eachLayer(function (layer) {
                 meteorLayer.removeLayer(layer);
             });
-            deselectMeteors();
 
             for (meteorIndex in jsonData.data) {
                 var lonBeg = jsonData.data[meteorIndex][lonBegIndex];
