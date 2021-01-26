@@ -251,19 +251,20 @@
             }
         }
 
-        function selectMeteor(meteorId) {
-            if (true) {
-                // Todo: IF NOT CONTROL OR SHIFT PRESSED
-                // Deselect all
-                for (oldSelectedMeteorIdIndex in selectedMeteorIds) {
-                    var oldSelectedMeteorId = selectedMeteorIds[oldSelectedMeteorIdIndex];
-                    var selectedFeature = meteorLayer.getLayer(jsonData.data[oldSelectedMeteorId].leafletId);
-                    L.DomUtil.removeClass(selectedFeature._path, 'selected-meteor');
-                    selectStations(jsonData.data[oldSelectedMeteorId].stations, false);
-                }
-                selectedMeteorIds = [];
+        function deselectMeteors() {
+            for (var oldSelectedMeteorIdIndex in selectedMeteorIds) {
+                var oldSelectedMeteorId = selectedMeteorIds[oldSelectedMeteorIdIndex];
+                var selectedFeature = meteorLayer.getLayer(jsonData.data[oldSelectedMeteorId].leafletId);
+                L.DomUtil.removeClass(selectedFeature._path, 'selected-meteor');
+                selectStations(jsonData.data[oldSelectedMeteorId].stations, false);
             }
+            selectedMeteorIds = [];
+        }
 
+        function selectMeteor(meteorId) {
+            if (true) { // TODO: multiple selection
+                deselectMeteors();
+            }
             L.DomUtil.addClass(meteorLayer.getLayer(jsonData.data[meteorId].leafletId)._path, 'selected-meteor');
             selectedMeteorIds.push(meteorId * 1);
             meteorTable.deselectRow();
@@ -446,7 +447,7 @@
             meteorLayer.eachLayer(function (layer) {
                 meteorLayer.removeLayer(layer);
             });
-            selectedMeteorIds = [];
+            deselectMeteors();
 
             for (meteorIndex in jsonData.data) {
                 var lonBeg = jsonData.data[meteorIndex][lonBegIndex];
