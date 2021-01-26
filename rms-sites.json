@@ -97,5 +97,60 @@
       "name": "Kattendijke",
       "id": "NL0001, NL0009"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [34.81, 32.07]
+    },
+    "properties": {
+      "name": "",
+      "id": "IL0001"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [34.76, 30.60]
+    },
+    "properties": {
+      "name": "",
+      "id": "IL0002, IL0003"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [35.04, 30.05]
+    },
+    "properties": {
+      "name": "",
+      "id": "IL0004"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [35.78, 33.31]
+    },
+    "properties": {
+      "name": "",
+      "id": "IL0006"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [35.02, 32.78]
+    },
+    "properties": {
+      "name": "",
+      "id": "IL0007"
+    }
   }
 ]
