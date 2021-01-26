@@ -266,6 +266,7 @@
                 deselectMeteors();
             }
             L.DomUtil.addClass(meteorLayer.getLayer(jsonData.data[meteorId].leafletId)._path, 'selected-meteor');
+            meteorLayer.getLayer(jsonData.data[meteorId].leafletId).bringToFront();
             selectedMeteorIds.push(meteorId * 1);
             meteorTable.deselectRow();
             meteorTable.selectRow(jsonData.data[meteorId][0]); // The table is indexed by element 0
