@@ -180,6 +180,11 @@
             permalink.href = newlink;
         }
 
+        function clearFilter() {
+            document.getElementById("stationsFilter").value = "";
+            updateFilter();
+        }
+
         function updateFilter() {
             var stationliststr = document.getElementById("stationsFilter").value;
             var stationlist = stationliststr.split(/, */);
@@ -208,6 +213,7 @@
         }
 
         function onclickStation(e) {
+            deselectMeteors();
             var append = false;
             if (e.originalEvent.ctrlKey || e.originalEvent.metaKey || e.originalEvent.shiftKey) {
                 append = true;
@@ -218,6 +224,8 @@
             } else {
                 stationsFilterBox.value = e.target.feature.properties.id;
             }
+            deselectAllStations();
+            selectStations(e.target.feature.properties.id.split(","), true);
             updateFilter();
         }
 
@@ -230,6 +238,15 @@
             var select = document.getElementById("datasetDropdown");
             getMeteorsFromUrl(select.value);
             updatePermalink();
+        }
+
+        function deselectAllStations() {
+            for (stationId in stationLayers) {
+                var stationLayer = stationLayers[stationId];
+                for (var s=0; s<stationLayer.length; s++) {
+                    stationLayer[s].setIcon(new stationIcon);
+                }
+            }
         }
 
         function selectStations(stations, doSelect) {
@@ -265,7 +282,11 @@
             if (true) { // TODO: multiple selection
                 deselectMeteors();
             }
-            L.DomUtil.addClass(meteorLayer.getLayer(jsonData.data[meteorId].leafletId)._path, 'selected-meteor');
+            var selectedLayer = meteorLayer.getLayer(jsonData.data[meteorId].leafletId);
+            if (L.DomUtil.hasClass(selectedLayer._path, 'filteredout-meteor')) {
+                clearFilter();
+            }
+            L.DomUtil.addClass(selectedLayer._path, 'selected-meteor');
             meteorLayer.getLayer(jsonData.data[meteorId].leafletId).bringToFront();
             selectedMeteorIds.push(meteorId * 1);
             meteorTable.deselectRow();
@@ -320,10 +341,7 @@
 
         function forEachStation(stationFeature, layer) {
             layer.on("click", onclickStation);
-            layer.options.title = stationFeature.properties.name + "(" + stationFeature.properties.id + ")";
-            //var icon = layer.options.icon;
-            //icon.options.iconSize = [12.5, 20.5];
-            //icon.options.iconAnchor = [5, 20.5];
+            layer.options.title = stationFeature.properties.name + " (" + stationFeature.properties.id + ")";
             var stationIds = stationFeature.properties.id.split(",");
             for (var stationIdIdx=0; stationIdIdx<stationIds.length; stationIdIdx++) {
                 var stationId = stationIds[stationIdIdx];
