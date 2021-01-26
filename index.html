@@ -49,6 +49,7 @@
         var meteorTable;
         var stationsIndex; // Differs between CAMS and RMS
         var stationLayers = {};
+        var stationMarkerLayers;
 
         var stationIcon = L.Icon.extend({
             options: {
@@ -108,27 +109,7 @@
             meteorLayer = new L.FeatureGroup();
             meteorLayer.addTo(mymap);
 
-            stationsLayer = addStationsToMap();
-            emptyLayer = new L.FeatureGroup();
-            //emptyLayer.addTo(mymap);
-            stationsLayer[2].addTo(mymap);
-
-            var stationLayers = {
-                "CAMS cameras": {
-                    "Cameras": stationsLayer[0],
-                    "Sites": stationsLayer[1]
-                },
-                "Meteors": {
-                    "Meteors": meteorLayer
-                }
-            };
-
-            L.control.layers({"No cameras": emptyLayer,
-                              "CAMS cameras (grouped)": stationsLayer[0],
-                              "CAMS stations": stationsLayer[1],
-                              "RMS stations": stationsLayer[2]}, {
-                "Meteors": meteorLayer
-            }).addTo(mymap);
+            addStationsToMap();
 
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
@@ -179,6 +160,21 @@
             }
 
             permalink.href = newlink;
+        }
+
+        function chooseStationMarkerLayer(stationType) {
+            // 0: none, 1: CAMS (clustered), 2: CAMS, 3: RMS
+            if (mymap.hasLayer(stationMarkerLayers[0])) {
+                // Don't add stations to the map if they were removed manually
+                return;
+            }
+            for (var i=0; i<4; i++) {
+                if (i==stationType) {
+                    mymap.addLayer(stationMarkerLayers[i]);
+                } else {
+                    mymap.removeLayer(stationMarkerLayers[i]);
+                }
+            }
         }
 
         function clearFilter() {
@@ -357,6 +353,8 @@
         }
 
         function addStationsToMap() {
+            var emptyLayer = new L.FeatureGroup();
+
             var camsStationLayer = new L.markerClusterGroup({showCoverageOnHover: false,
                  zoomToBoundsOnClick: false, maxClusterRadius:1});
             $.getJSON("cams-sites.json", function (data) {
@@ -394,7 +392,17 @@
                 locations.addTo(rmsStationLayer);
             });
 
-            return [camsStationLayer, camsStationLayerDedup, rmsStationLayer];
+            stationMarkerLayers = [emptyLayer,
+                                   camsStationLayer,
+                                   camsStationLayerDedup,
+                                   rmsStationLayer];
+
+            L.control.layers({"No cameras": emptyLayer,
+                              "CAMS cameras (grouped)": camsStationLayer,
+                              "CAMS stations": camsStationLayerDedup,
+                              "RMS stations": rmsStationLayer}, {
+                "Meteors": meteorLayer
+            }).addTo(mymap);
         }
 
         function getColumnDefinitions(isCams) {
@@ -448,6 +456,7 @@
 
             if (jsonData.data[0].length == 83) {
                 console.log("RMS format detected");
+                chooseStationMarkerLayer(3);
                 var lonBegIndex = 62;
                 var latBegIndex = 60;
                 var lonEndIndex = 68;
@@ -456,6 +465,7 @@
                 var isCams = false;
             } else if (jsonData.data[0].length == 35) {
                 console.log("CAMS format detected");
+                chooseStationMarkerLayer(2);
                 var lonBegIndex = 17;
                 var latBegIndex = 15;
                 var lonEndIndex = 23;
