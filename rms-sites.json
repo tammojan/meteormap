@@ -83,7 +83,7 @@
       "coordinates": [-0.45, 54.32]
     },
     "properties": {
-      "name": "UK0008",
+      "name": "",
       "id": "UK0008"
     }
   },
@@ -151,6 +151,28 @@
     "properties": {
       "name": "",
       "id": "IL0007"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-9.09, 53.27]
+    },
+    "properties": {
+      "name": "",
+      "id": "IE0005"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-1.27, 51.40]
+    },
+    "properties": {
+      "name": "",
+      "id": "UK000D"
     }
   }
 ]
