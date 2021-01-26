@@ -274,9 +274,9 @@
                 var oldSelectedMeteorId = selectedMeteorIds[oldSelectedMeteorIdIndex];
                 var selectedFeature = meteorLayer.getLayer(jsonData.data[oldSelectedMeteorId].leafletId);
                 L.DomUtil.removeClass(selectedFeature._path, 'selected-meteor');
-                //selectStations(jsonData.data[oldSelectedMeteorId].stations, false);
+                selectStations(jsonData.data[oldSelectedMeteorId].stations, false);
             }
-            deselectAllStations();
+            selectStations(document.getElementById("stationsFilter").value.split(","), false);
             selectedMeteorIds = [];
         }
 
