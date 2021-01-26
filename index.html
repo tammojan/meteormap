@@ -47,7 +47,25 @@
         var selectedMeteorIds = [];
         var jsonData;
         var meteorTable;
-        var stationsIndex; // Differs between CAMS and RMS; shouldn't be a global
+        var stationsIndex; // Differs between CAMS and RMS
+        var stationLayers = {};
+
+        var stationIcon = L.Icon.extend({
+            options: {
+                iconUrl: 'marker-icon-2x-blue.png',
+                iconSize: [12.5, 20.5],
+                iconAnchor: [5, 20.5],
+            }
+        });
+
+        var selectedStationIcon = L.Icon.extend({
+            options: {
+                iconUrl: 'marker-icon-2x-red.png',
+                iconSize: [12.5, 20.5],
+                iconAnchor: [5, 20.5],
+            }
+
+        });
 
         $(function () {
             var holder = document.getElementById('mapid');
@@ -213,13 +231,34 @@
             updatePermalink();
         }
 
+        function selectStations(stations, doSelect) {
+            for (var i=0; i<stations.length; i++) {
+                if (!(stations[i] in stationLayers)) {
+                    // We don't have a feature for this station
+                    console.log("No feature found for station " + stations[i]);
+                    continue;
+                } else {
+                    var stationLayer = stationLayers[stations[i]];
+                    for (var s=0; s<stationLayer.length; s++) {
+                        if (doSelect) {
+                            stationLayer[s].setIcon(new selectedStationIcon);
+                        } else {
+                            stationLayer[s].setIcon(new stationIcon);
+                        }
+                    }
+                }
+            }
+        }
+
         function selectMeteor(meteorId) {
             if (true) {
                 // Todo: IF NOT CONTROL OR SHIFT PRESSED
                 // Deselect all
-                for (selectedMeteorIdIndex in selectedMeteorIds) {
-                    var selectedFeature = meteorLayer.getLayer(jsonData.data[selectedMeteorIds[selectedMeteorIdIndex]].leafletId);
+                for (oldSelectedMeteorIdIndex in selectedMeteorIds) {
+                    var oldSelectedMeteorId = selectedMeteorIds[oldSelectedMeteorIdIndex];
+                    var selectedFeature = meteorLayer.getLayer(jsonData.data[oldSelectedMeteorId].leafletId);
                     L.DomUtil.removeClass(selectedFeature._path, 'selected-meteor');
+                    selectStations(jsonData.data[oldSelectedMeteorId].stations, false);
                 }
                 selectedMeteorIds = [];
             }
@@ -227,7 +266,8 @@
             L.DomUtil.addClass(meteorLayer.getLayer(jsonData.data[meteorId].leafletId)._path, 'selected-meteor');
             selectedMeteorIds.push(meteorId * 1);
             meteorTable.deselectRow();
-            meteorTable.selectRow(jsonData.data[meteorId][0]);
+            meteorTable.selectRow(jsonData.data[meteorId][0]); // The table is indexed by element 0
+            selectStations(jsonData.data[meteorId].stations, true);
             meteorTable.getSelectedRows()[0].scrollTo();
         }
 
@@ -278,11 +318,19 @@
         function forEachStation(stationFeature, layer) {
             layer.on("click", onclickStation);
             layer.options.title = stationFeature.properties.name + "(" + stationFeature.properties.id + ")";
-            var icon = layer.options.icon;
-            icon.options.iconSize = [12.5, 20.5];
-            icon.options.iconAnchor = [5, 20.5];
-            layer.setIcon(icon);
-            var popupContent = "<p> <b>" + stationFeature.properties.name + "</b> (" + stationFeature.properties.id + ")</p>";
+            //var icon = layer.options.icon;
+            //icon.options.iconSize = [12.5, 20.5];
+            //icon.options.iconAnchor = [5, 20.5];
+            var stationIds = stationFeature.properties.id.split(",");
+            for (var stationIdIdx=0; stationIdIdx<stationIds.length; stationIdIdx++) {
+                var stationId = stationIds[stationIdIdx];
+                if (stationFeature.properties.id in stationLayers) {
+                    stationLayers[stationId].push(layer);
+                } else {
+                    stationLayers[stationId] = [layer];
+                }
+            }
+            layer.setIcon(new stationIcon);
         }
 
         function addStationsToMap() {
@@ -404,7 +452,8 @@
                 var latBeg = jsonData.data[meteorIndex][latBegIndex];
                 var lonEnd = jsonData.data[meteorIndex][lonEndIndex];
                 var latEnd = jsonData.data[meteorIndex][latEndIndex];
-                var stations = jsonData.data[meteorIndex][stationsIndex].split(/[,_]/);
+                var stations = jsonData.data[meteorIndex][stationsIndex].replace(/^[_ ]/, "").split(/[,_]/);
+                stations.forEach((name, index) => stations[index] = name.replace(/^0*/, ""));
                 jsonData.data[meteorIndex].stations = stations;
                 meteorFeature = L.polyline([[latBeg, lonBeg], [latEnd, lonEnd]], {className: 'unselected-meteor', meteorId: meteorIndex});
                 meteorFeature.addTo(meteorLayer);
@@ -425,7 +474,7 @@
         <defs>
           <linearGradient id="GradientUnselected">
             <stop offset="5%" stop-color="#FFF" />
-            <stop offset="95%" stop-color="#A00" />
+            <stop offset="95%" stop-color="#600" />
           </linearGradient>
           <linearGradient id="GradientSelected">
             <stop offset="5%" stop-color="#FFF" />
