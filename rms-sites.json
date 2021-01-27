@@ -174,5 +174,269 @@
       "name": "",
       "id": "UK000D"
     }
+  },
+  {
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.68, 35.06]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0001"
   }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.68, 35.06]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0002"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.92, 34.07]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0003"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-105.99, 35.63]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0004"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.19, 35.05]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0005"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.51, 35.15]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0006"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.67, 35.21]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0007"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.76, 34.80]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0008"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.76, 34.80]
+  },
+  "properties": {
+    "name": "",
+    "id": "US0009"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.73, 34.64]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-107.24, 34.11]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000C"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.67, 35.12]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000D"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.68, 35.06]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000E"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.85, 34.52]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000G"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-108.37, 34.36]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000H"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-107.24, 34.15]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000J"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.92, 34.07]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000K"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.01, 35.71]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000L"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.19, 35.05]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000M"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.51, 35.15]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000N"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.67, 35.21]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000P"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-106.76, 34.80]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000R"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-116.38, 34.29]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000S"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-117.26, 33.96]
+  },
+  "properties": {
+    "name": "",
+    "id": "US000V"
+  }
+}
 ]
