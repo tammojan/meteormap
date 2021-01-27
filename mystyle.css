@@ -48,3 +48,12 @@ select {
     stroke: url(#GradientFilteredOut);
     stroke-width: 1.5px;
 }
+
+#loading {
+    margin-left: 10em;
+    float: left;
+}
+
+#gmnform {
+    float: left;
+}

@@ -117,10 +117,6 @@
             if (urlStations) {
                 document.getElementById("stationsFilter").value = urlStations;
             }
-            var initialDataset = urlParams.get("data");
-            if (!initialDataset) {
-                initialDataset = "latest_daily"
-            }
 
             meteorTable = new Tabulator("#meteortable", {
                 data: [],
@@ -142,8 +138,22 @@
             $("#stationsFilter").change(updateFilter);
             $("#stationsFilter").keyup(updateFilter);
 
-            populateDropdown();
-            getMeteorsFromUrl("https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_" + initialDataset + ".txt");
+            var initialDataset = urlParams.get("data");
+            if (initialDataset) {
+                if (initialDataset.length == 7) {
+                    var year = initialDataset.slice(0, 4);
+                    var month = initialDataset.slice(5);
+                    var url = "https://globalmeteornetwork.org/data/traj_summary_data/monthly/traj_summary_monthly_" + year + month + ".txt";
+                    document.getElementById("dailymonthly_daily").checked = false;
+                    document.getElementById("dailymonthly_monthly").checked = true;
+                } else {
+                    var url = "https://globalmeteornetwork.org/data/traj_summary_data/daily/traj_summary_" + initialDataset + ".txt";
+                }
+                dailyMonthlyChange(); // This will populate the dropdown
+                getMeteorsFromUrl(url);
+            } else {
+                dailyMonthlyChange(true); // Populate dropdown and load data
+            }
         });
 
         function updatePermalink() {
@@ -231,6 +241,11 @@
             selectMeteor(clickedMeteorId);
         }
 
+        function dailyMonthlyChange(loadData) {
+            var dailyChecked = document.getElementById("dailymonthly_daily").checked;
+            populateDropdown(dailyChecked, loadData);
+        }
+
         function loadDataFromGMN() {
             var select = document.getElementById("datasetDropdown");
             getMeteorsFromUrl(select.value);
@@ -294,30 +309,65 @@
         }
 
         function getMeteorsFromUrl(url) {
+            showLoading();
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
+                if (!data.contents) {
+                    console.log(url);
+                }
                 var csvData = data.contents.replace(/\r/g, '');
                 addMeteorsToMap(csvData);
+                hideLoading();
                 panToExtent();
             });
         }
 
-        function populateDropdown() {
-            url = "https://globalmeteornetwork.org/data/traj_summary_data/daily/";
+        function showLoading() {
+            document.getElementById("loading").style.display = 'block';
+        }
+
+        function hideLoading() {
+            document.getElementById("loading").style.display = 'none';
+        }
+
+        function populateDropdown(daily, loadData) {
+            var select = document.getElementById("datasetDropdown");
+
+            for (var i = select.options.length - 1; i >= 0; i--) {
+                select.remove(i);
+            }
+
+            if (daily) {
+                url = "https://globalmeteornetwork.org/data/traj_summary_data/daily/";
+            } else {
+                url = "https://globalmeteornetwork.org/data/traj_summary_data/monthly/";
+            }
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var parser = new DOMParser();
                 var doc = parser.parseFromString(data.contents, "text/html");
                 var docfrag = document.createDocumentFragment();
 
-                for(var i = 1, l=doc.links.length; i<l; i++) {
+                if (daily) {
                     var base_address = "https://globalmeteornetwork.org/data/traj_summary_data/daily/";
+                } else {
+                    var base_address = "https://globalmeteornetwork.org/data/traj_summary_data/monthly/";
+                }
+
+                for (var i = 1, l=doc.links.length; i<l; i++) {
                     var filename = base_address + doc.links[i].getAttribute('href');
-                    var prettyname = filename.substr(74, filename.length - 78);
+                    if (daily) {
+                        var prettyname = filename.substr(74, filename.length - 78);
+                    } else {
+                        var prettyname = filename.substr(filename.length - 10, 4) + '-';
+                        prettyname += filename.substr(filename.length - 6, 2);
+                    }
                     docfrag.appendChild(new Option(prettyname, filename));
                 }
 
-                var select = document.getElementById("datasetDropdown");
                 select.appendChild(docfrag);
-                select.selectedIndex = select.options.length-2;
+                select.selectedIndex = select.options.length-1;
+                if (loadData) {
+                    loadDataFromGMN();
+                }
             });
         }
 
@@ -527,7 +577,14 @@
     </p>
     <p>Link for the current selection: <a id="permalink" href="?data=latest_daily&stations=">here</a>.</p>
 
+    <div id="gmnform">
     <select id="datasetDropdown" onChange="loadDataFromGMN()"></select>
+    <input type="radio" id="dailymonthly_daily" name="dailymonthlyradio" value="daily" checked="checked" onChange="dailyMonthlyChange(true)" />
+    <label for="daily"checked="true">Daily</label>
+    <input type="radio" id="dailymonthly_monthly" name="dailymonthlyradio" value="monthly" onChange="dailyMonthlyChange(true)" />
+    <label for="monthly">Monthly</label>
+    </div>
+    <div style="display:none" id="loading">Loading...</div>
     <br />
     <br />
     <div id="mapid"></div>
