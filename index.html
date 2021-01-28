@@ -469,6 +469,10 @@
                   return data[1] + " " + data[2] ; //return the sum of the other two columns.
                 }
 
+                var stationsMutator = function(value) {
+                    return value.replaceAll("_", ",").slice(1);
+                }
+
                 return [
                     {title: "Number", field: "0"},
                     {title: "Start (UTC)", field: "sumcol", mutator: dateConcatMutator},
@@ -476,7 +480,7 @@
                     {title:"Int-mV (mag)", hozAlign:"right", field: "31"},
                     {title:"Ht_beg (km)", hozAlign:"right", field: "19"},
                     {title:"Ht_end (km)", hozAlign:"right", field: "25"},
-                    {title: "Stations", field: "34", sorter:numStationsSorter}
+                    {title: "Stations", field: "34", sorter:numStationsSorter, mutator:stationsMutator}
                 ]
             } else {
                 return [
