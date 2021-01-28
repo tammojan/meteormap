@@ -51,23 +51,6 @@
         var stationLayers = {};
         var stationMarkerLayers;
 
-        var stationIcon = L.Icon.extend({
-            options: {
-                iconUrl: 'marker-icon-2x-blue.png',
-                iconSize: [12.5, 20.5],
-                iconAnchor: [5, 20.5],
-            }
-        });
-
-        var selectedStationIcon = L.Icon.extend({
-            options: {
-                iconUrl: 'marker-icon-2x-red.png',
-                iconSize: [12.5, 20.5],
-                iconAnchor: [5, 20.5],
-            }
-
-        });
-
         $(function () {
             var holder = document.getElementById('mapid');
 
@@ -256,7 +239,7 @@
             for (stationId in stationLayers) {
                 var stationLayer = stationLayers[stationId];
                 for (var s=0; s<stationLayer.length; s++) {
-                    stationLayer[s].setIcon(new stationIcon);
+                    stationLayer[s].setStyle({fillColor: "#3af"});
                 }
             }
         }
@@ -271,9 +254,9 @@
                     var stationLayer = stationLayers[stations[i]];
                     for (var s=0; s<stationLayer.length; s++) {
                         if (doSelect) {
-                            stationLayer[s].setIcon(new selectedStationIcon);
+                            stationLayer[s].setStyle({fillColor: "#f83"});
                         } else {
-                            stationLayer[s].setIcon(new stationIcon);
+                            stationLayer[s].setStyle({fillColor: "#3af"});
                         }
                     }
                 }
@@ -389,7 +372,11 @@
 
         function forEachStation(stationFeature, layer) {
             layer.on("click", onclickStation);
-            layer.options.title = stationFeature.properties.name + " (" + stationFeature.properties.id + ")";
+            if (stationFeature.properties.name == "") {
+                layer.bindTooltip(stationFeature.properties.id);
+            } else {
+                layer.bindTooltip(stationFeature.properties.name + " (" + stationFeature.properties.id + ")");
+            }
             var stationIds = stationFeature.properties.id.split(",");
             for (var stationIdIdx=0; stationIdIdx<stationIds.length; stationIdIdx++) {
                 var stationId = stationIds[stationIdIdx];
@@ -399,48 +386,42 @@
                     stationLayers[stationId] = [layer];
                 }
             }
-            layer.setIcon(new stationIcon);
         }
 
         function addStationsToMap() {
             var emptyLayer = new L.FeatureGroup();
 
+            var geojsonMarkerOptions = {
+                radius: 2700,
+                fillColor: "#3af",
+                color: "#000",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.7
+            };
+
+            function makeGeoJsonLayer(layer, stationfilename) {
+                $.getJSON(stationfilename, function (data) {
+                    locations = L.geoJson(data, {
+                        onEachFeature: forEachStation,
+                        pointToLayer: function (feature, latlng) {
+                            return L.circle(latlng, geojsonMarkerOptions)
+                        }
+                    });
+
+                    locations.addTo(layer);
+                });
+            }
+
             var camsStationLayer = new L.markerClusterGroup({showCoverageOnHover: false,
                  zoomToBoundsOnClick: false, maxClusterRadius:1});
-            $.getJSON("cams-sites.json", function (data) {
-                locations = L.geoJson(data, {
-                    onEachFeature: forEachStation,
-                    pointToLayer: function (feature, latlng) {
-                        return L.marker(latlng)
-                    }
-                });
-
-                locations.addTo(camsStationLayer);
-            });
+            makeGeoJsonLayer(camsStationLayer, "cams-sites.json");
 
             var camsStationLayerDedup = new L.FeatureGroup();
-            $.getJSON("cams-sites-dedup.json", function (data) {
-                locations = L.geoJson(data, {
-                    onEachFeature: forEachStation,
-                    pointToLayer: function (feature, latlng) {
-                        return L.marker(latlng)
-                    }
-                });
-
-                locations.addTo(camsStationLayerDedup);
-            });
+            makeGeoJsonLayer(camsStationLayerDedup, "cams-sites-dedup.json");
 
             var rmsStationLayer = new L.FeatureGroup();
-            $.getJSON("rms-sites.json", function (data) {
-                locations = L.geoJson(data, {
-                    onEachFeature: forEachStation,
-                    pointToLayer: function (feature, latlng) {
-                        return L.marker(latlng)
-                    }
-                });
-
-                locations.addTo(rmsStationLayer);
-            });
+            makeGeoJsonLayer(rmsStationLayer, "rms-sites.json");
 
             stationMarkerLayers = [emptyLayer,
                                    camsStationLayer,
