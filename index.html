@@ -92,6 +92,8 @@
             meteorLayer = new L.FeatureGroup();
             meteorLayer.addTo(mymap);
 
+            mymap.on('zoomend', fixStationScale);
+
             addStationsToMap();
 
             const queryString = window.location.search;
@@ -233,6 +235,21 @@
             var select = document.getElementById("datasetDropdown");
             getMeteorsFromUrl(select.value);
             updatePermalink();
+        }
+
+        function fixStationScale() {
+            var currentZoom = mymap.getZoom();
+            if (currentZoom <= 5) {
+                var markerRadius = 12000;
+            } else {
+                var markerRadius = 2700;
+            }
+            for (stationId in stationLayers) {
+                var stationLayer = stationLayers[stationId];
+                for (var s=0; s<stationLayer.length; s++) {
+                    stationLayer[s].setRadius(markerRadius);
+                }
+            }
         }
 
         function deselectAllStations() {
