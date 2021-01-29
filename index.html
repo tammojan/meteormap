@@ -41,6 +41,8 @@
     <link href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator_midnight.min.css" rel="stylesheet" />
     <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
 
+    <script type="text/javascript" src="established.json"></script>
+
     <script>
         var mymap;
         var meteorLayer;
@@ -50,6 +52,7 @@
         var stationsIndex; // Differs between CAMS and RMS
         var stationLayers = {};
         var stationMarkerLayers;
+        var establishedShowers = JSON.parse(establishedStr);
 
         $(function () {
             var holder = document.getElementById('mapid');
@@ -486,6 +489,15 @@
                     {title: "Stations", field: "34", sorter:numStationsSorter, mutator:stationsMutator}
                 ]
             } else {
+                var showerMutator = function(value, data, type, params, component) {
+                    if (value.trim() in establishedShowers) {
+                        return establishedShowers[value.trim()];
+                    } else if (value == "...") {
+                        return "Sporadic";
+                    } else {
+                        return value.trim();
+                    }
+                }
                 return [
                     {title:"Start (UTC)", field:"1"},
                     {title:"V_avg (km/s)", hozAlign:"right", field: "58"},
@@ -493,7 +505,8 @@
                     {title:"Ht_end (km)", hozAlign:"right", field: "70"},
                     {title:"Duration (s)", hozAlign:"right", field: "72"},
                     {title:"Peak (abs mag)", hozAlign:"right", field: "73"},
-                    {title:"Stations", field:"82", sorter:numStationsSorter}
+                    {title:"Stations", field:"82", sorter:numStationsSorter},
+                    {title:"Shower", field:"3", mutator:showerMutator}
                     ]
             }
         }
