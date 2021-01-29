@@ -263,6 +263,9 @@
 
         function selectStations(stations, doSelect) {
             for (var i=0; i<stations.length; i++) {
+                if (stations[i] == "") {
+                    continue;
+                }
                 if (!(stations[i] in stationLayers)) {
                     // We don't have a feature for this station
                     console.log("No feature found for station " + stations[i]);
