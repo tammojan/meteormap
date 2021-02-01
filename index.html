@@ -206,7 +206,11 @@
             var fileContents = [];
             var headers = [];
 
-            //itterate over rows
+            fileContents.push('<?xml version="1.0" encoding="UTF-8"?>')
+            fileContents.push('<kml xmlns="http://www.opengis.net/kml/2.2">')
+            fileContents.push('<Document>')
+
+            //iterate over rows
             list.forEach((row) => {
                 var item = [];
 
@@ -238,7 +242,7 @@
             });
 
             //trigger file download, passing the formatted data and mime type
-            setFileContents(fileContents.join("\n"), "text/plain");
+            setFileContents(fileContents.join("\n"), "application/vnd.google-earth.kml+xml");
         }
 
         function clearFilter() {
@@ -810,7 +814,7 @@
     <br />
     <div id="mapid"></div>
     <br />
-    Filter stations: <input type="text" id="stationsFilter"></input> <button onclick="meteorTable.download('csv','data.csv')">Download selection</button><button onclick="meteorTable.download(kmlFormatter,'data.csv')">Download selection as KML</button> Number of meteors: <span id="rowcount">0</span>
+    Filter stations: <input type="text" id="stationsFilter"></input> <button onclick="meteorTable.download('csv','data.csv')">Download selection as CSV</button><button onclick="meteorTable.download(kmlFormatter,'data.csv')">Download selection as KML</button> Number of meteors: <span id="rowcount">0</span>
     <div id="meteortable"></div>
 </body>
 </html>
