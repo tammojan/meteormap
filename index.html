@@ -96,12 +96,12 @@
             }}).addTo(mymap);
 
             fovLayer = new L.FeatureGroup();
-            fovLayer.setStyle({fillColor: "#f00"});
 
             meteorLayer = new L.FeatureGroup();
             meteorLayer.addTo(mymap);
 
             mymap.on('zoomend', fixStationScale);
+            mymap.on('click', fovClickHandler);
 
             addStationsToMap();
             loadFov();
@@ -272,6 +272,9 @@
         }
 
         function selectStations(stations, doSelect) {
+            if (!doSelect) {
+                doSelect = true;
+            }
             for (var i=0; i<stations.length; i++) {
                 if (stations[i] == "") {
                     continue;
@@ -432,12 +435,45 @@
             });
         }
 
+        function fovClickHandler(e) {
+            if (!mymap.hasLayer(fovLayer)) {
+                return;
+            }
+
+            deselectAllStations();
+            var clickBounds = L.latLngBounds(e.latlng, e.latlng);
+
+            var clickedFov = [];
+
+            for (var f in fovLayer._layers) {
+                var feature = fovLayer._layers[f];
+                var bounds = feature.getBounds();
+                if (bounds && clickBounds.intersects(bounds)) {
+                    for (f1 in feature._layers) {
+                        var stationid = feature._layers[f1].feature.id;
+                        clickedFov.push(stationid);
+                    }
+                }
+            }
+
+            selectStations(clickedFov);
+        }
+
         function loadOneFov(url) {
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var layer = omnivore.kml.parse(data.contents);
                 layer.setStyle({fillColor: "#f33", stroke: false});
+                //layer.on("click", onclickFov);
                 layer.addTo(fovLayer);
             });
+        }
+
+        function onclickFov(e) {
+            selectStations(document.getElementById("stationsFilter").value.split(","), false);
+
+            var station = e.layer.feature.id;
+            console.log(station);
+            selectStations([station]);
         }
 
         function addStationsToMap() {
