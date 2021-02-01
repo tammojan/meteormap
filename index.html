@@ -456,7 +456,9 @@
                 }
             }
 
+            document.getElementById("stationsFilter").value = clickedFov.join(",");
             selectStations(clickedFov);
+            updateFilter();
         }
 
         function loadOneFov(url) {
