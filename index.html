@@ -197,6 +197,50 @@
             }
         }
 
+        //custom file formatter
+        var kmlFormatter = function(list, options, setFileContents){
+            //list - an array of export rows representing one row of data for the table;
+            //options - the options object passed from the download function
+            //setFileContents - function to call to pass the formatted data to the downloader
+
+            var fileContents = [];
+            var headers = [];
+
+            //itterate over rows
+            list.forEach((row) => {
+                var item = [];
+
+                switch(row.type){
+                    case "group":
+                    case "calc":
+                    break;
+
+                    case "header":
+                    row.columns.forEach((col) => {
+                        if (col) {
+                            headers.push(col.value);
+                        }
+                    })
+                    fileContents.push(headers.join(options.delimiter));
+                    break;
+
+                    case "row":
+                    //iterate over the columns in a row
+                    row.columns.forEach((col) => {
+                        if (col) {
+                            item.push(col.value);
+                        }
+                    });
+
+                    fileContents.push(item.join(options.delimiter));
+                    break;
+                }
+            });
+
+            //trigger file download, passing the formatted data and mime type
+            setFileContents(fileContents.join("\n"), "text/plain");
+        }
+
         function clearFilter() {
             document.getElementById("stationsFilter").value = "";
             updateFilter();
@@ -766,7 +810,7 @@
     <br />
     <div id="mapid"></div>
     <br />
-    Filter stations: <input type="text" id="stationsFilter"></input> <button onclick="meteorTable.download('csv','data.csv')">Download selection</button> Number of meteors: <span id="rowcount">0</span>
+    Filter stations: <input type="text" id="stationsFilter"></input> <button onclick="meteorTable.download('csv','data.csv')">Download selection</button><button onclick="meteorTable.download(kmlFormatter,'data.csv')">Download selection as KML</button> Number of meteors: <span id="rowcount">0</span>
     <div id="meteortable"></div>
 </body>
 </html>
