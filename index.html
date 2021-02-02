@@ -229,7 +229,7 @@
             }
             selectStations(e.target.feature.properties.id.split(","), true);
             updateFilter();
-            alert('click station');
+            L.DomEvent.stop(e);
         }
 
         function onclickMeteor(e) {
@@ -463,7 +463,6 @@
             document.getElementById("stationsFilter").value = clickedFov.join(",");
             selectStations(clickedFov);
             updateFilter();
-            alert('click fov');
         }
 
         function loadOneFov(url) {
