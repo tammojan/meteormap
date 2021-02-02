@@ -156,11 +156,10 @@
 
         function reorderLayers() {
             fovLayer.bringToBack();
+            meteorLayer.bringToFront();
             for (var i in stationMarkerLayers) {
                 stationMarkerLayers[i].bringToFront();
             }
-            meteorLayer.bringToFront();
-            console.log("Reordered");
         }
 
         function updatePermalink() {
@@ -444,8 +443,29 @@
             }
         }
 
+
+        function onrightclickStation(e) {
+            var props = e.target.feature.properties;
+            var popupcontents = "<p>";
+            if (props.link) {
+                // Make up new istrastream links, assuming that if any station is on it, the rest will be as well.
+                var stations = props.id.split(",");
+                var firstStation = props.link.slice(-6);
+                for (var i=0; i<stations.length; i++) {
+                    popupcontents += `<a href="${props.link.replace(firstStation, stations[i])}" title="${stations[i]}" target="_blank">${stations[i]} on IstraStream</a><br />`;
+                }
+            } else {
+                popupcontents = `${props.id} is not on IstraStream`;
+            }
+            popupcontents += "</p>"
+            var popup = L.popup().setContent(popupcontents);
+            popup.setLatLng(e.target.getLatLng());
+            mymap.openPopup(popup);
+        }
+
         function forEachStation(stationFeature, layer) {
             layer.on("click", onclickStation);
+            layer.on("contextmenu", onrightclickStation);
             var tooltip = "";
             if (stationFeature.properties.name == "") {
                 tooltip = stationFeature.properties.id;
@@ -453,17 +473,6 @@
                 tooltip = stationFeature.properties.name + " (" + stationFeature.properties.id + ")";
             }
             layer.bindTooltip(tooltip);
-            if (stationFeature.properties.link) {
-                var popupcontents = "";
-                // Make up new istrastream links, assuming that if any station is on it, the rest will be as well.
-                var stations = stationFeature.properties.id.split(",");
-                var firstStation = stationFeature.properties.link.slice(-6);
-                for (var i=0; i<stations.length; i++) {
-                    popupcontents += `<p><a href="${stationFeature.properties.link.replace(firstStation, stations[i])}" title="${stations[i]}" target="_blank">${stations[i]} on IstraStream</a><br /></p>`;
-                }
-
-                layer.bindPopup(popupcontents);
-            }
             var stationIds = stationFeature.properties.id.split(",");
             for (var stationIdIdx=0; stationIdIdx<stationIds.length; stationIdIdx++) {
                 var stationId = stationIds[stationIdIdx];
