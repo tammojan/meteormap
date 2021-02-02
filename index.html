@@ -56,6 +56,7 @@
         var meteorTable;
         var stationsIndex; // Differs between CAMS and RMS
         var stationLayers = {};
+        var fovLayers = {};
         var stationMarkerLayers;
         var establishedShowers = JSON.parse(establishedStr);
 
@@ -239,6 +240,7 @@
                 stationsFilterBox.value = e.target.feature.properties.id;
             }
             selectStations(e.target.feature.properties.id.split(","), true);
+            selectFov(e.target.feature.properties.id.split(","), append);
             updateFilter();
             L.DomEvent.stop(e);
         }
@@ -281,6 +283,32 @@
                     stationLayer[s].setStyle({fillColor: "#3af"});
                 }
             }
+        }
+
+        function deselectAllFov() {
+            for (var i in fovLayers) {
+                fovLayers[i].setStyle({fillColor: "#F33", fillOpacity:0.1});
+            }
+        }
+
+        function selectFov(stations, appendToSelection) {
+            if (!appendToSelection) {
+                deselectAllFov();
+            }
+            for (var i=0; i<stations.length; i++) {
+                if (stations[i] == "") {
+                    continue;
+                }
+                if (!(stations[i] in fovLayers)) {
+                    console.log("No FOV found for station " + stations[i]);
+                    continue;
+                } else {
+                    var fovLayer = fovLayers[stations[i]];
+                    fovLayer.setStyle({fillColor: "#00F", fillOpacity: 0.3});
+                    fovLayer.bringToFront();
+                }
+            }
+            reorderLayers();
         }
 
         function selectStations(stations, doSelect) {
@@ -453,6 +481,7 @@
             }
 
             deselectAllStations();
+            deselectAllFov();
             var clickBounds = L.latLngBounds(e.latlng, e.latlng);
 
             var clickedFov = [];
@@ -479,8 +508,12 @@
         function loadOneFov(url) {
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var layer = omnivore.kml.parse(data.contents);
-                layer.setStyle({fillColor: "#f33", stroke: false});
+                layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
                 layer.addTo(fovLayer);
+                for (f1 in layer._layers) {
+                    var stationid = layer._layers[f1].feature.id;
+                    fovLayers[stationid] = layer;
+                }
             });
         }
 
