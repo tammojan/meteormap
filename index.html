@@ -160,7 +160,7 @@
                 stationMarkerLayers[i].bringToFront();
             }
             meteorLayer.bringToFront();
-            console.log("Reorderred");
+            console.log("Reordered");
         }
 
         function updatePermalink() {
@@ -248,6 +248,7 @@
         function onclickMeteor(e) {
             var clickedMeteorId = e.target.options.meteorId;
             selectMeteor(clickedMeteorId);
+            L.DomEvent.stop(e);
         }
 
         function dailyMonthlyChange(loadData) {
@@ -445,10 +446,23 @@
 
         function forEachStation(stationFeature, layer) {
             layer.on("click", onclickStation);
+            var tooltip = "";
             if (stationFeature.properties.name == "") {
-                layer.bindTooltip(stationFeature.properties.id);
+                tooltip = stationFeature.properties.id;
             } else {
-                layer.bindTooltip(stationFeature.properties.name + " (" + stationFeature.properties.id + ")");
+                tooltip = stationFeature.properties.name + " (" + stationFeature.properties.id + ")";
+            }
+            layer.bindTooltip(tooltip);
+            if (stationFeature.properties.link) {
+                var popupcontents = "";
+                // Make up new istrastream links, assuming that if any station is on it, the rest will be as well.
+                var stations = stationFeature.properties.id.split(",");
+                var firstStation = stationFeature.properties.link.slice(-6);
+                for (var i=0; i<stations.length; i++) {
+                    popupcontents += `<p><a href="${stationFeature.properties.link.replace(firstStation, stations[i])}" title="${stations[i]}" target="_blank">${stations[i]} on IstraStream</a><br /></p>`;
+                }
+
+                layer.bindPopup(popupcontents);
             }
             var stationIds = stationFeature.properties.id.split(",");
             for (var stationIdIdx=0; stationIdIdx<stationIds.length; stationIdIdx++) {
