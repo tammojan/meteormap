@@ -21,6 +21,8 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
 
+    <script src="https://unpkg.com/@mapbox/leaflet-pip@latest/leaflet-pip.js"></script>
+
     <script src="https://unpkg.com/leaflet.locatecontrol@0.72.0/src/L.Control.Locate.js"
     integrity="sha384-PSVTmppejJh0R+0VYiO5WfFwPwEhGaGi+vAg+amhVMPBgQIEynPFz44Qw/CzyAgA"
     crossorigin=""></script>
@@ -67,8 +69,6 @@
                 return false;
             };
             holder.ondrop = function(e) {
-                e.preventDefault();
-
                 var file = e.dataTransfer.files[0],
                 reader = new FileReader();
                 reader.onload = function(event) {
@@ -229,6 +229,7 @@
             }
             selectStations(e.target.feature.properties.id.split(","), true);
             updateFilter();
+            alert('click station');
         }
 
         function onclickMeteor(e) {
@@ -447,11 +448,14 @@
 
             for (var f in fovLayer._layers) {
                 var feature = fovLayer._layers[f];
-                var bounds = feature.getBounds();
-                if (bounds && clickBounds.intersects(bounds)) {
-                    for (f1 in feature._layers) {
-                        var stationid = feature._layers[f1].feature.id;
-                        clickedFov.push(stationid);
+                var featurebounds = feature.getBounds();
+                if (featurebounds && clickBounds.intersects(featurebounds)) { // Should be pip
+                    var results = leafletPip.pointInLayer([e.latlng.lng, e.latlng.lat], feature);
+                    if (results.length > 0) {
+                        for (f1 in feature._layers) {
+                            var stationid = feature._layers[f1].feature.id;
+                            clickedFov.push(stationid);
+                        }
                     }
                 }
             }
@@ -459,23 +463,15 @@
             document.getElementById("stationsFilter").value = clickedFov.join(",");
             selectStations(clickedFov);
             updateFilter();
+            alert('click fov');
         }
 
         function loadOneFov(url) {
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var layer = omnivore.kml.parse(data.contents);
                 layer.setStyle({fillColor: "#f33", stroke: false});
-                //layer.on("click", onclickFov);
                 layer.addTo(fovLayer);
             });
-        }
-
-        function onclickFov(e) {
-            selectStations(document.getElementById("stationsFilter").value.split(","), false);
-
-            var station = e.layer.feature.id;
-            console.log(station);
-            selectStations([station]);
         }
 
         function addStationsToMap() {
