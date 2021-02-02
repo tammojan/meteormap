@@ -96,8 +96,10 @@
             }}).addTo(mymap);
 
             fovLayer = new L.FeatureGroup();
+            fovLayer.on("add", reorderLayers);
 
             meteorLayer = new L.FeatureGroup();
+            meteorLayer.on("add", reorderLayers);
             meteorLayer.addTo(mymap);
 
             mymap.on('zoomend', fixStationScale);
@@ -150,6 +152,15 @@
                 dailyMonthlyChange(true); // Populate dropdown and load data
             }
         });
+
+        function reorderLayers() {
+            fovLayer.bringToBack();
+            for (var i in stationMarkerLayers) {
+                stationMarkerLayers[i].bringToFront();
+            }
+            meteorLayer.bringToFront();
+            console.log("Reorderred");
+        }
 
         function updatePermalink() {
             var permalink = document.getElementById("permalink");
@@ -496,6 +507,7 @@
 
                     locations.addTo(layer);
                 });
+                layer.on("add", reorderLayers);
             }
 
             var camsStationLayer = new L.markerClusterGroup({showCoverageOnHover: false,
