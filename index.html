@@ -202,6 +202,7 @@
             var stationliststr = document.getElementById("stationsFilter").value;
             var stationlist = stationliststr.split(/, */);
             meteorTable.setFilter(customFilter, {stationlist: stationlist});
+            document.getElementById("rowcount").innerHTML = meteorTable.getData(true).length;
             updatePermalink();
         }
 
@@ -700,6 +701,7 @@
 
             meteorTable.setColumns(getColumnDefinitions(isCams));
             meteorTable.setData(jsonData.data);
+            document.getElementById("rowcount").innerHTML = meteorTable.getData(true).length;
         }
     </script>
 </head>
@@ -743,7 +745,7 @@
     <br />
     <div id="mapid"></div>
     <br />
-    Filter stations: <input type="text" id="stationsFilter"></input> <button onclick="meteorTable.download('csv','data.csv')">Download selection</button>
+    Filter stations: <input type="text" id="stationsFilter"></input> <button onclick="meteorTable.download('csv','data.csv')">Download selection</button> Number of meteors: <span id="rowcount">0</span>
     <div id="meteortable"></div>
 </body>
 </html>
