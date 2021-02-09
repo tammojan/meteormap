@@ -203,6 +203,7 @@
             var stationlist = stationliststr.split(/, */);
             meteorTable.setFilter(customFilter, {stationlist: stationlist});
             document.getElementById("rowcount").innerHTML = meteorTable.getData(true).length;
+            selectFov(stationlist, false);
             updatePermalink();
         }
 
@@ -240,7 +241,6 @@
                 stationsFilterBox.value = e.target.feature.properties.id;
             }
             selectStations(e.target.feature.properties.id.split(","), true);
-            selectFov(e.target.feature.properties.id.split(","), append);
             updateFilter();
             L.DomEvent.stop(e);
         }
