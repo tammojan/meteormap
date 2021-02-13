@@ -361,6 +361,7 @@
             selectedMeteorIds.push(meteorId * 1);
             meteorTable.deselectRow();
             meteorTable.selectRow(jsonData.data[meteorId][0]); // The table is indexed by element 0
+            deselectAllStations();
             selectStations(jsonData.data[meteorId].stations, true);
             meteorTable.getSelectedRows()[0].scrollTo();
         }
