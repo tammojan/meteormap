@@ -70,12 +70,16 @@
                 return false;
             };
             holder.ondrop = function(e) {
-                var file = e.dataTransfer.files[0],
+                var file = e.dataTransfer.files[0];
                 reader = new FileReader();
                 reader.onload = function(event) {
-                    var csvData = event.target.result.replace(/\r/g, "");
-                    addMeteorsToMap(csvData);
-                    panToExtent();
+                    if (file.name.includes(".KML") || file.name.includes(".kml")) {
+                        loadCamsFov(event.target.result);
+                    } else {
+                        var csvData = event.target.result.replace(/\r/g, "");
+                        addMeteorsToMap(csvData);
+                        panToExtent();
+                    }
                 };
                 reader.readAsText(file);
 
@@ -486,6 +490,22 @@
             }
         }
 
+        function loadCamsFov(kmlContents) {
+            fovLayer.eachLayer(function (layer) {
+                fovLayer.removeLayer(layer);
+            });
+            fovLayers = {};
+            var layer = omnivore.kml.parse(kmlContents);
+            layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
+            layer.eachLayer(function (oneStationLayer) {
+                var dummyLayer = new L.FeatureGroup(); // Mimic layout of RMS FOV
+                oneStationLayer.addTo(dummyLayer);
+                dummyLayer.addTo(fovLayer);
+                var stationid = oneStationLayer.feature.id.replace(/^0*/, "");
+                fovLayers[stationid] = dummyLayer;
+            });
+        }
+
         function loadFov() {
             var url = "https://globalmeteornetwork.org/data/kml_fov/";
             var base_address = "https://globalmeteornetwork.org/data/kml_fov/";
@@ -518,7 +538,7 @@
                     var results = leafletPip.pointInLayer([e.latlng.lng, e.latlng.lat], feature);
                     if (results.length > 0) {
                         for (f1 in feature._layers) {
-                            var stationid = feature._layers[f1].feature.id;
+                            var stationid = feature._layers[f1].feature.id.replace(/^0*/, '');
                             clickedFov.push(stationid);
                         }
                     }
