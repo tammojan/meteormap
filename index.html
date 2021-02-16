@@ -625,7 +625,7 @@
                   //type - the type of mutation occurring  (data|edit)
                   //params - the mutatorParams object from the column definition
                   //component - when the "type" argument is "edit", this contains the cell component for the edited cell, otherwise it is the column component for the column'
-                  var startDate = new Date(Date.parse(data[1] + " " + data[2]) + data[3] * 1000);
+                  var startDate = new Date(Date.parse(data[1] + " " + data[2] + "Z") + data[3] * 1000);
                   return startDate.toISOString().replace("T", " ").substr(0, 22);
                 }
 
