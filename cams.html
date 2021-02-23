@@ -146,11 +146,11 @@
                 if (initialDataset.length == 7) {
                     var year = initialDataset.slice(0, 4);
                     var month = initialDataset.slice(5);
-                    var url = "https://globalmeteornetwork.org/data/traj_summary_data/monthly/traj_summary_monthly_" + year + month + ".txt";
+                    var url = "https://www.tammo80.nl/camsfiles/monthly/SML-" + year + month + ".txt";
                     document.getElementById("dailymonthly_daily").checked = false;
                     document.getElementById("dailymonthly_monthly").checked = true;
                 } else {
-                    var url = "https://www.tammo80.nl/camsfiles/daily/traj_summary_" + initialDataset + ".txt";
+                    var url = "https://www.tammo80.nl/camsfiles/daily/SML-" + initialDataset + ".txt";
                 }
                 dailyMonthlyChange(); // This will populate the dropdown
                 getMeteorsFromUrl(url);
@@ -460,6 +460,8 @@
             if (daily) {
                 url = "https://www.tammo80.nl/camsfiles/daily/";
             } else {
+                alert("No monthly data for CAMS yet!");
+                return;
                 url = "https://www.tammo80.nl/camsfiles/monthly/";
             }
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
