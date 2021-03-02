@@ -167,6 +167,7 @@
             if (stationid in stationLayers) {
                 mymap.panTo(stationLayers[stationid][0].getBounds().getCenter());
             }
+            deselectAllStations();
         }
 
         function reorderLayers() {
