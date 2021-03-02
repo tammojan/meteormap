@@ -140,6 +140,8 @@
             $("#stationsFilter").change(updateFilter);
             $("#stationsFilter").keyup(updateFilter);
 
+            $("#stationSearch").change(highlightStation);
+
             var initialDataset = urlParams.get("data");
             if (initialDataset) {
                 if (initialDataset.length == 7) {
@@ -157,6 +159,15 @@
                 dailyMonthlyChange(true); // Populate dropdown and load data
             }
         });
+
+        function highlightStation() {
+            var stationid = document.getElementById("stationSearch").value;
+            console.log("Highlighting " + stationid);
+            selectStations([stationid]);
+            if (stationid in stationLayers) {
+                mymap.panTo(stationLayers[stationid][0].getBounds().getCenter());
+            }
+        }
 
         function reorderLayers() {
             fovLayer.bringToBack();
@@ -832,9 +843,12 @@
     <br />
     <div id="mapid"></div>
     <br />
+    <div>
     Filter stations: <input type="text" id="stationsFilter"></input>
     <button onclick="clearFilter()">❌</button>
     <button onclick="meteorTable.download('csv', 'meteors.csv')">Download selection as CSV</button><button onclick="meteorTable.download(kmlFormatter, 'meteors.kml')">Download selection as KML</button> Number of meteors: <span id="rowcount">0</span>
+    <span style="float:right">Search station: <input type="text" id="stationSearch"></input></float>
+    </div>
     <div id="meteortable"></div>
 </body>
 </html>
