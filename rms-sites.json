@@ -106,7 +106,7 @@
         },
         "properties": {
             "name": "Elginfield",
-            "id": "CA0001,CA0005,CA0006,CA0007,CA0008,CA0009,US000A",
+            "id": "CA0001,CA0005,CA0006,CA0007,CA0008,CA0009",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA0001"
         }
@@ -1773,6 +1773,48 @@
         "properties": {
             "name": "",
             "id": "UK000Y,UK000Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.906,
+                44.909
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "HR001T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.055,
+                45.355
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "HR0021"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -106.749,
+                34.633
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US000A"
         }
     }
 ]
