@@ -163,12 +163,12 @@
         function highlightStation() {
             var stationid = document.getElementById("stationSearch").value;
             console.log("Highlighting " + stationid);
+            deselectAllStations();
             selectStations([stationid]);
             if (stationid in stationLayers) {
-                selectFov([stationlist], false);
+                selectFov([stationid], false);
                 mymap.panTo(stationLayers[stationid][0].getBounds().getCenter());
             }
-            deselectAllStations();
         }
 
         function reorderLayers() {
