@@ -165,6 +165,7 @@
             console.log("Highlighting " + stationid);
             selectStations([stationid]);
             if (stationid in stationLayers) {
+                selectFov([stationlist], false);
                 mymap.panTo(stationLayers[stationid][0].getBounds().getCenter());
             }
             deselectAllStations();
