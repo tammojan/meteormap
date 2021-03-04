@@ -487,8 +487,6 @@
                 if (daily) {
                         var prettyname = filename.substr(43, filename.length - 47);
                 } else {
-                    console.log(filename);
-                    alert("No monthly data for CAMS yet!");
                     var prettyname = filename.substr(filename.length - 10, 4) + '-';
                     prettyname += filename.substr(filename.length - 6, 2);
                 }
@@ -514,10 +512,6 @@
                 var url =  getBaseUrl() + "daily/";
             } else {
                 var url = getBaseUrl() + "monthly/";
-                if (camsMode) {
-                    alert("No monthly data for CAMS yet!");
-                    return;
-                }
             }
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var parser = new DOMParser();
