@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Meteor trajectory viewer</title>
+    <title>Meteor map</title>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -115,6 +115,12 @@
             const urlParams = new URLSearchParams(queryString);
             camsMode = urlParams.has("cams");
 
+            if (camsMode) {
+                $("#attribution-cams").show();
+            } else {
+                $("#attribution-rms").show();
+            }
+
             addStationsToMap();
             loadFov();
 
@@ -150,7 +156,11 @@
                 if (initialDataset.length == 7) {
                     var year = initialDataset.slice(0, 4);
                     var month = initialDataset.slice(5);
-                    var url = getBaseUrl() + "montly/SML-" + year + month + ".txt";
+                    if (camsMode) {
+                        var url = getBaseUrl() + "monthly/SML-" + year + month + ".txt";
+                    } else {
+                        var url = getBaseUrl() + "monthly/traj_summary_" + year + month + ".txt";
+                    }
                     document.getElementById("dailymonthly_daily").checked = false;
                     document.getElementById("dailymonthly_monthly").checked = true;
                 } else {
@@ -160,6 +170,7 @@
                         var url = getBaseUrl() + "daily/traj_summary_" + initialDataset + ".txt";
                     }
                 }
+                console.log("Using data from URL: " + url);
                 dailyMonthlyChange(); // This will populate the dropdown
                 getMeteorsFromUrl(url);
             } else {
@@ -208,7 +219,6 @@
 
         function chooseStationMarkerLayer(stationType) {
             // TODO: load the other type of stations if camsMode changed
-            // 0: none, 1: CAMS (clustered), 2: CAMS, 3: RMS
             if (mymap.hasLayer(stationMarkerLayers[0])) {
                 // Don't add stations to the map if they were removed manually
                 return;
@@ -849,10 +859,14 @@
         </defs>
       </svg>
 
-    <p>Drag a SummaryMeteorLog file or a traj_summary file onto the map to view them. Or click below to load meteors
-        from the Global Meteor Network. The data from the <a href="https://globalmeteornetwork.org/data/">Global Meteor
-            Network</a> is used under a CC-BY 4.0 license.
-          The maps on this website are therefore also licensed CC-BY 4.0. <b>Legend</b>: the meteors go in the direction from darker to white. So the white part of the trail is the lowest and last part of the trail.</p>
+    <p>Drag a SummaryMeteorLog file or a traj_summary file onto the map to view them. Or select a day or month below.</p>
+
+    <p id="attribution-rms" style="display:none">The data from the <a href="https://globalmeteornetwork.org/data/">Global Meteor Network</a> is used under a CC-BY 4.0 license.
+          The maps on this website are therefore also licensed CC-BY 4.0.</p>
+
+    <p id="attribution-cams" style="display:none">The data from <a href="http://cams.seti.org/">CAMS</a> is described in <i>P. Jenniskens, J. Baggaley, I. Crumpton, P. Aldous, P. Pokorny, D. Janches, P. S. Gural, D. Samuels, J. Albers, A. Howell, C. Johannink, M. Breukers, M. Odeh, N. Moskovitz, J. Collison, S. Ganju, 2018. A survey of southern hemisphere meteor showers. Planetary and Space Science 154, 21-29.</i>. Please refer to that paper when using this data.</p>
+
+    <p><b>Legend</b>: the meteors go in the direction from darker to white. So the white part of the trail is the lowest and last part of the trail.</p>
     <p>Link for the current selection: <a id="permalink" href="?data=latest_daily&stations=">here</a>.</p>
 
     <div id="gmnform">
