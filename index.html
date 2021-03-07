@@ -159,7 +159,7 @@
                     if (camsMode) {
                         var url = getBaseUrl() + "monthly/SML-" + year + month + ".txt";
                     } else {
-                        var url = getBaseUrl() + "monthly/traj_summary_" + year + month + ".txt";
+                        var url = getBaseUrl() + "monthly/traj_summary_monthly_" + year + month + ".txt";
                     }
                     document.getElementById("dailymonthly_daily").checked = false;
                     document.getElementById("dailymonthly_monthly").checked = true;
@@ -297,8 +297,9 @@
 
         function updateFilter() {
             var stationliststr = document.getElementById("stationsFilter").value;
-            var stationlist = stationliststr.split(/, */);
-            meteorTable.setFilter(customFilter, {stationlist: stationlist});
+            var stationlist = stationliststr.split(/[,;] */);
+            meteorTable.setFilter(customFilter, {stationlist: stationlist, needsAll: stationliststr.includes(";")});
+            console.log(stationliststr.includes(";"));
             document.getElementById("rowcount").innerHTML = meteorTable.getData('active').length;
             selectFov(stationlist, false);
             updatePermalink();
@@ -313,14 +314,26 @@
             } else {
                 // rowstations contains any of the filterparams.stationlist
                 var rowstations = data[stationsIndex];
-                for (i=0; i<filterParams.stationlist.length; i++) {
-                    if (rowstations.includes(filterParams.stationlist[i])) {
-                        L.DomUtil.removeClass(selectedFeature._path, 'filteredout-meteor');
-                        return true;
+                if (filterParams.needsAll) {
+                    for (i=0; i<filterParams.stationlist.length; i++) {
+                        if (!rowstations.includes(filterParams.stationlist[i])) {
+                            L.DomUtil.addClass(selectedFeature._path, 'filteredout-meteor');
+                            return false;
+                        }
                     }
+                    L.DomUtil.removeClass(selectedFeature._path, 'filteredout-meteor');
+                    return true;
+                } else {
+                    // Match any of the stations
+                    for (i=0; i<filterParams.stationlist.length; i++) {
+                        if (rowstations.includes(filterParams.stationlist[i])) {
+                            L.DomUtil.removeClass(selectedFeature._path, 'filteredout-meteor');
+                            return true;
+                        }
+                    }
+                    L.DomUtil.addClass(selectedFeature._path, 'filteredout-meteor');
+                    return false;
                 }
-                L.DomUtil.addClass(selectedFeature._path, 'filteredout-meteor');
-                return false;
             }
         }
 
@@ -337,7 +350,7 @@
                 deselectAllStations();
                 stationsFilterBox.value = e.target.feature.properties.id;
             }
-            selectStations(e.target.feature.properties.id.split(","), true);
+            selectStations(e.target.feature.properties.id.split(/[,;]/), true);
             updateFilter();
             L.DomEvent.stop(e);
         }
@@ -441,7 +454,7 @@
                 L.DomUtil.removeClass(selectedFeature._path, 'selected-meteor');
                 selectStations(jsonData.data[oldSelectedMeteorId].stations, false);
             }
-            selectStations(document.getElementById("stationsFilter").value.split(","), false);
+            selectStations(document.getElementById("stationsFilter").value.split(/[,;]/), false);
             selectedMeteorIds = [];
         }
 
@@ -564,7 +577,7 @@
             var popupcontents = "<p>";
             if (props.link) {
                 // Make up new istrastream links, assuming that if any station is on it, the rest will be as well.
-                var stations = props.id.split(",");
+                var stations = props.id.split(/[;,]/);
                 var firstStation = props.link.slice(-6);
                 for (var i=0; i<stations.length; i++) {
                     popupcontents += `<a href="${props.link.replace(firstStation, stations[i])}" title="${stations[i]}" target="_blank">${stations[i]} on IstraStream</a><br />`;
@@ -588,7 +601,7 @@
                 tooltip = stationFeature.properties.name + " (" + stationFeature.properties.id + ")";
             }
             layer.bindTooltip(tooltip);
-            var stationIds = stationFeature.properties.id.split(",");
+            var stationIds = stationFeature.properties.id.split(/[;,]/);
             for (var stationIdIdx=0; stationIdIdx<stationIds.length; stationIdIdx++) {
                 var stationId = stationIds[stationIdIdx];
                 if (stationFeature.properties.id in stationLayers) {
@@ -719,8 +732,8 @@
 
         function getColumnDefinitions(isCams) {
             function numStationsSorter(a, b, aRow, bRow, column, dir, sorterParams) {
-                var lenA = a.split(/[,_]/).length;
-                var lenB = b.split(/[,_]/).length;
+                var lenA = a.split(/[,;_]/).length;
+                var lenB = b.split(/[,;_]/).length;
                 return lenB - lenA;
             }
             if (isCams) {
@@ -823,7 +836,7 @@
                 var latBeg = jsonData.data[meteorIndex][latBegIndex];
                 var lonEnd = jsonData.data[meteorIndex][lonEndIndex];
                 var latEnd = jsonData.data[meteorIndex][latEndIndex];
-                var stations = jsonData.data[meteorIndex][stationsIndex].replace(/^[_ ]/, "").split(/[,_]/);
+                var stations = jsonData.data[meteorIndex][stationsIndex].replace(/^[_ ]/, "").split(/[,_;]/);
                 stations.forEach((name, index) => stations[index] = name.replace(/^0*/, ""));
                 jsonData.data[meteorIndex].stations = stations;
                 meteorFeature = L.polyline([[latBeg, lonBeg], [latEnd, lonEnd]], {className: 'unselected-meteor', meteorId: meteorIndex});
