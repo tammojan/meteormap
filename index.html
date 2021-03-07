@@ -722,6 +722,7 @@
                 var rmsStationLayer = new L.FeatureGroup();
                 makeGeoJsonLayer(stationMarkerLayer, "rms-sites.json");
             }
+            stationMarkerLayer.addTo(mymap);
 
             L.control.layers( {}, {
                 "Stations": stationMarkerLayer,
