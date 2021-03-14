@@ -1315,8 +1315,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK0003"
+            "name": "Loscoe",
+            "id": "UK0003",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0003"
         }
     },
     {
@@ -1715,8 +1717,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "CH0002"
+            "name": "Bern, Switzerland",
+            "id": "CH0002",
+            "lens": "9mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CH0002"
         }
     },
     {
@@ -1743,8 +1747,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "HR001E"
+            "name": "Ro\u010d",
+            "id": "HR001E",
+            "lens": "8mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR001E"
         }
     },
     {
@@ -1757,8 +1763,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "HR001S,HR001U,HR001V"
+            "name": "Loborika",
+            "id": "HR001S,HR001U,HR001V",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR001S"
         }
     },
     {
@@ -1771,8 +1779,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK000Y,UK000Z"
+            "name": "Tissington",
+            "id": "UK000Y,UK000Z",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK000Y"
         }
     },
     {
@@ -1785,8 +1795,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "HR001T"
+            "name": "Loborika",
+            "id": "HR001T",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR001T"
         }
     },
     {
@@ -1799,8 +1811,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "HR0021"
+            "name": "IMX307 Test",
+            "id": "HR0021",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR0021"
         }
     },
     {
@@ -1841,8 +1855,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "CA000P"
+            "name": "Bowmanville, Ontario, Canada",
+            "id": "CA000P",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA000P"
         }
     },
     {
@@ -1883,8 +1899,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "USL00K,USL00L,USL00M,USL00N,USL00P,USL00Q"
+            "name": "Prescott, Arizona",
+            "id": "USL00K,USL00L,USL00M,USL00N,USL00P,USL00Q",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL00K"
         }
     }
 ]
