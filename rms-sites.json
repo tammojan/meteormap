@@ -1816,5 +1816,75 @@
             "name": "",
             "id": "US000A"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -48.384,
+                -23.1
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -78.686,
+                43.924
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.278,
+                45.969
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA000Q,CA000R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.883,
+                48.536
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "FR000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -112.5,
+                34.495
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "USL00K,USL00L,USL00M,USL00N,USL00P,USL00Q"
+        }
     }
 ]
