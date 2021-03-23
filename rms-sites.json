@@ -1841,8 +1841,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "BR000F"
+            "name": "Pardinho, Sao Paulo, Brazil",
+            "id": "BR000F",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000F"
         }
     },
     {
@@ -1885,8 +1887,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "FR000F"
+            "name": "Colombey-les-Belles, France",
+            "id": "FR000F",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=FR000F"
         }
     },
     {
@@ -1903,6 +1907,64 @@
             "id": "USL00K,USL00L,USL00M,USL00N,USL00P,USL00Q",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=USL00K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -48.587,
+                -27.59
+            ]
+        },
+        "properties": {
+            "name": "Florianópolis, Brasil",
+            "id": "BR0008",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR0008"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.773,
+                50.843
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK000S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.593,
+                53.828
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -106.947,
+                37.814
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US001L"
         }
     }
 ]
