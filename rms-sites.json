@@ -1331,8 +1331,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK0006"
+            "name": "Tackley",
+            "id": "UK0006",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0006"
         }
     },
     {
@@ -1703,8 +1705,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "US001G"
+            "name": "Carlisle, MA, USA",
+            "id": "US001G",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US001G"
         }
     },
     {
@@ -1873,8 +1877,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "CA000Q,CA000R"
+            "name": "Saint-Joseph-de-Coleraine, Qu\u00e9bec, Canada",
+            "id": "CA000Q,CA000R",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA000Q"
         }
     },
     {
@@ -1919,7 +1925,7 @@
             ]
         },
         "properties": {
-            "name": "Florianópolis, Brasil",
+            "name": "Florian\u00f3polis, Brasil",
             "id": "BR0008",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR0008"
@@ -1965,6 +1971,36 @@
         "properties": {
             "name": "",
             "id": "US001L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                40.212,
+                47.728
+            ]
+        },
+        "properties": {
+            "name": "Shakhty",
+            "id": "RU000Q",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=RU000Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.542,
+                53.057
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001P,UK001Q,UK001R"
         }
     }
 ]
