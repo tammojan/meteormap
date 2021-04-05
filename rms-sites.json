@@ -2002,5 +2002,99 @@
             "name": "",
             "id": "UK001P,UK001Q,UK001R"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -48.373,
+                -23.113
+            ]
+        },
+        "properties": {
+            "name": "Pardinho, Sao Paulo, Brazil",
+            "id": "BR000G",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                2.17,
+                41.411
+            ]
+        },
+        "properties": {
+            "name": "Barcelona downtown, Spain",
+            "id": "ES000B",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.75,
+                42.006
+            ]
+        },
+        "properties": {
+            "name": "AAS Ager, Lleida, Spain",
+            "id": "ES000C,ES000D",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.861,
+                42.088
+            ]
+        },
+        "properties": {
+            "name": "Berga, Barcelona, Spain",
+            "id": "ES000E",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.592,
+                53.052
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.371,
+                42.536
+            ]
+        },
+        "properties": {
+            "name": "Carlisle, MA, USA",
+            "id": "US001N",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US001N"
+        }
     }
 ]
