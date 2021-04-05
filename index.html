@@ -109,6 +109,8 @@
             meteorLayer.addTo(mymap);
 
             mymap.on('zoomend', fixStationScale);
+            mymap.on('zoomend', updatePermalink);
+            mymap.on('moveend', updatePermalink);
             mymap.on('click', fovClickHandler);
 
             const queryString = window.location.search;
@@ -127,6 +129,11 @@
             var urlStations = urlParams.get("stations");
             if (urlStations) {
                 document.getElementById("stationsFilter").value = urlStations;
+            }
+
+            if (urlParams.has("zoom") && urlParams.has("lat") && urlParams.has("lng")) {
+                mymap.panTo([urlParams.get("lat"), urlParams.get("lng")])
+                mymap.setZoom(urlParams.get("zoom"));
             }
 
             meteorTable = new Tabulator("#meteortable", {
@@ -214,6 +221,10 @@
                 newlink += "&cams"
             }
 
+            newlink += "&lng=" + mymap.getCenter()['lng'];
+            newlink += "&lat=" + mymap.getCenter()['lat'];
+            newlink += "&zoom=" + mymap.getZoom();
+
             permalink.href = newlink;
         }
 
@@ -299,7 +310,6 @@
             var stationliststr = document.getElementById("stationsFilter").value;
             var stationlist = stationliststr.split(/[,;] */);
             meteorTable.setFilter(customFilter, {stationlist: stationlist, needsAll: stationliststr.includes(";")});
-            console.log(stationliststr.includes(";"));
             document.getElementById("rowcount").innerHTML = meteorTable.getData('active').length;
             selectFov(stationlist, false);
             updatePermalink();
@@ -431,7 +441,7 @@
                     continue;
                 }
                 if (!(stations[i] in stationLayers)) {
-                    // We don't have a feature for this station
+                    // We do not have a feature for this station
                     console.log("No feature found for station " + stations[i]);
                     continue;
                 } else {
@@ -557,6 +567,11 @@
 
         function panToExtent() {
             if (document.getElementById("stationsFilter").value=="") {
+                return;
+            }
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            if (urlParams.has("lng")) {
                 return;
             }
             var tempLayer = new L.FeatureGroup();
