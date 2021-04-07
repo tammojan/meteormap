@@ -2096,5 +2096,35 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=US001N"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                35.764,
+                33.318
+            ]
+        },
+        "properties": {
+            "name": "Hermon mountain",
+            "id": "IL0006",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IL0006"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.563,
+                53.058
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001T"
+        }
     }
 ]
