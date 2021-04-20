@@ -1737,8 +1737,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "DE000B"
+            "name": "Holdorf, Germany",
+            "id": "DE000B",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE000B"
         }
     },
     {
@@ -2125,6 +2127,142 @@
         "properties": {
             "name": "",
             "id": "UK001T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -51.946,
+                -23.375
+            ]
+        },
+        "properties": {
+            "name": "Maringá, PR, Brasil",
+            "id": "BR000A",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -54.055,
+                -25.173
+            ]
+        },
+        "properties": {
+            "name": "Medianeira, Paran\u00e1, Brazil",
+            "id": "BR000D",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.085,
+                43.594
+            ]
+        },
+        "properties": {
+            "name": "Antibes, France",
+            "id": "FR000N",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=FR000N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                34.742,
+                30.601
+            ]
+        },
+        "properties": {
+            "name": "Wise observatory",
+            "id": "IL0003",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IL0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.561,
+                51.48
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.101,
+                52.506
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001N,UK001X,UK001Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.572,
+                53.056
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001U,UK001V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.504,
+                50.695
+            ]
+        },
+        "properties": {
+            "name": "Exeter",
+            "id": "UK0020,UK0021",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0020"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.949,
+                50.866
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0024"
         }
     }
 ]
