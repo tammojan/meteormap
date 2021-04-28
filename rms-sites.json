@@ -73,7 +73,7 @@
             ]
         },
         "properties": {
-            "name": "Sumar\u00e9, SP, Brasil",
+            "name": "Sumaré, SP, Brasil",
             "id": "BR0001",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR0001"
@@ -89,7 +89,7 @@
             ]
         },
         "properties": {
-            "name": "Po\u00e7os de Caldas, MG, Brasil",
+            "name": "Poços de Caldas, MG, Brasil",
             "id": "BR0003",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR0003"
@@ -137,7 +137,7 @@
             ]
         },
         "properties": {
-            "name": "Saint-F\u00e9licien, Quebec",
+            "name": "Saint-Félicien, Quebec",
             "id": "CA000C",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA000C"
@@ -169,7 +169,7 @@
             ]
         },
         "properties": {
-            "name": "Qu\u00e9bec city",
+            "name": "Québec city",
             "id": "CA000E",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA000E"
@@ -547,7 +547,7 @@
             ]
         },
         "properties": {
-            "name": "Buzet, Srednja \u0160kola",
+            "name": "Buzet, Srednja Škola",
             "id": "HR0004",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR0004"
@@ -579,7 +579,7 @@
             ]
         },
         "properties": {
-            "name": "Labin, Srednja \u0160kola",
+            "name": "Labin, Srednja Škola",
             "id": "HR0008",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR0008"
@@ -595,7 +595,7 @@
             ]
         },
         "properties": {
-            "name": "\u010ciovo",
+            "name": "Čiovo",
             "id": "HR000D",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR000D"
@@ -659,7 +659,7 @@
             ]
         },
         "properties": {
-            "name": "\u0110akovo, Drenje",
+            "name": "Đakovo, Drenje",
             "id": "HR000M",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR000M"
@@ -675,7 +675,7 @@
             ]
         },
         "properties": {
-            "name": "Ti\u0107an, Zvjezdarnica",
+            "name": "Tićan, Zvjezdarnica",
             "id": "HR000N",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR000N"
@@ -691,7 +691,7 @@
             ]
         },
         "properties": {
-            "name": "Po\u017eega",
+            "name": "Požega",
             "id": "HR000P",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR000P"
@@ -707,7 +707,7 @@
             ]
         },
         "properties": {
-            "name": "\u0160krljevo",
+            "name": "Škrljevo",
             "id": "HR000Q",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR000Q"
@@ -723,7 +723,7 @@
             ]
         },
         "properties": {
-            "name": "\u010cakovec",
+            "name": "Čakovec",
             "id": "HR000R",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR000R"
@@ -787,7 +787,7 @@
             ]
         },
         "properties": {
-            "name": "RGN fakultet Zagreb \u2013 \u017deljko Andrei\u0107",
+            "name": "RGN fakultet Zagreb – Željko Andreić",
             "id": "HR000X",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR000X"
@@ -865,7 +865,7 @@
             ]
         },
         "properties": {
-            "name": "Ro\u010d",
+            "name": "Roč",
             "id": "HR001D",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001D"
@@ -913,7 +913,7 @@
             ]
         },
         "properties": {
-            "name": "Ka\u0161telir, Meki\u0161i",
+            "name": "Kaštelir, Mekiši",
             "id": "HR001N,HR001P,HR001Q,HR001R",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001N"
@@ -1021,7 +1021,7 @@
             ]
         },
         "properties": {
-            "name": "Farra d\u2019Isonzo",
+            "name": "Farra d’Isonzo",
             "id": "IT0001",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IT0001"
@@ -1115,7 +1115,7 @@
             ]
         },
         "properties": {
-            "name": "G\u00f3ra, Poland",
+            "name": "Góra, Poland",
             "id": "PL0001",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=PL0001"
@@ -1273,7 +1273,7 @@
             ]
         },
         "properties": {
-            "name": "\u0160alovci",
+            "name": "Šalovci",
             "id": "SI0001",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=SI0001"
@@ -1755,7 +1755,7 @@
             ]
         },
         "properties": {
-            "name": "Ro\u010d",
+            "name": "Roč",
             "id": "HR001E",
             "lens": "8mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001E"
@@ -1881,7 +1881,7 @@
             ]
         },
         "properties": {
-            "name": "Saint-Joseph-de-Coleraine, Qu\u00e9bec, Canada",
+            "name": "Saint-Joseph-de-Coleraine, Québec, Canada",
             "id": "CA000Q,CA000R",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA000Q"
@@ -1929,7 +1929,7 @@
             ]
         },
         "properties": {
-            "name": "Florian\u00f3polis, Brasil",
+            "name": "Florianópolis, Brasil",
             "id": "BR0008",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR0008"
@@ -2141,7 +2141,7 @@
             ]
         },
         "properties": {
-            "name": "Maring\u00e1, PR, Brasil",
+            "name": "Maringá, PR, Brasil",
             "id": "BR000A",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR000A"
@@ -2157,7 +2157,7 @@
             ]
         },
         "properties": {
-            "name": "Medianeira, Paran\u00e1, Brazil",
+            "name": "Medianeira, Paraná, Brazil",
             "id": "BR000D",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR000D"
