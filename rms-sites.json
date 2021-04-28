@@ -1067,8 +1067,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NL0006,NL0008,NL000A,NL000B"
+            "name": "Hengelo",
+            "id": "NL0006,NL0008,NL000A,NL000B",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NL0006"
         }
     },
     {
@@ -2139,7 +2141,7 @@
             ]
         },
         "properties": {
-            "name": "Maringá, PR, Brasil",
+            "name": "Maring\u00e1, PR, Brasil",
             "id": "BR000A",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR000A"
@@ -2263,6 +2265,48 @@
         "properties": {
             "name": "",
             "id": "UK0024"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.084,
+                47.343
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "FR000Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.046,
+                54.979
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.854,
+                51.244
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0022"
         }
     }
 ]
