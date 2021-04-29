@@ -1,1718 +1,497 @@
 [
-  {
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [11.77, 54.12]
+        "type": "Point",
+        "coordinates": [11.796, 54.119]
     },
     "properties": {
-      "name": "Kuehlungsborn",
-      "id": "81",
-      "Code": "KB"
+        "name": "Kuehlungsborn",
+        "id": "81,82,83,84"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [11.77, 54.12]
+        "type": "Point",
+        "coordinates": [10.550, 53.968]
     },
     "properties": {
-      "name": "Kuehlungsborn",
-      "id": "82",
-      "Code": "KB"
+        "name": "Lebatz",
+        "id": "111,112,113,114"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [11.77, 54.12]
+        "type": "Point",
+        "coordinates": [5.543, 44.053]
     },
     "properties": {
-      "name": "Kuehlungsborn",
-      "id": "83",
-      "Code": "KB"
+        "name": "Revest du Bion",
+        "id": "300,301"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [11.77, 54.12]
+        "type": "Point",
+        "coordinates": [6.158, 43.912]
     },
     "properties": {
-      "name": "Kuehlungsborn",
-      "id": "84",
-      "Code": "KB"
+        "name": "La Blache",
+        "id": "302,303,335,336,392"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [10.55, 53.98]
+        "type": "Point",
+        "coordinates": [-4.577, 36.930]
     },
     "properties": {
-      "name": "Lebatz",
-      "id": "111",
-      "Code": "LZ"
+        "name": "Villanueva",
+        "id": "304,305"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [10.55, 53.98]
+        "type": "Point",
+        "coordinates": [-4.312, 37.418]
     },
     "properties": {
-      "name": "Lebatz",
-      "id": "112",
-      "Code": "LZ"
+        "name": "Carcabuey",
+        "id": "306,307"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [10.55, 53.98]
+        "type": "Point",
+        "coordinates": [3.536, 51.565]
     },
     "properties": {
-      "name": "Lebatz",
-      "id": "113",
-      "Code": "LZ"
+        "name": "Oostkapelle",
+        "id": "330,331,332,333,334,337,338,339,3030,3031,3032,3033,3034,3035,3036,3037"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [10.55, 53.98]
+        "type": "Point",
+        "coordinates": [4.378, 51.683]
     },
     "properties": {
-      "name": "Lebatz",
-      "id": "114",
-      "Code": "LZ"
+        "name": "Ooltgensplaat",
+        "id": "340,341,342,343,344,345,349,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,840"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.55, 44.06]
+        "type": "Point",
+        "coordinates": [6.387, 52.824]
     },
     "properties": {
-      "name": "Revest du Bion",
-      "id": "300",
-      "Code": "RB"
+        "name": "Dwingelo",
+        "id": "346"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.55, 44.06]
+        "type": "Point",
+        "coordinates": [6.994, 52.210]
     },
     "properties": {
-      "name": "Revest du Bion",
-      "id": "301",
-      "Code": "RB"
+        "name": "Gronau",
+        "id": "830,831,832,833,312,313,315,316"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [6.16, 43.91]
+        "type": "Point",
+        "coordinates": [5.573, 51.518]
     },
     "properties": {
-      "name": "La Blache",
-      "id": "302",
-      "Code": "LB"
+        "name": "Lieshout",
+        "id": "356,357"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [6.16, 43.91]
+        "type": "Point",
+        "coordinates": [5.038, 52.703]
     },
     "properties": {
-      "name": "La Blache",
-      "id": "303",
-      "Code": "LB"
+        "name": "Benningbroek",
+        "id": "358,359"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [-4.59, 36.92]
+        "type": "Point",
+        "coordinates": [4.675, 52.159]
     },
     "properties": {
-      "name": "Villanueva",
-      "id": "304",
-      "Code": "VN"
+        "name": "Alphen a/d Rijn",
+        "id": "360,361,362,363,364,365,367,368,3160,3161,3162,3163,3164,3165,3166,3167"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [-4.59, 36.92]
+        "type": "Point",
+        "coordinates": [4.500, 52.150]
     },
     "properties": {
-      "name": "Villanueva",
-      "id": "305",
-      "Code": "VN"
+        "name": "Leiden centrum",
+        "id": "366"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [-4.31, 37.42]
+        "type": "Point",
+        "coordinates": [4.498, 52.166]
     },
     "properties": {
-      "name": "Carcabuey",
-      "id": "306",
-      "Code": "CB"
+        "name": "Leiden",
+        "id": "371,372,373,3971,3972,3973"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [-4.31, 37.42]
+        "type": "Point",
+        "coordinates": [2.910, 50.827]
     },
     "properties": {
-      "name": "Carcabuey",
-      "id": "307",
-      "Code": "CB"
+        "name": "Zillebeke",
+        "id": "385,387,3850,3852"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.35, 51.68]
+        "type": "Point",
+        "coordinates": [2.914, 50.923]
     },
     "properties": {
-      "name": "Ooltgensplaat",
-      "id": "340",
-      "Code": "OP"
+        "name": "Langemark",
+        "id": "386"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.35, 51.68]
+        "type": "Point",
+        "coordinates": [5.356, 53.401]
     },
     "properties": {
-      "name": "Ooltgensplaat",
-      "id": "341",
-      "Code": "OP"
+        "name": "Terschelling",
+        "id": "841,842,843,844"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.35, 51.68]
+        "type": "Point",
+        "coordinates": [4.466, 50.995]
     },
     "properties": {
-      "name": "Ooltgensplaat",
-      "id": "342",
-      "Code": "OP"
+        "name": "Mechelen",
+        "id": "390,391,807,808,383,384,388,389,399,809,3830,3831,3832,3833,3834,3835,3836,3837,3890,3891,3892,3893,3894,3895,3896,3897"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.35, 51.68]
+        "type": "Point",
+        "coordinates": [6.916, 52.236]
     },
     "properties": {
-      "name": "Ooltgensplaat",
-      "id": "343",
-      "Code": "OP"
+        "name": "Enschede",
+        "id": "3110,3111"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.35, 51.68]
+        "type": "Point",
+        "coordinates": [7.533, 53.038]
     },
     "properties": {
-      "name": "Ooltgensplaat",
-      "id": "344",
-      "Code": "OP"
+        "name": "Burlage",
+        "id": "801,802,821,822"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.35, 51.68]
+        "type": "Point",
+        "coordinates": [4.600, 50.081]
     },
     "properties": {
-      "name": "Ooltgensplaat",
-      "id": "345",
-      "Code": "OP"
+        "name": "Dourbes",
+        "id": "394"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [6.38, 52.83]
+        "type": "Point",
+        "coordinates": [4.594, 50.098]
     },
     "properties": {
-      "name": "Dwingeloo",
-      "id": "346",
-      "Code": "DW"
+        "name": "Dourbes",
+        "id": "395"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.35, 51.68]
+        "type": "Point",
+        "coordinates": [6.531, 53.197]
     },
     "properties": {
-      "name": "Ooltgensplaat",
-      "id": "349",
-      "Code": "OP"
+        "name": "Eelderwolde",
+        "id": "3198"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.58, 51.51]
+        "type": "Point",
+        "coordinates": [6.354, 52.830]
     },
     "properties": {
-      "name": "Lieshout",
-      "id": "356",
-      "Code": "LH"
+        "name": "Dwingeloo",
+        "id": "3199"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.58, 51.51]
+        "type": "Point",
+        "coordinates": [5.601, 52.286]
     },
     "properties": {
-      "name": "Lieshout",
-      "id": "357",
-      "Code": "LH"
+        "name": "Ermelo",
+        "id": "351,352,353,354"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.03, 52.70]
+        "type": "Point",
+        "coordinates": [5.527, 50.959]
     },
     "properties": {
-      "name": "Benningbroek",
-      "id": "358",
-      "Code": "BB"
+        "name": "Genk",
+        "id": "3815"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.03, 52.70]
+        "type": "Point",
+        "coordinates": [3.729, 51.051]
     },
     "properties": {
-      "name": "Benningbroek",
-      "id": "359",
-      "Code": "BB"
+        "name": "Gent",
+        "id": "396"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.49, 52.15]
+        "type": "Point",
+        "coordinates": [5.374, 49.820]
     },
     "properties": {
-      "name": "Leiden centrum",
-      "id": "366",
-      "Code": "LC"
+        "name": "Grapfontaine",
+        "id": "814,815,3814"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [2.93, 50.91]
+        "type": "Point",
+        "coordinates": [7.021, 52.197]
     },
     "properties": {
-      "name": "Langemark",
-      "id": "386",
-      "Code": "LM"
+        "name": "Gronau",
+        "id": "311,314,317,318,3000,3001,3002,3003,3004,3005,3006,3007,3008,3009,3010"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.35, 51.68]
+        "type": "Point",
+        "coordinates": [5.563, 51.731]
     },
     "properties": {
-      "name": "Ooltgensplaat",
-      "id": "840",
-      "Code": "OP"
+        "name": "Heesh",
+        "id": "347,348"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.37, 53.40]
+        "type": "Point",
+        "coordinates": [6.787, 52.270]
     },
     "properties": {
-      "name": "Terschelling",
-      "id": "841",
-      "Code": "TS"
+        "name": "Hengelo",
+        "id": "320,321,322,323,324,325,326,327,328,329"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.37, 53.40]
+        "type": "Point",
+        "coordinates": [8.133, 52.592]
     },
     "properties": {
-      "name": "Terschelling",
-      "id": "842",
-      "Code": "TS"
+        "name": "Holdorf",
+        "id": "3801"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.37, 53.40]
+        "type": "Point",
+        "coordinates": [5.244, 50.200]
     },
     "properties": {
-      "name": "Terschelling",
-      "id": "843",
-      "Code": "TS"
+        "name": "Humain",
+        "id": "816"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [5.37, 53.40]
+        "type": "Point",
+        "coordinates": [3.949, 51.500]
     },
     "properties": {
-      "name": "Terschelling",
-      "id": "844",
-      "Code": "TS"
+        "name": "Kattendijke",
+        "id": "378"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [6.92, 52.23]
+        "type": "Point",
+        "coordinates": [6.981, 51.123]
     },
     "properties": {
-      "name": "Enschede",
-      "id": "3110",
-      "Code": "EN"
+        "name": "Langenfeld",
+        "id": "3800"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [6.92, 52.23]
+        "type": "Point",
+        "coordinates": [4.786, 50.397]
     },
     "properties": {
-      "name": "Enschede",
-      "id": "3111",
-      "Code": "EN"
+        "name": "Lesve",
+        "id": "3816"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.67, 52.15]
+        "type": "Point",
+        "coordinates": [6.181, 48.651]
     },
     "properties": {
-      "name": "Alphen a/d Rijn",
-      "id": "3160",
-      "Code": "AR"
+        "name": "Nancy",
+        "id": "3900,3901"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.67, 52.15]
+        "type": "Point",
+        "coordinates": [6.222, 51.209]
     },
     "properties": {
-      "name": "Alphen a/d Rijn",
-      "id": "3161",
-      "Code": "AR"
+        "name": "Niederkruechten",
+        "id": "803"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.67, 52.15]
+        "type": "Point",
+        "coordinates": [4.745, 53.077]
     },
     "properties": {
-      "name": "Alphen a/d Rijn",
-      "id": "3162",
-      "Code": "AR"
+        "name": "Texel",
+        "id": "810,811,812,813"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.67, 52.15]
+        "type": "Point",
+        "coordinates": [4.357, 50.798]
     },
     "properties": {
-      "name": "Alphen a/d Rijn",
-      "id": "3163",
-      "Code": "AR"
+        "name": "Ukkel",
+        "id": "393"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.67, 52.15]
+        "type": "Point",
+        "coordinates": [5.136, 52.102]
     },
     "properties": {
-      "name": "Alphen a/d Rijn",
-      "id": "3164",
-      "Code": "AR"
+        "name": "Utrecht",
+        "id": "376,377"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.67, 52.15]
+        "type": "Point",
+        "coordinates": [5.147, 50.834]
     },
     "properties": {
-      "name": "Alphen a/d Rijn",
-      "id": "3165",
-      "Code": "AR"
+        "name": "Wilderen",
+        "id": "379,380,381,382"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.67, 52.15]
+        "type": "Point",
+        "coordinates": [6.663, 51.918]
     },
     "properties": {
-      "name": "Alphen a/d Rijn",
-      "id": "3166",
-      "Code": "AR"
+        "name": "Winterswijk Woold",
+        "id": "3071,3072,3073"
     }
-  },
-  {
+},
+{
     "type": "Feature",
     "geometry": {
-      "type": "Point",
-      "coordinates": [4.67, 52.15]
+        "type": "Point",
+        "coordinates": [4.669, 51.280]
     },
     "properties": {
-      "name": "Alphen a/d Rijn",
-      "id": "3167",
-      "Code": "AR"
+        "name": "Zoersel",
+        "id": "397,398,804,805,806,888"
     }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.55, 53.05]
-    },
-    "properties": {
-      "name": "Burlage",
-      "id": "801",
-      "Code": "BL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.55, 53.05]
-    },
-    "properties": {
-      "name": "Burlage",
-      "id": "802",
-      "Code": "BL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.55, 53.05]
-    },
-    "properties": {
-      "name": "Burlage",
-      "id": "821",
-      "Code": "BL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.55, 53.05]
-    },
-    "properties": {
-      "name": "Burlage",
-      "id": "822",
-      "Code": "BL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.59, 50.09]
-    },
-    "properties": {
-      "name": "Dourbes",
-      "id": "394",
-      "Code": "DB"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.59, 50.09]
-    },
-    "properties": {
-      "name": "Dourbes",
-      "id": "395",
-      "Code": "DB"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.36, 52.84]
-    },
-    "properties": {
-      "name": "Dwingeloo",
-      "id": "3199",
-      "Code": "DW"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.61, 52.29]
-    },
-    "properties": {
-      "name": "Ermelo",
-      "id": "351",
-      "Code": "EM"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.61, 52.29]
-    },
-    "properties": {
-      "name": "Ermelo",
-      "id": "352",
-      "Code": "EM"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.61, 52.29]
-    },
-    "properties": {
-      "name": "Ermelo",
-      "id": "353",
-      "Code": "EM"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.61, 52.29]
-    },
-    "properties": {
-      "name": "Ermelo",
-      "id": "354",
-      "Code": "EM"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.54, 50.96]
-    },
-    "properties": {
-      "name": "Genk",
-      "id": "3815",
-      "Code": "GK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.74, 51.06]
-    },
-    "properties": {
-      "name": "Gent",
-      "id": "396",
-      "Code": "GT"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.40, 49.81]
-    },
-    "properties": {
-      "name": "Grapfontaine",
-      "id": "814",
-      "Code": "GF"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.40, 49.81]
-    },
-    "properties": {
-      "name": "Grapfontaine",
-      "id": "815",
-      "Code": "GF"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.40, 49.81]
-    },
-    "properties": {
-      "name": "Grapfontaine",
-      "id": "3814",
-      "Code": "GF"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "311",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "312",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "313",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "314",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "315",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "316",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "317",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "318",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "3000",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "3001",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "3002",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "3003",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "3004",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [7.01, 52.21]
-    },
-    "properties": {
-      "name": "Gronau",
-      "id": "3005",
-      "Code": "GN"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.54, 51.73]
-    },
-    "properties": {
-      "name": "Heesh",
-      "id": "347",
-      "Code": "HE"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.54, 51.73]
-    },
-    "properties": {
-      "name": "Heesh",
-      "id": "348",
-      "Code": "HE"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "320",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "321",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "322",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "323",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "324",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "325",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "326",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "327",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "328",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.79, 52.26]
-    },
-    "properties": {
-      "name": "Hengelo",
-      "id": "329",
-      "Code": "HL"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.25, 50.19]
-    },
-    "properties": {
-      "name": "Humain",
-      "id": "816",
-      "Code": "HM"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.95, 51.53]
-    },
-    "properties": {
-      "name": "Kattendijke",
-      "id": "378",
-      "Code": "KD"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.50, 52.18]
-    },
-    "properties": {
-      "name": "Leiden",
-      "id": "371",
-      "Code": ""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.50, 52.18]
-    },
-    "properties": {
-      "name": "Leiden",
-      "id": "372",
-      "Code": ""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.50, 52.18]
-    },
-    "properties": {
-      "name": "Leiden",
-      "id": "373",
-      "Code": ""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.97, 51.11]
-    },
-    "properties": {
-      "name": "Langenfeld",
-      "id": "3800",
-      "Code": "LF"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.79, 50.38]
-    },
-    "properties": {
-      "name": "Lesve",
-      "id": "3816",
-      "Code": "LV"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "383",
-      "Code": "ML"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "384",
-      "Code": "ML"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "388",
-      "Code": "ML"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "389",
-      "Code": "ML"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "399",
-      "Code": "ML"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "809",
-      "Code": "ML"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3830",
-      "Code": "ML"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3831",
-      "Code": "ML"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3890",
-      "Code": "MC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3891",
-      "Code": "MC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3892",
-      "Code": "MC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3893",
-      "Code": "MC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3894",
-      "Code": "MC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3895",
-      "Code": "MC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3896",
-      "Code": "MC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.48, 51.01]
-    },
-    "properties": {
-      "name": "Mechelen",
-      "id": "3897",
-      "Code": "MC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.16, 48.66]
-    },
-    "properties": {
-      "name": "Nancy",
-      "id": "3900",
-      "Code": "NC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.16, 48.66]
-    },
-    "properties": {
-      "name": "Nancy",
-      "id": "3901",
-      "Code": "NC"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.20, 51.20]
-    },
-    "properties": {
-      "name": "Niederkruechten",
-      "id": "803",
-      "Code": "NK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.54, 51.57]
-    },
-    "properties": {
-      "name": "Oostkapelle",
-      "id": "3030",
-      "Code": "OK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.54, 51.57]
-    },
-    "properties": {
-      "name": "Oostkapelle",
-      "id": "3031",
-      "Code": "OK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.54, 51.57]
-    },
-    "properties": {
-      "name": "Oostkapelle",
-      "id": "3032",
-      "Code": "OK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.54, 51.57]
-    },
-    "properties": {
-      "name": "Oostkapelle",
-      "id": "3033",
-      "Code": "OK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.54, 51.57]
-    },
-    "properties": {
-      "name": "Oostkapelle",
-      "id": "3034",
-      "Code": "OK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.54, 51.57]
-    },
-    "properties": {
-      "name": "Oostkapelle",
-      "id": "3035",
-      "Code": "OK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.54, 51.57]
-    },
-    "properties": {
-      "name": "Oostkapelle",
-      "id": "3036",
-      "Code": "OK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [3.54, 51.57]
-    },
-    "properties": {
-      "name": "Oostkapelle",
-      "id": "3037",
-      "Code": "OK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.74, 53.08]
-    },
-    "properties": {
-      "name": "Texel",
-      "id": "810",
-      "Code": "TX"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.74, 53.08]
-    },
-    "properties": {
-      "name": "Texel",
-      "id": "811",
-      "Code": "TX"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.74, 53.08]
-    },
-    "properties": {
-      "name": "Texel",
-      "id": "812",
-      "Code": "TX"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.74, 53.08]
-    },
-    "properties": {
-      "name": "Texel",
-      "id": "813",
-      "Code": "TX"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.36, 50.80]
-    },
-    "properties": {
-      "name": "Ukkel",
-      "id": "393",
-      "Code": "UK"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.12, 52.09]
-    },
-    "properties": {
-      "name": "Utrecht",
-      "id": "376",
-      "Code": "UT"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.12, 52.09]
-    },
-    "properties": {
-      "name": "Utrecht",
-      "id": "377",
-      "Code": "UT"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.14, 50.82]
-    },
-    "properties": {
-      "name": "Wilderen",
-      "id": "379",
-      "Code": "WD"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.14, 50.82]
-    },
-    "properties": {
-      "name": "Wilderen",
-      "id": "380",
-      "Code": "WD"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.14, 50.82]
-    },
-    "properties": {
-      "name": "Wilderen",
-      "id": "381",
-      "Code": "WD"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [5.14, 50.82]
-    },
-    "properties": {
-      "name": "Wilderen",
-      "id": "382",
-      "Code": "WD"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.67, 51.92]
-    },
-    "properties": {
-      "name": "Winterswijk Woold",
-      "id": "3071",
-      "Code": "WW"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.67, 51.92]
-    },
-    "properties": {
-      "name": "Winterswijk Woold",
-      "id": "3072",
-      "Code": "WW"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [6.67, 51.92]
-    },
-    "properties": {
-      "name": "Winterswijk Woold",
-      "id": "3073",
-      "Code": "WW"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.91, 50.82]
-    },
-    "properties": {
-      "name": "Zillebeke",
-      "id": "3850",
-      "Code": "ZB"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.91, 50.82]
-    },
-    "properties": {
-      "name": "Zillebeke",
-      "id": "3852",
-      "Code": "ZB"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.65, 51.27]
-    },
-    "properties": {
-      "name": "Zoersel",
-      "id": "397",
-      "Code": "ZS"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.65, 51.27]
-    },
-    "properties": {
-      "name": "Zoersel",
-      "id": "398",
-      "Code": "ZS"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.65, 51.27]
-    },
-    "properties": {
-      "name": "Zoersel",
-      "id": "804",
-      "Code": "ZS"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.65, 51.27]
-    },
-    "properties": {
-      "name": "Zoersel",
-      "id": "805",
-      "Code": "ZS"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.65, 51.27]
-    },
-    "properties": {
-      "name": "Zoersel",
-      "id": "806",
-      "Code": "ZS"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [4.65, 51.27]
-    },
-    "properties": {
-      "name": "Zoersel",
-      "id": "888",
-      "Code": "ZS"
-    }
-  }
+}
 ]
