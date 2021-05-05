@@ -2322,5 +2322,77 @@
             "name": "",
             "id": "UK001Z"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.621,
+                43.51
+            ]
+        },
+        "properties": {
+            "name": "Zvjezdano selo Mosor",
+            "id": "HR001J",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR001J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.951,
+                50.877
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0025"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.021,
+                52.98
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0026"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -113.533,
+                37.0
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US000U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -117.573,
+                33.666
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US001E"
+        }
     }
 ]
