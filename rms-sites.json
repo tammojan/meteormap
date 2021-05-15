@@ -2410,5 +2410,21 @@
             "name": "",
             "id": "UK002K"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.991,
+                41.31
+            ]
+        },
+        "properties": {
+            "name": "Astrocat Observatory, Spain",
+            "id": "ES000F",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000F"
+        }
     }
 ]
