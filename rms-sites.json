@@ -2426,5 +2426,37 @@
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000F"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.569,
+                46.826
+            ]
+        },
+        "properties": {
+            "name": "Ste-Catherine de la Jacques Cartier",
+            "id": "CA000F",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.623,
+                43.503
+            ]
+        },
+        "properties": {
+            "name": "Zvjezdano selo Mosor",
+            "id": "HR001K",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR001K"
+        }
     }
 ]
