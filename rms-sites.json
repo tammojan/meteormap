@@ -2458,5 +2458,49 @@
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001K"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -48.364,
+                -23.116
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR000J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.517,
+                53.189
+            ]
+        },
+        "properties": {
+            "name": "Eelderwolde",
+            "id": "NL000E",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NL000E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                173.278,
+                -41.281
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0001"
+        }
     }
 ]
