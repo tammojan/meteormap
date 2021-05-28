@@ -2469,8 +2469,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "BR000J"
+            "name": "Pardinho, Sao Paulo, Brazil",
+            "id": "BR000J",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000J"
         }
     },
     {
@@ -2501,6 +2503,36 @@
         "properties": {
             "name": "",
             "id": "NZ0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                9.65,
+                54.716
+            ]
+        },
+        "properties": {
+            "name": "Flatzby, Germany",
+            "id": "DE000C",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE000C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.426,
+                52.002
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0029"
         }
     }
 ]
