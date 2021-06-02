@@ -2517,7 +2517,7 @@
         "properties": {
             "name": "Flatzby, Germany",
             "id": "DE000C",
-            "lens": "6mm",
+            "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=DE000C"
         }
     },
@@ -2533,6 +2533,50 @@
         "properties": {
             "name": "",
             "id": "UK0029"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.41,
+                44.584
+            ]
+        },
+        "properties": {
+            "name": "Mali Lošinj",
+            "id": "HR001L,HR001M,HR001X",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR001L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.575,
+                53.071
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001W"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.044,
+                54.991
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK002X"
         }
     }
 ]
