@@ -2592,5 +2592,35 @@
             "name": "",
             "id": "UK002P"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.325,
+                53.698
+            ]
+        },
+        "properties": {
+            "name": "Drogheda",
+            "id": "IE0003",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IE0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.409,
+                53.386
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK002H"
+        }
     }
 ]
