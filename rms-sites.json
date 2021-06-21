@@ -2407,8 +2407,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK002K"
+            "name": "Searby ESE, Lincolnshire",
+            "id": "UK002K",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK002K"
         }
     },
     {
@@ -2677,6 +2679,48 @@
         "properties": {
             "name": "",
             "id": "UK002Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.8,
+                51.333
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK002C,UK002D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.09,
+                52.5
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK002R,UK002S,UK002T,UK002U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.198,
+                51.536
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0030"
         }
     }
 ]
