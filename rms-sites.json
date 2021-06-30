@@ -2621,8 +2621,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK002H"
+            "name": "Altrincham, UK",
+            "id": "UK002H",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK002H"
         }
     },
     {
@@ -2737,6 +2739,22 @@
             "id": "ES000H",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                18.089,
+                42.656
+            ]
+        },
+        "properties": {
+            "name": "Dubrovnik, Srđ",
+            "id": "HR001C",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR001C"
         }
     }
 ]
