@@ -2756,5 +2756,37 @@
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001C"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.077,
+                -31.973
+            ]
+        },
+        "properties": {
+            "name": "Perth, Western Australia",
+            "id": "AU0002",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                17.109,
+                42.95
+            ]
+        },
+        "properties": {
+            "name": "Korčula",
+            "id": "HR001B",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR001B"
+        }
     }
 ]
