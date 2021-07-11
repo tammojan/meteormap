@@ -2788,5 +2788,19 @@
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001B"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.845,
+                45.65
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA000U"
+        }
     }
 ]
