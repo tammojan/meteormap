@@ -2802,5 +2802,19 @@
             "name": "",
             "id": "CA000U"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.837,
+                45.625
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA000V"
+        }
     }
 ]
