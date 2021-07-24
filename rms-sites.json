@@ -2799,8 +2799,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "CA000U"
+            "name": "Ste-Thérèse, Québec, Canada",
+            "id": "CA000U",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA000U"
         }
     },
     {
@@ -2813,8 +2815,116 @@
             ]
         },
         "properties": {
+            "name": "Ste-Thérèse, Québec, Canada",
+            "id": "CA000V",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA000V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -52.694,
+                47.606
+            ]
+        },
+        "properties": {
+            "name": "St. John’s, NL, Canada",
+            "id": "CA000T",
+            "lens": "8mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA000T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.015,
+                52.969
+            ]
+        },
+        "properties": {
+            "name": "Boston, Lincs",
+            "id": "UK0032",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0032"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.079,
+                52.505
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "CA000V"
+            "id": "UK0033"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.612,
+                53.85
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0036"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -116.39,
+                34.291
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US001R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -111.418,
+                34.74
+            ]
+        },
+        "properties": {
+            "name": "Lowell",
+            "id": "USL009",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL009"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -111.755,
+                34.862
+            ]
+        },
+        "properties": {
+            "name": "Sedona",
+            "id": "USL00D",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL00D"
         }
     }
 ]
