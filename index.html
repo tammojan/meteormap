@@ -50,13 +50,14 @@
     <script>
         var mymap;
         var meteorLayer;
+        const fovHeights = [25, 70, 100];
         var fovLayers = {}; // FeatureGroup with all FOVs, per height
         var selectedMeteorIds = [];
         var jsonData;
         var meteorTable;
         var stationsIndex; // Differs between CAMS and RMS
         var stationLayers = {};
-        var fovPerStation = {}; // Has keys station name
+        var fovPerStation = {}; // Has keys station name, only FOV for 100km
         var stationMarkerLayer;
         var establishedShowers = JSON.parse(establishedStr);
         var camsMode = false;
@@ -101,8 +102,10 @@
                 maxZoom: 10
             }}).addTo(mymap);
 
-            fovLayers[100] = new L.FeatureGroup();
-            fovLayers[100].on("add", reorderLayers);
+            for (const fovHeight of fovHeights) {
+                fovLayers[fovHeight] = new L.FeatureGroup();
+                fovLayers[fovHeight].on("add", reorderLayers);
+            }
 
             meteorLayer = new L.FeatureGroup();
             meteorLayer.on("add", reorderLayers);
@@ -197,7 +200,9 @@
         }
 
         function reorderLayers() {
-            fovLayers[100].bringToBack();
+            for (const fovHeight of fovHeights) {
+                fovLayers[fovHeight].bringToBack();
+            }
             meteorLayer.bringToFront();
             if (stationMarkerLayer) {
                 stationMarkerLayer.bringToFront();
@@ -628,9 +633,11 @@
         }
 
         function loadCamsFov(kmlContents) {
-            fovLayers[100].eachLayer(function (layer) {
-                fovLayers[100].removeLayer(layer);
-            });
+            for (const fovHeight of fovHeights) {
+                fovLayers[fovHeight].eachLayer(function (layer) {
+                    fovLayers[fovHeight].removeLayer(layer);
+                });
+            }
             fovPerStation = {};
             var layer = omnivore.kml.parse(kmlContents);
             layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
@@ -656,10 +663,12 @@
                     var parser = new DOMParser();
                     var doc = parser.parseFromString(data.contents, "text/html");
 
-                    for (var i = 1, l=doc.links.length; i<l; i++) {
-                        if (doc.links[i].innerText.includes("100km")) {
-                            var filename = base_address + doc.links[i].getAttribute('href');
-                            loadOneFov(filename);
+                    for (const fovHeight of fovHeights) {
+                        for (var i = 1, l=doc.links.length; i<l; i++) {
+                            if (doc.links[i].innerText.includes(fovHeight + "km")) {
+                                var filename = base_address + doc.links[i].getAttribute('href');
+                                loadOneFov(filename, fovHeight);
+                            }
                         }
                     }
                 });
@@ -696,14 +705,16 @@
             updateFilter();
         }
 
-        function loadOneFov(url) {
+        function loadOneFov(url, height) {
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var layer = omnivore.kml.parse(data.contents);
                 layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
-                layer.addTo(fovLayers[100]);
-                for (f1 in layer._layers) {
-                    var stationid = layer._layers[f1].feature.id;
-                    fovPerStation[stationid] = layer;
+                layer.addTo(fovLayers[height]);
+                if (height == 100) { // TODO
+                    for (f1 in layer._layers) {
+                        var stationid = layer._layers[f1].feature.id;
+                        fovPerStation[stationid] = layer;
+                    }
                 }
             });
         }
@@ -744,7 +755,9 @@
             L.control.layers( {}, {
                 "Stations": stationMarkerLayer,
                 "Meteors": meteorLayer,
-                "Fields of view": fovLayers[100]
+                "Fields of view 100km": fovLayers[100],
+                "Fields of view 70km": fovLayers[70],
+                "Fields of view 25km": fovLayers[25]
             }).addTo(mymap);
         }
 
