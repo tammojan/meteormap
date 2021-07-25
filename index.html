@@ -50,13 +50,13 @@
     <script>
         var mymap;
         var meteorLayer;
-        var fovLayer;
+        var fovLayer; // FeatureGroup with all FOVs
         var selectedMeteorIds = [];
         var jsonData;
         var meteorTable;
         var stationsIndex; // Differs between CAMS and RMS
         var stationLayers = {};
-        var fovLayers = {};
+        var fovPerStation = {}; // Has keys station name
         var stationMarkerLayer;
         var establishedShowers = JSON.parse(establishedStr);
         var camsMode = false;
@@ -407,8 +407,8 @@
         }
 
         function deselectAllFov() {
-            for (var i in fovLayers) {
-                fovLayers[i].setStyle({fillColor: "#F33", fillOpacity:0.1});
+            for (var i in fovPerStation) {
+                fovPerStation[i].setStyle({fillColor: "#F33", fillOpacity:0.1});
             }
         }
 
@@ -420,11 +420,11 @@
                 if (stations[i] == "") {
                     continue;
                 }
-                if (!(stations[i] in fovLayers)) {
+                if (!(stations[i] in fovPerStation)) {
                     console.log("No FOV found for station " + stations[i]);
                     continue;
                 } else {
-                    var fovLayer = fovLayers[stations[i]];
+                    var fovLayer = fovPerStation[stations[i]];
                     fovLayer.setStyle({fillColor: "#00F", fillOpacity: 0.3});
                     fovLayer.bringToFront();
                 }
@@ -631,7 +631,7 @@
             fovLayer.eachLayer(function (layer) {
                 fovLayer.removeLayer(layer);
             });
-            fovLayers = {};
+            fovPerStation = {};
             var layer = omnivore.kml.parse(kmlContents);
             layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
             layer.eachLayer(function (oneStationLayer) {
@@ -639,7 +639,7 @@
                 oneStationLayer.addTo(dummyLayer);
                 dummyLayer.addTo(fovLayer);
                 var stationid = oneStationLayer.feature.id.replace(/^0*/, "");
-                fovLayers[stationid] = dummyLayer;
+                fovPerStation[stationid] = dummyLayer;
             });
         }
 
@@ -701,7 +701,7 @@
                 layer.addTo(fovLayer);
                 for (f1 in layer._layers) {
                     var stationid = layer._layers[f1].feature.id;
-                    fovLayers[stationid] = layer;
+                    fovPerStation[stationid] = layer;
                 }
             });
         }
@@ -738,6 +738,7 @@
                 makeGeoJsonLayer(stationMarkerLayer, "rms-sites.json");
             }
             stationMarkerLayer.addTo(mymap);
+            //fovLayer.addTo(mymap);
 
             L.control.layers( {}, {
                 "Stations": stationMarkerLayer,
