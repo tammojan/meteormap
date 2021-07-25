@@ -50,7 +50,7 @@
     <script>
         var mymap;
         var meteorLayer;
-        var fovLayer; // FeatureGroup with all FOVs
+        var fovLayers = {}; // FeatureGroup with all FOVs, per height
         var selectedMeteorIds = [];
         var jsonData;
         var meteorTable;
@@ -101,8 +101,8 @@
                 maxZoom: 10
             }}).addTo(mymap);
 
-            fovLayer = new L.FeatureGroup();
-            fovLayer.on("add", reorderLayers);
+            fovLayers[100] = new L.FeatureGroup();
+            fovLayers[100].on("add", reorderLayers);
 
             meteorLayer = new L.FeatureGroup();
             meteorLayer.on("add", reorderLayers);
@@ -197,7 +197,7 @@
         }
 
         function reorderLayers() {
-            fovLayer.bringToBack();
+            fovLayers[100].bringToBack();
             meteorLayer.bringToFront();
             if (stationMarkerLayer) {
                 stationMarkerLayer.bringToFront();
@@ -424,9 +424,9 @@
                     console.log("No FOV found for station " + stations[i]);
                     continue;
                 } else {
-                    var fovLayer = fovPerStation[stations[i]];
-                    fovLayer.setStyle({fillColor: "#00F", fillOpacity: 0.3});
-                    fovLayer.bringToFront();
+                    var stationFov = fovPerStation[stations[i]];
+                    stationFov.setStyle({fillColor: "#00F", fillOpacity: 0.3});
+                    stationFov.bringToFront();
                 }
             }
             reorderLayers();
@@ -628,8 +628,8 @@
         }
 
         function loadCamsFov(kmlContents) {
-            fovLayer.eachLayer(function (layer) {
-                fovLayer.removeLayer(layer);
+            fovLayers[100].eachLayer(function (layer) {
+                fovLayers[100].removeLayer(layer);
             });
             fovPerStation = {};
             var layer = omnivore.kml.parse(kmlContents);
@@ -637,7 +637,7 @@
             layer.eachLayer(function (oneStationLayer) {
                 var dummyLayer = new L.FeatureGroup(); // Mimic layout of RMS FOV
                 oneStationLayer.addTo(dummyLayer);
-                dummyLayer.addTo(fovLayer);
+                dummyLayer.addTo(fovLayers[100]);
                 var stationid = oneStationLayer.feature.id.replace(/^0*/, "");
                 fovPerStation[stationid] = dummyLayer;
             });
@@ -657,15 +657,17 @@
                     var doc = parser.parseFromString(data.contents, "text/html");
 
                     for (var i = 1, l=doc.links.length; i<l; i++) {
-                        var filename = base_address + doc.links[i].getAttribute('href');
-                        loadOneFov(filename);
+                        if (doc.links[i].innerText.includes("100km")) {
+                            var filename = base_address + doc.links[i].getAttribute('href');
+                            loadOneFov(filename);
+                        }
                     }
                 });
             }
         }
 
         function fovClickHandler(e) {
-            if (!mymap.hasLayer(fovLayer)) {
+            if (!mymap.hasLayer(fovLayers[100])) {
                 return;
             }
 
@@ -675,8 +677,8 @@
 
             var clickedFov = [];
 
-            for (var f in fovLayer._layers) {
-                var feature = fovLayer._layers[f];
+            for (var f in fovLayers[100]._layers) {
+                var feature = fovLayers[100]._layers[f];
                 var featurebounds = feature.getBounds();
                 if (featurebounds && clickBounds.intersects(featurebounds)) { // Should be pip
                     var results = leafletPip.pointInLayer([e.latlng.lng, e.latlng.lat], feature);
@@ -698,7 +700,7 @@
             $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
                 var layer = omnivore.kml.parse(data.contents);
                 layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
-                layer.addTo(fovLayer);
+                layer.addTo(fovLayers[100]);
                 for (f1 in layer._layers) {
                     var stationid = layer._layers[f1].feature.id;
                     fovPerStation[stationid] = layer;
@@ -738,12 +740,11 @@
                 makeGeoJsonLayer(stationMarkerLayer, "rms-sites.json");
             }
             stationMarkerLayer.addTo(mymap);
-            //fovLayer.addTo(mymap);
 
             L.control.layers( {}, {
                 "Stations": stationMarkerLayer,
                 "Meteors": meteorLayer,
-                "Fields of view": fovLayer
+                "Fields of view": fovLayers[100]
             }).addTo(mymap);
         }
 
