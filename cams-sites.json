@@ -493,5 +493,27 @@
         "name": "Zoersel",
         "id": "397,398,804,805,806,888"
     }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.208, 39.34130]
+    },
+    "properties": {
+        "name": "",
+        "id": "400,401"
+    }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.663, 38.922]
+    },
+    "properties": {
+        "name": "",
+        "id": "452"
+    }
 }
 ]
