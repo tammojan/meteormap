@@ -2926,5 +2926,19 @@
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=USL00D"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                173.0,
+                -41.12
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0002"
+        }
     }
 ]
