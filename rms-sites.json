@@ -2940,5 +2940,19 @@
             "name": "",
             "id": "NZ0002"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.092,
+                52.486
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK002G,UK002V"
+        }
     }
 ]
