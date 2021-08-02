@@ -2503,8 +2503,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ0001"
+            "name": "Rutherford Street Observatory, Nelson",
+            "id": "NZ0001",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0001"
         }
     },
     {
@@ -2953,6 +2955,20 @@
         "properties": {
             "name": "",
             "id": "UK002G,UK002V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.373,
+                51.359
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0038,UK003H"
         }
     }
 ]
