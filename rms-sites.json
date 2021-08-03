@@ -2970,5 +2970,19 @@
             "name": "",
             "id": "UK0038,UK003H"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.381,
+                51.35
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003J"
+        }
     }
 ]
