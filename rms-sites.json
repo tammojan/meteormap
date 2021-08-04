@@ -2984,5 +2984,19 @@
             "name": "",
             "id": "UK003J"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -77.667,
+                38.935
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0010,US0011,US0012,US0013"
+        }
     }
 ]
