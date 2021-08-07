@@ -2939,8 +2939,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ0002"
+            "name": "Tasman Skies, Motueka",
+            "id": "NZ0002",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0002"
         }
     },
     {
@@ -2997,6 +2999,68 @@
         "properties": {
             "name": "",
             "id": "US0010,US0011,US0012,US0013"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -78.321,
+                44.021
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA000W"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                10.426,
+                44.992
+            ]
+        },
+        "properties": {
+            "name": "Casalmaggiore",
+            "id": "IT0003",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IT0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.594,
+                46.24
+            ]
+        },
+        "properties": {
+            "name": "Kamnik",
+            "id": "SI0002",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=SI0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.023,
+                52.947
+            ]
+        },
+        "properties": {
+            "name": "Blakeney (S), Norfolk",
+            "id": "UK0034,UK0035",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0034"
         }
     }
 ]
