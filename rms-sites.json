@@ -3108,5 +3108,51 @@
             "name": "",
             "id": "USL00S,USL00T,USL00U,USL00V"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.799,
+                51.358
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003E,UK003F,UK003G,UK003L,UK003M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -103.268,
+                44.047
+            ]
+        },
+        "properties": {
+            "name": "Rapid City, South Dakota",
+            "id": "US001U",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US001U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -111.77,
+                34.85
+            ]
+        },
+        "properties": {
+            "name": "Sedona",
+            "id": "USL00G,USL00J",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL00G"
+        }
     }
 ]
