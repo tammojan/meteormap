@@ -65,7 +65,7 @@
         $(function () {
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            camsMode = urlParams.has("cams");
+            const camsMode = urlParams.has("cams");
 
             var holder = document.getElementById('mapid');
 
