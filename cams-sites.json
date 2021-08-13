@@ -529,8 +529,8 @@
 },
 {
     "type": "Feature",
-    "geometry", {
-        "type": "Point":,
+    "geometry": {
+        "type": "Point",
         "coordinates": [9.636, 54.722]
     },
     "properties": {
