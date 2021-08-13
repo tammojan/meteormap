@@ -3154,5 +3154,33 @@
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=USL00G"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.398,
+                52.126
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.07,
+                52.28
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003B"
+        }
     }
 ]
