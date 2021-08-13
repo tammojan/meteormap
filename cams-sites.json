@@ -526,5 +526,16 @@
         "name": "Lovetsville VA",
         "id": "429,430,431,432"
     }
+},
+{
+    "type": "Feature",
+    "geometry", {
+        "type": "Point":,
+        "coordinates": [9.636, 54.722]
+    },
+    "properties": {
+        "name": "Flatzby",
+        "id": "3801"
+    }
 }
 ]
