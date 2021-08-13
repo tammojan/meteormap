@@ -63,10 +63,6 @@
         var camsMode = false;
 
         $(function () {
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const camsMode = urlParams.has("cams");
-
             var holder = document.getElementById('mapid');
 
             holder.ondragover = function() {
@@ -93,16 +89,10 @@
             };
 
             mymap = L.map('mapid', {maxZoom: 12}).setView([52.3, 5], 8);
-
-            var mapAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
-                                 '&copy; <a href="https://carto.com/attributions">CARTO</a>; ';
-            if (camsMode) {
-                mapAttribution += '&copy; <a href="http://cams.seti.org/FDL/index-BeNeLux.html">CAMS BeNeLux</a>';
-            } else {
-                mapAttribution += '&copy; CC-BY 4.0 <a href="https://globalmeteornetwork.org/data/">Global Meteor Network</a>';
-            }
             var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-                attribution: mapAttribution,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
+                             '&copy; <a href="https://carto.com/attributions">CARTO</a>; ' +
+                             '&copy; CC-BY 4.0 <a href="https://globalmeteornetwork.org/data/">Global Meteor Network</a>',
                 subdomains: 'abcd',
                 maxZoom: 18,
                 minZoom: 2
@@ -125,6 +115,10 @@
             mymap.on('zoomend', updatePermalink);
             mymap.on('moveend', updatePermalink);
             mymap.on('click', fovClickHandler);
+
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            camsMode = urlParams.has("cams");
 
             if (camsMode) {
                 $("#attribution-cams").show();
