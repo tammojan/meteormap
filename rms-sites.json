@@ -41,7 +41,7 @@
             ]
         },
         "properties": {
-            "name": "Genk",
+            "name": "Zillebeke",
             "id": "BE0003",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE0003"
@@ -302,28 +302,12 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                1.843,
-                42.077
-            ]
-        },
-        "properties": {
-            "name": "Berga, Barcelona, Spain",
-            "id": "ES0004",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=ES0004"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 0.744,
                 42.006
             ]
         },
         "properties": {
-            "name": "AAS Ager, Lleida, Spain",
+            "name": "AAS Ager, Lleida",
             "id": "ES0005",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0005"
@@ -339,7 +323,7 @@
             ]
         },
         "properties": {
-            "name": "Forcarei, Pontevedra, Spain",
+            "name": "Forcarei, Pontevedra",
             "id": "ES0006",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0006"
@@ -355,7 +339,7 @@
             ]
         },
         "properties": {
-            "name": "Carballo, Spain",
+            "name": "Carballo",
             "id": "ES0007",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0007"
@@ -2033,7 +2017,7 @@
             ]
         },
         "properties": {
-            "name": "Barcelona downtown, Spain",
+            "name": "Barcelona downtown",
             "id": "ES000B",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000B"
@@ -2049,7 +2033,7 @@
             ]
         },
         "properties": {
-            "name": "AAS Ager, Lleida, Spain",
+            "name": "AAS Ager, Lleida",
             "id": "ES000C,ES000D",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000C"
@@ -2065,10 +2049,10 @@
             ]
         },
         "properties": {
-            "name": "Berga, Barcelona, Spain",
-            "id": "ES000E",
+            "name": "Berga, Barcelona",
+            "id": "ES0004, ES000E",
             "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=ES000E"
+            "link": "http://istrastream.com/rms-gmn/?id=ES0004"
         }
     },
     {
@@ -2258,20 +2242,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -2.949,
-                50.866
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK0024"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 5.084,
                 47.343
             ]
@@ -2314,20 +2284,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -2.929,
-                50.887
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK001Z"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 16.621,
                 43.51
             ]
@@ -2349,8 +2305,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK0025"
+            "name": "Chard - South",
+            "id": "UK0024,UK0025,UK001Z",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0025"
         }
     },
     {
@@ -2423,7 +2381,7 @@
             ]
         },
         "properties": {
-            "name": "Astrocat Observatory, Spain",
+            "name": "Astrocat Observatory",
             "id": "ES000F",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000F"
@@ -2737,7 +2695,7 @@
             ]
         },
         "properties": {
-            "name": "Berga, Barcelona, Spain",
+            "name": "Berga, Barcelona",
             "id": "ES000H",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000H"
@@ -2918,22 +2876,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -111.755,
-                34.862
-            ]
-        },
-        "properties": {
-            "name": "Sedona",
-            "id": "USL00D",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=USL00D"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 173.0,
                 -41.12
             ]
@@ -3091,8 +3033,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "USL00E,USL00F,USL00H"
+            "name": "Sedona, Arizona",
+            "id": "US000D,USL00E,USL00F,USL00H,USL00G,USL00J",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL00E"
         }
     },
     {
@@ -3144,22 +3088,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -111.77,
-                34.85
-            ]
-        },
-        "properties": {
-            "name": "Sedona",
-            "id": "USL00G,USL00J",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=USL00G"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -2.398,
                 52.126
             ]
@@ -3181,6 +3109,258 @@
         "properties": {
             "name": "",
             "id": "UK003B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.389,
+                49.822
+            ]
+        },
+        "properties": {
+            "name": "Grapfontaine",
+            "id": "BE0005",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.527,
+                50.975
+            ]
+        },
+        "properties": {
+            "name": "Genk",
+            "id": "BE0007,BE0008",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE0007"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.091,
+                45.319
+            ]
+        },
+        "properties": {
+            "name": "Casselman, Ontario, Canada",
+            "id": "CA000N,CA000S",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA000N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -70.582,
+                48.4
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA000X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.568,
+                41.675
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES000K,ES000L,ES000M,ES000N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.742,
+                42.016
+            ]
+        },
+        "properties": {
+            "name": "AAS Ager, Lleida",
+            "id": "ES000T",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.578,
+                49.599
+            ]
+        },
+        "properties": {
+            "name": "Observatoire Omega, Hagnicourt, France",
+            "id": "FR000R",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=FR000R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.414,
+                43.403
+            ]
+        },
+        "properties": {
+            "name": "Montefano",
+            "id": "IT0004",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IT0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                10.424,
+                44.98
+            ]
+        },
+        "properties": {
+            "name": "Casalmaggiore",
+            "id": "IT0005",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IT0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.172,
+                51.231
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.36,
+                51.36
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003R,UK003S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.169,
+                51.439
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003W"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.375,
+                51.686
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.047,
+                54.974
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.621,
+                51.01
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -105.811,
+                36.55
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US001P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -110.78,
+                32.21
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0021,US0022,US0023"
         }
     }
 ]
