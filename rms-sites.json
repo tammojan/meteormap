@@ -10,7 +10,7 @@
         },
         "properties": {
             "name": "Grapfontaine",
-            "id": "BE0001",
+            "id": "BE0001,BE0005",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE0001"
         }
@@ -1772,7 +1772,7 @@
         },
         "properties": {
             "name": "Tissington",
-            "id": "UK000Y,UK000Z",
+            "id": "UK000Y,UK000Z,UK003T,UK003U",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK000Y"
         }
@@ -2050,7 +2050,7 @@
         },
         "properties": {
             "name": "Berga, Barcelona",
-            "id": "ES0004, ES000E",
+            "id": "ES0004,ES000E,ES000H",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0004"
         }
@@ -2305,10 +2305,10 @@
             ]
         },
         "properties": {
-            "name": "Chard - South",
+            "name": "Chard - West",
             "id": "UK0024,UK0025,UK001Z",
             "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=UK0025"
+            "link": "http://istrastream.com/rms-gmn/?id=UK0024"
         }
     },
     {
@@ -2690,22 +2690,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                1.845,
-                42.082
-            ]
-        },
-        "properties": {
-            "name": "Berga, Barcelona",
-            "id": "ES000H",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=ES000H"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 18.089,
                 42.656
             ]
@@ -2970,7 +2954,7 @@
         },
         "properties": {
             "name": "Casalmaggiore",
-            "id": "IT0003",
+            "id": "IT0003,IT0005,IT0006",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IT0003"
         }
@@ -3034,7 +3018,7 @@
         },
         "properties": {
             "name": "Sedona, Arizona",
-            "id": "US000D,USL00E,USL00F,USL00H,USL00G,USL00J",
+            "id": "USL00D,USL00E,USL00F,USL00H,USL00G,USL00J",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=USL00E"
         }
@@ -3109,22 +3093,6 @@
         "properties": {
             "name": "",
             "id": "UK003B"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                5.389,
-                49.822
-            ]
-        },
-        "properties": {
-            "name": "Grapfontaine",
-            "id": "BE0005",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=BE0005"
         }
     },
     {
@@ -3233,22 +3201,6 @@
             "id": "IT0004",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IT0004"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                10.424,
-                44.98
-            ]
-        },
-        "properties": {
-            "name": "Casalmaggiore",
-            "id": "IT0005",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=IT0005"
         }
     },
     {
