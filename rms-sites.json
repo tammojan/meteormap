@@ -36,22 +36,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                5.529,
-                50.964
-            ]
-        },
-        "properties": {
-            "name": "Zillebeke",
-            "id": "BE0003",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=BE0003"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 4.81,
                 50.383
             ]
@@ -3020,7 +3004,7 @@
             "name": "Sedona, Arizona",
             "id": "USL00D,USL00E,USL00F,USL00H,USL00G,USL00J",
             "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=USL00E"
+            "link": "http://istrastream.com/rms-gmn/?id=USL00D"
         }
     },
     {
@@ -3255,8 +3239,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK003X"
+            "name": "Dursley, NNE",
+            "id": "UK003X",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK003X"
         }
     },
     {
@@ -3283,8 +3269,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK003Z"
+            "name": "Whiteparish",
+            "id": "UK003Z",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK003Z"
         }
     },
     {
@@ -3313,6 +3301,22 @@
         "properties": {
             "name": "",
             "id": "US0021,US0022,US0023"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                2.883,
+                50.822
+            ]
+        },
+        "properties": {
+            "name": "Zillebeke",
+            "id": "BE0003",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE0003"
         }
     }
 ]
