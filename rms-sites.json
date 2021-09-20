@@ -2879,22 +2879,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK0038,UK003H"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -2.381,
-                51.35
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK003J"
+            "name": "Odd Down, Bath",
+            "id": "UK0038,UK003H,UK003J,UK003R,UK003S",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0038"
         }
     },
     {
@@ -3199,20 +3187,6 @@
         "properties": {
             "name": "",
             "id": "UK003N"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -2.36,
-                51.36
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK003R,UK003S"
         }
     },
     {
