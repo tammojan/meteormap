@@ -3292,5 +3292,19 @@
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE0003"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.167,
+                52.269
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0042"
+        }
     }
 ]
