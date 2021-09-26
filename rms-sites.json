@@ -3109,8 +3109,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "CA000X,CA000Y"
+            "name": "L Orion Observatory of Ste-Rose-du-Nord",
+            "id": "CA000X,CA000Y",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA000X"
         }
     },
     {
@@ -3305,6 +3307,36 @@
         "properties": {
             "name": "",
             "id": "UK0042"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.992,
+                -31.636
+            ]
+        },
+        "properties": {
+            "name": "Meckering, Western Australia",
+            "id": "AU0003",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.363,
+                51.451
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0039"
         }
     }
 ]
