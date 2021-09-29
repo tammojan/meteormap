@@ -2350,7 +2350,7 @@
         },
         "properties": {
             "name": "Searby ESE, Lincolnshire",
-            "id": "UK002K",
+            "id": "UK002K,UK002Z",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK002K"
         }
@@ -3289,7 +3289,7 @@
             ]
         },
         "properties": {
-            "name": "Zillebeke",
+            "name": "Observatory Astrolab Iris, Zillebeke",
             "id": "BE0003",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE0003"
@@ -3337,6 +3337,22 @@
         "properties": {
             "name": "",
             "id": "UK0039"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.804,
+                -32.327
+            ]
+        },
+        "properties": {
+            "name": "Baldivis, Western Australia",
+            "id": "AU0006",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU0006"
         }
     }
 ]
