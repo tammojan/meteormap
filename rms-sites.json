@@ -1818,7 +1818,7 @@
         },
         "properties": {
             "name": "Pardinho, Sao Paulo, Brazil",
-            "id": "BR000F",
+            "id": "BR000F,BR000G,BR000J,BR000M",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR000F"
         }
@@ -1973,22 +1973,6 @@
         "properties": {
             "name": "",
             "id": "UK001P,UK001Q,UK001R"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -48.373,
-                -23.113
-            ]
-        },
-        "properties": {
-            "name": "Pardinho, Sao Paulo, Brazil",
-            "id": "BR000G",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=BR000G"
         }
     },
     {
@@ -2350,7 +2334,7 @@
         },
         "properties": {
             "name": "Searby ESE, Lincolnshire",
-            "id": "UK002K,UK002Z",
+            "id": "UK002K,UK002Z,UK004B",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK002K"
         }
@@ -2401,22 +2385,6 @@
             "id": "HR001K",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001K"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -48.364,
-                -23.116
-            ]
-        },
-        "properties": {
-            "name": "Pardinho, Sao Paulo, Brazil",
-            "id": "BR000J",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=BR000J"
         }
     },
     {
@@ -3290,7 +3258,7 @@
         },
         "properties": {
             "name": "Observatory Astrolab Iris, Zillebeke",
-            "id": "BE0003",
+            "id": "BE0003,BE0009",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE0003"
         }
@@ -3353,6 +3321,20 @@
             "id": "AU0006",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU0006"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.962,
+                50.22
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003C"
         }
     }
 ]
