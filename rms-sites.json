@@ -2973,8 +2973,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "USL00S,USL00T,USL00U,USL00V"
+            "name": "Window Rock, Arizona",
+            "id": "USL00S,USL00T,USL00U,USL00V,USL00R,USL00W",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL00S"
         }
     },
     {
@@ -3335,6 +3337,92 @@
         "properties": {
             "name": "",
             "id": "UK003C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.823,
+                -32.333
+            ]
+        },
+        "properties": {
+            "name": "Baldivis, Western Australia",
+            "id": "AU0004,AU0007,AU0008",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                25.594,
+                42.071
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BG0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                24.749,
+                41.693
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BG0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.261,
+                50.754
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.648,
+                51.911
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.172,
+                51.249
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0045"
         }
     }
 ]
