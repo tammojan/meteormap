@@ -2018,7 +2018,7 @@
         },
         "properties": {
             "name": "Berga, Barcelona",
-            "id": "ES0004,ES000E,ES000H",
+            "id": "ES0004,ES000E,ES000H,ES000V",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0004"
         }
@@ -3423,6 +3423,48 @@
         "properties": {
             "name": "",
             "id": "UK0045"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.133,
+                -32.012
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.97,
+                52.343
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0049"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.27,
+                50.763
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK004P"
         }
     }
 ]
