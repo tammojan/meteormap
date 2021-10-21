@@ -3466,5 +3466,109 @@
             "name": "",
             "id": "UK004P"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14511044.007,
+                -36.829
+            ]
+        },
+        "properties": {
+            "name": "Melbourne",
+            "id": "AU0001",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -78.327,
+                44.016
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA001C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.485,
+                38.243
+            ]
+        },
+        "properties": {
+            "name": "Valencia del Ventoso, Badajoz",
+            "id": "ES000U",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.463,
+                -41.229
+            ]
+        },
+        "properties": {
+            "name": "Atutahi Observatory, Martinborough",
+            "id": "NZ0004",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                62.476,
+                55.34
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RU000J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.361,
+                53.327
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.492,
+                51.744
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK004D"
+        }
     }
 ]
