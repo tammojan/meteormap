@@ -493,11 +493,11 @@
 
         function getMeteorsFromUrl(url) {
             showLoading();
-            $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
-                if (!data.contents) {
+            $.get(url, function (data) {
+                if (!data) {
                     console.log(url);
                 }
-                var csvData = data.contents.replace(/\r/g, '');
+                var csvData = data.replace(/\r/g, '');
                 addMeteorsToMap(csvData);
                 hideLoading();
                 panToExtent();
@@ -551,9 +551,9 @@
             } else {
                 var url = getBaseUrl() + "monthly/";
             }
-            $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
+            $.get(url, function(data) {
                 var parser = new DOMParser();
-                var doc = parser.parseFromString(data.contents, "text/html");
+                var doc = parser.parseFromString(data, "text/html");
                 var docfrag = document.createDocumentFragment();
 
                 for (var i = 1, l=doc.links.length; i<l; i++) {
@@ -659,9 +659,9 @@
             } else {
                 var url = "https://globalmeteornetwork.org/data/kml_fov/";
                 var base_address = "https://globalmeteornetwork.org/data/kml_fov/";
-                $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
+                $.get(url, function (data) {
                     var parser = new DOMParser();
-                    var doc = parser.parseFromString(data.contents, "text/html");
+                    var doc = parser.parseFromString(data, "text/html");
 
                     for (const fovHeight of fovHeights) {
                         for (var i = 1, l=doc.links.length; i<l; i++) {
@@ -706,8 +706,8 @@
         }
 
         function loadOneFov(url, height) {
-            $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(url) + '&callback=?', function (data) {
-                var layer = omnivore.kml.parse(data.contents);
+            $.get(url, function (data) {
+                var layer = omnivore.kml.parse(data);
                 layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
                 layer.addTo(fovLayers[height]);
                 if (height == 100) { // TODO
@@ -845,6 +845,14 @@
                 var lonEndIndex = 68;
                 var latEndIndex = 66;
                 stationsIndex = 82;
+                var isCams = false;
+            } else if (jsonData.data[0].length == 85) {
+                console.log("RMS format v2 detected");
+                var lonBegIndex = 65;
+                var latBegIndex = 63;
+                var lonEndIndex = 71;
+                var latEndIndex = 69;
+                stationsIndex = 85;
                 var isCams = false;
             } else if (jsonData.data[0].length == 35 || jsonData.data[0].length == 81 || jsonData.data[0].length == 37) {
                 console.log("CAMS format detected");
