@@ -2878,7 +2878,7 @@
         },
         "properties": {
             "name": "Port Hope, Ontario, Canada",
-            "id": "CA000W",
+            "id": "CA000W,CA001C,CA001D",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA000W"
         }
@@ -3481,20 +3481,6 @@
             "id": "AU0001",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU0001"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -78.327,
-                44.016
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "CA001C"
         }
     },
     {
