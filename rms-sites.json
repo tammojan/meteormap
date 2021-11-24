@@ -3556,5 +3556,47 @@
             "name": "",
             "id": "UK004D"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -109.860,
+               32.010
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "USL00X,USL00Y,USL00Z,USL010,USL011,USL012"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -148.266,
+                64.910 
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US001J,US001S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                145.351,
+                -36.366
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000B"
+        }
     }
 ]
