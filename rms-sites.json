@@ -1302,7 +1302,7 @@
         },
         "properties": {
             "name": "Tackley",
-            "id": "UK0006",
+            "id": "UK0006,UK000F,UK001L,UK002F",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK0006"
         }
@@ -3436,7 +3436,7 @@
         },
         "properties": {
             "name": "",
-            "id": "AU000A"
+            "id": "AU000A,AU000E,AU000H"
         }
     },
     {
@@ -3472,7 +3472,7 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                14511044.007,
+                145.1,
                 -36.829
             ]
         },
