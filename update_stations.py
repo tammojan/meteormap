@@ -94,3 +94,4 @@ for station_id in new_station_ids:
 
 with open("rms-sites.json", "w", encoding="utf8") as outfile:
     json.dump(json_stations, outfile, indent=4, ensure_ascii=False)
+    outfile.write("\n")
