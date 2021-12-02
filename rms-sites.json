@@ -132,22 +132,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -71.57,
-                46.808
-            ]
-        },
-        "properties": {
-            "name": "Ste-Catherine de la Jacques Cartier",
-            "id": "CA000D",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=CA000D"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -71.28,
                 46.76
             ]
@@ -279,22 +263,6 @@
             "id": "ES0003",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0003"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                0.744,
-                42.006
-            ]
-        },
-        "properties": {
-            "name": "AAS Ager, Lleida",
-            "id": "ES0005",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=ES0005"
         }
     },
     {
@@ -500,7 +468,7 @@
         },
         "properties": {
             "name": "Hum",
-            "id": "HR0002,HR0006,HR000E,HR0010,HR001Z",
+            "id": "HR0002,HR0006,HR000E,HR0010,HR001Z,HR0021",
             "lens": "8mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR0002"
         }
@@ -1782,22 +1750,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                14.055,
-                45.355
-            ]
-        },
-        "properties": {
-            "name": "IMX307 Test",
-            "id": "HR0021",
-            "lens": "16mm",
-            "link": "http://istrastream.com/rms-gmn/?id=HR0021"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -106.749,
                 34.633
             ]
@@ -2284,22 +2236,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -0.021,
-                52.98
-            ]
-        },
-        "properties": {
-            "name": "Boston, Lincs",
-            "id": "UK0026",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=UK0026"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -113.533,
                 37.0
             ]
@@ -2366,7 +2302,7 @@
         },
         "properties": {
             "name": "Ste-Catherine de la Jacques Cartier",
-            "id": "CA000F,CA000B",
+            "id": "CA000F,CA000B,CA000D",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA000F"
         }
@@ -2696,25 +2632,9 @@
         },
         "properties": {
             "name": "Ste-Thérèse, Québec, Canada",
-            "id": "CA000U",
+            "id": "CA000U,CA000V",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA000U"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -73.837,
-                45.625
-            ]
-        },
-        "properties": {
-            "name": "Ste-Thérèse, Québec, Canada",
-            "id": "CA000V",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=CA000V"
         }
     },
     {
@@ -2744,7 +2664,7 @@
         },
         "properties": {
             "name": "Boston, Lincs",
-            "id": "UK0032",
+            "id": "UK0032,UK0026",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK0032"
         }
@@ -3110,7 +3030,7 @@
         },
         "properties": {
             "name": "AAS Ager, Lleida",
-            "id": "ES000T",
+            "id": "ES000T,ES0005",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000T"
         }
@@ -3314,22 +3234,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                115.804,
-                -32.327
-            ]
-        },
-        "properties": {
-            "name": "Baldivis, Western Australia",
-            "id": "AU0006",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU0006"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -4.962,
                 50.22
             ]
@@ -3350,7 +3254,7 @@
         },
         "properties": {
             "name": "Baldivis, Western Australia",
-            "id": "AU0004,AU0007,AU0008",
+            "id": "AU0004,AU0007,AU0008,AU0006",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU0004"
         }
