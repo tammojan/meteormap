@@ -2366,7 +2366,7 @@
         },
         "properties": {
             "name": "Ste-Catherine de la Jacques Cartier",
-            "id": "CA000F",
+            "id": "CA000F,CA000B",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA000F"
         }
@@ -3767,6 +3767,76 @@
         "properties": {
             "name": "",
             "id": "US001Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -40.291,
+                -20.31
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR000C,BR000L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -43.397,
+                -21.729
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR000K,BR000U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -40.305,
+                -20.311
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -50.216,
+                -26.464
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR000R,BR000S,BR000T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -43.247,
+                -21.452
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR000W"
         }
     }
 ]
