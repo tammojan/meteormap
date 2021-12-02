@@ -90,25 +90,9 @@
         },
         "properties": {
             "name": "Elginfield",
-            "id": "CA0001,CA0005,CA0006,CA0007,CA0008,CA0009",
+            "id": "CA0001,CA0005,CA0006,CA0007,CA0008,CA0009,CA0003,CA0011,CA0012,CA0013,CA0014,CA0015",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA0001"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -80.78,
-                43.264
-            ]
-        },
-        "properties": {
-            "name": "Tavistock",
-            "id": "CA0003,CA0011,CA0012,CA0013,CA0014,CA0015",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=CA0003"
         }
     },
     {
@@ -580,7 +564,7 @@
         },
         "properties": {
             "name": "Zvjezdano selo Mosor",
-            "id": "HR000K",
+            "id": "HR000K,HR001J,HR001K",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR000K"
         }
@@ -802,7 +786,7 @@
         },
         "properties": {
             "name": "Roč",
-            "id": "HR001D",
+            "id": "HR001D,HR001E",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001D"
         }
@@ -910,7 +894,7 @@
         },
         "properties": {
             "name": "Wise observatory",
-            "id": "IL0002",
+            "id": "IL0002,IL0003",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IL0002"
         }
@@ -1226,7 +1210,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK0001,UK000H"
+            "id": "UK0001,UK000H,UK000S"
         }
     },
     {
@@ -1302,7 +1286,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK0009"
+            "id": "UK0009,UK0022"
         }
     },
     {
@@ -1388,7 +1372,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK000T"
+            "id": "UK000T,UK001K"
         }
     },
     {
@@ -1628,7 +1612,7 @@
         },
         "properties": {
             "name": "Lowell",
-            "id": "USL007,USL008,USL00A,USL00B,USL00C",
+            "id": "USL007,USL008,USL00A,USL00B,USL00C,USL009",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=USL007"
         }
@@ -1686,29 +1670,13 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                14.063,
-                45.294
-            ]
-        },
-        "properties": {
-            "name": "Roč",
-            "id": "HR001E",
-            "lens": "8mm",
-            "link": "http://istrastream.com/rms-gmn/?id=HR001E"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 13.919,
                 44.907
             ]
         },
         "properties": {
             "name": "Loborika",
-            "id": "HR001S,HR001U,HR001V",
+            "id": "HR001S,HR001U,HR001V,HR001T",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001S"
         }
@@ -1727,22 +1695,6 @@
             "id": "UK000Y,UK000Z,UK003T,UK003U",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK000Y"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                13.906,
-                44.909
-            ]
-        },
-        "properties": {
-            "name": "Loborika",
-            "id": "HR001T",
-            "lens": "16mm",
-            "link": "http://istrastream.com/rms-gmn/?id=HR001T"
         }
     },
     {
@@ -1860,20 +1812,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -1.773,
-                50.843
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK000S"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -1.593,
                 53.828
             ]
@@ -1924,7 +1862,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK001P,UK001Q,UK001R"
+            "id": "UK001P,UK001Q,UK001R,UK001T,UK001U,UK001V,UK001W,UK001S"
         }
     },
     {
@@ -1980,20 +1918,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -2.592,
-                53.052
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK001S"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -71.371,
                 42.536
             ]
@@ -2019,20 +1943,6 @@
             "id": "IL0006",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IL0006"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -2.563,
-                53.058
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK001T"
         }
     },
     {
@@ -2088,57 +1998,13 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                34.742,
-                30.601
-            ]
-        },
-        "properties": {
-            "name": "Wise observatory",
-            "id": "IL0003",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=IL0003"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -3.561,
-                51.48
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK001K"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -3.101,
                 52.506
             ]
         },
         "properties": {
             "name": "",
-            "id": "UK001N,UK001X,UK001Y"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -2.572,
-                53.056
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK001U,UK001V"
+            "id": "UK001N,UK001X,UK001Y,UK0033,UK002G,UK002V,UK002R,UK002S,UK002T,UK002U"
         }
     },
     {
@@ -2182,37 +2048,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK000P"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -0.854,
-                51.244
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK0022"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                16.621,
-                43.51
-            ]
-        },
-        "properties": {
-            "name": "Zvjezdano selo Mosor",
-            "id": "HR001J",
-            "lens": "16mm",
-            "link": "http://istrastream.com/rms-gmn/?id=HR001J"
+            "id": "UK000P,UK002X,UK003Y"
         }
     },
     {
@@ -2312,22 +2148,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                16.623,
-                43.503
-            ]
-        },
-        "properties": {
-            "name": "Zvjezdano selo Mosor",
-            "id": "HR001K",
-            "lens": "16mm",
-            "link": "http://istrastream.com/rms-gmn/?id=HR001K"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 6.517,
                 53.189
             ]
@@ -2399,34 +2219,6 @@
             "id": "HR001L,HR001M,HR001X",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001L"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -2.575,
-                53.071
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK001W"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -3.044,
-                54.991
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK002X"
         }
     },
     {
@@ -2550,20 +2342,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -3.09,
-                52.5
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK002R,UK002S,UK002T,UK002U"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -3.198,
                 51.536
             ]
@@ -2674,20 +2452,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -3.079,
-                52.505
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK0033"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -1.612,
                 53.85
             ]
@@ -2716,22 +2480,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -111.418,
-                34.74
-            ]
-        },
-        "properties": {
-            "name": "Lowell",
-            "id": "USL009",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=USL009"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 173.0,
                 -41.12
             ]
@@ -2741,20 +2489,6 @@
             "id": "NZ0002",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ0002"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -3.092,
-                52.486
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK002G,UK002V"
         }
     },
     {
@@ -3109,20 +2843,6 @@
             "id": "UK003X",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK003X"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -3.047,
-                54.974
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK003Y"
         }
     },
     {
