@@ -91,6 +91,7 @@ for station_id in new_station_ids:
                 "properties": {"name": "", "id": station_id},  # TODO: fetch from istra
             }
             json_stations.append(new_station)
+            exact_location_inv[exact_location[station_id]] = station_id
 
 with open("rms-sites.json", "w", encoding="utf8") as outfile:
     json.dump(json_stations, outfile, indent=4, ensure_ascii=False)
