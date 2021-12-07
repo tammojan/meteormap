@@ -3418,7 +3418,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BR000K,BR000U"
+            "id": "BR000K,BR000U,BR000W"
         }
     },
     {
@@ -3447,20 +3447,6 @@
         "properties": {
             "name": "",
             "id": "BR000Q,BR000R,BR000S,BR000T"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -43.247,
-                -21.452
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "BR000W"
         }
     },
     {
