@@ -2734,7 +2734,7 @@
         },
         "properties": {
             "name": "L Orion Observatory of Ste-Rose-du-Nord",
-            "id": "CA000X,CA000Y",
+            "id": "CA000X,CA000Y,CA000Z",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA000X"
         }
@@ -3060,7 +3060,7 @@
         },
         "properties": {
             "name": "",
-            "id": "AU000A,AU000E,AU000H"
+            "id": "AU000A,AU000E,AU000G,AU000H"
         }
     },
     {
@@ -3404,7 +3404,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BR000C,BR000L"
+            "id": "BR000C,BR000L,BR000H"
         }
     },
     {
@@ -3446,7 +3446,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BR000R,BR000S,BR000T"
+            "id": "BR000Q,BR000R,BR000S,BR000T"
         }
     },
     {
@@ -3461,6 +3461,62 @@
         "properties": {
             "name": "",
             "id": "BR000W"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.345,
+                50.058
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ0006"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.337,
+                52.441
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE000G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                42.153,
+                57.49
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RU000R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -119.034,
+                34.84
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0027"
         }
     }
 ]
