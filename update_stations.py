@@ -10,6 +10,8 @@ import sys
 from tqdm import tqdm
 import pickle
 import numpy as np
+import requests
+from bs4 import BeautifulSoup
 
 cnopts = pysftp.CnOpts()
 cnopts.hostkeys = None
@@ -45,7 +47,7 @@ with pysftp.Connection(
         station_id for station_id in all_station_ids if station_id not in exact_location
     ]
 
-    for station_id in tqdm(new_station_ids):
+    for station_id in new_station_ids:
         stationpath = os.path.join("files/extracted_data", station_id)
         obslist = sorted(sftp.listdir(stationpath))
         configpath = os.path.join(stationpath, obslist[-1], ".config")
@@ -95,6 +97,33 @@ for station_id in new_station_ids:
             }
             json_stations.append(new_station)
             exact_location_inv[exact_location[station_id]] = station_id
+
+# Update names from istrastream
+url = 'http://istrastream.com/rms-gmn/'
+soup = BeautifulSoup(requests.get(url).content, 'html.parser')
+rows = soup.select("tr")
+stationnames = {}
+stationlens = {}
+for row in rows[:-1]:
+    texts = [child.text for child in row.children]
+    station_id = texts[3]
+    station_name = texts[5]
+    station_lens = texts[7]
+    if station_id in exact_location:
+        stationnames[station_id] = station_name
+        stationlens[station_id] = station_lens
+
+for station in json_stations:
+    stationids = station["properties"]["id"].split(",")
+    has_match = False
+    for stationid in stationids:
+        if stationid in stationnames:
+            has_match = True
+            break
+    if not has_match:
+        continue
+    station["properties"]["name"] = stationnames[stationid]
+    station["properties"]["lens"] = stationlens[stationid]
 
 with open("rms-sites.json", "w", encoding="utf8") as outfile:
     json.dump(json_stations, outfile, indent=4, ensure_ascii=False)
