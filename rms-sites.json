@@ -1202,20 +1202,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -0.192,
-                51.652
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK0002"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -1.376,
                 53.028
             ]
@@ -3529,6 +3515,20 @@
         "properties": {
             "name": "",
             "id": "ES0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.258,
+                50.765
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0002"
         }
     }
 ]
