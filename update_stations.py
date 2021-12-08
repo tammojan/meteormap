@@ -19,8 +19,11 @@ with open("rms-sites.json") as rmsfile:
 
 approx_location = {}  # map station id to approximate lon-lat
 
-with open("exact_locations.pickle", "rb") as handle:
-    exact_location = pickle.load(handle)
+try:
+    with open("exact_locations.pickle", "rb") as handle:
+        exact_location = pickle.load(handle)
+except FileNotFoundError:
+    exact_location = {}
 
 known_station_ids = []
 for station in json_stations:
@@ -42,7 +45,7 @@ with pysftp.Connection(
         station_id for station_id in all_station_ids if station_id not in exact_location
     ]
 
-    for station_id in new_station_ids:
+    for station_id in tqdm(new_station_ids):
         stationpath = os.path.join("files/extracted_data", station_id)
         obslist = sorted(sftp.listdir(stationpath))
         configpath = os.path.join(stationpath, obslist[-1], ".config")
