@@ -3036,22 +3036,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                145.1,
-                -36.829
-            ]
-        },
-        "properties": {
-            "name": "Melbourne",
-            "id": "AU0001",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU0001"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -6.485,
                 38.243
             ]
@@ -3527,6 +3511,20 @@
         "properties": {
             "name": "",
             "id": "UK000C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                145.103,
+                -37.819
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0001"
         }
     }
 ]
