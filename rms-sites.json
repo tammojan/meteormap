@@ -1202,22 +1202,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -1.376,
-                53.028
-            ]
-        },
-        "properties": {
-            "name": "Loscoe",
-            "id": "UK0003",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=UK0003"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -1.302,
                 51.875
             ]
@@ -1273,20 +1257,6 @@
             "id": "UK000B",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK000B"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -0.265,
-                51.251
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK000C"
         }
     },
     {
@@ -3529,6 +3499,34 @@
         "properties": {
             "name": "",
             "id": "UK0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.232,
+                53.118
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.719,
+                51.265
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK000C"
         }
     }
 ]
