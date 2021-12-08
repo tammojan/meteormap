@@ -238,22 +238,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -16.307,
-                28.476
-            ]
-        },
-        "properties": {
-            "name": "Teneriffe",
-            "id": "ES0003",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=ES0003"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -8.361,
                 42.625
             ]
@@ -3531,6 +3515,20 @@
         "properties": {
             "name": "",
             "id": "SK0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -16.506,
+                28.304
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES0003"
         }
     }
 ]
