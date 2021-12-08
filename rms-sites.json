@@ -3001,7 +3001,8 @@
         "properties": {
             "name": "Perth Observatory, Western Australia",
             "id": "AU000A,AU000E,AU000G,AU000H",
-            "lens": "4mm"
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU000A"
         }
     },
     {
@@ -3118,7 +3119,8 @@
         "properties": {
             "name": "Sunizona, Arizona",
             "id": "USL00X,USL00Y,USL00Z,USL010,USL011,USL012",
-            "lens": "3.6mm"
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL00X"
         }
     },
     {
@@ -3133,7 +3135,8 @@
         "properties": {
             "name": "Ester, Alaska",
             "id": "US001J,US001S",
-            "lens": "3.6mm"
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US001J"
         }
     },
     {
@@ -3162,7 +3165,8 @@
         "properties": {
             "name": "Saint-Faustin-Lac-Carré, Québec",
             "id": "CA001A",
-            "lens": "3.6mm"
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001A"
         }
     },
     {
@@ -3177,7 +3181,8 @@
         "properties": {
             "name": "Vallbona Observatory, Valencia",
             "id": "ES000W",
-            "lens": "4mm"
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000W"
         }
     },
     {
@@ -3192,7 +3197,8 @@
         "properties": {
             "name": "Jankovac - 900 m",
             "id": "HR0024",
-            "lens": "3.6mm"
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR0024"
         }
     },
     {
@@ -3221,7 +3227,8 @@
         "properties": {
             "name": "Invercargill",
             "id": "NZ0003",
-            "lens": "4mm"
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0003"
         }
     },
     {
@@ -3322,7 +3329,8 @@
         "properties": {
             "name": "Jefferson, GA",
             "id": "US001Y",
-            "lens": "3.6mm"
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US001Y"
         }
     },
     {
@@ -3337,7 +3345,8 @@
         "properties": {
             "name": "Victoria, ES, Brasil",
             "id": "BR000C,BR000L,BR000H",
-            "lens": "6mm"
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000C"
         }
     },
     {
@@ -3352,7 +3361,8 @@
         "properties": {
             "name": "Juiz de Fora, Minas Gerais, Brazil",
             "id": "BR000K,BR000U,BR000W",
-            "lens": "6mm"
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000K"
         }
     },
     {
@@ -3367,7 +3377,8 @@
         "properties": {
             "name": "Vitoria, ES, Brazil",
             "id": "BR000P",
-            "lens": "16mm"
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000P"
         }
     },
     {
@@ -3382,7 +3393,8 @@
         "properties": {
             "name": "Monte Castelo, Santa Catarina",
             "id": "BR000Q,BR000R,BR000S,BR000T",
-            "lens": "4mm"
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000Q"
         }
     },
     {
@@ -3397,7 +3409,8 @@
         "properties": {
             "name": "CZ0006",
             "id": "CZ0006",
-            "lens": "3.6mm"
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CZ0006"
         }
     },
     {
@@ -3454,7 +3467,8 @@
         "properties": {
             "name": "Tavistock",
             "id": "CA0003,CA0011,CA0013,CA0014",
-            "lens": "3.6mm"
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA0003"
         }
     },
     {
@@ -3483,7 +3497,8 @@
         "properties": {
             "name": "Teneriffe",
             "id": "ES0003",
-            "lens": "3.6mm"
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES0003"
         }
     },
     {
@@ -3512,7 +3527,8 @@
         "properties": {
             "name": "Loscoe",
             "id": "UK0003",
-            "lens": "4mm"
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0003"
         }
     },
     {
@@ -3541,7 +3557,8 @@
         "properties": {
             "name": "Melbourne",
             "id": "AU0001",
-            "lens": "4mm"
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU0001"
         }
     }
 ]

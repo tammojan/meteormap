@@ -124,6 +124,7 @@ for station in json_stations:
         continue
     station["properties"]["name"] = stationnames[stationid]
     station["properties"]["lens"] = stationlens[stationid]
+    station["properties"]["link"] = "http://istrastream.com/rms-gmn/?id=" + stationid
 
 with open("rms-sites.json", "w", encoding="utf8") as outfile:
     json.dump(json_stations, outfile, indent=4, ensure_ascii=False)
