@@ -537,5 +537,16 @@
         "name": "Flatzby",
         "id": "3802"
     }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [52.215, -7.013]
+    },
+    "properties": {
+        "name": "Gronau",
+        "id": "3800,3801,3802"
+    }
 }
 ]
