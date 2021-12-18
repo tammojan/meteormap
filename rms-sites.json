@@ -3149,8 +3149,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "AU000B"
+            "name": "Mooroopna, Victoria",
+            "id": "AU000B",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU000B"
         }
     },
     {
@@ -3211,8 +3213,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "MY0001"
+            "name": "Daknam Meteor Station, Putatan, Sabah",
+            "id": "MY0001",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MY0001"
         }
     },
     {
@@ -3559,6 +3563,68 @@
             "id": "AU0001",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                145.245,
+                -36.615
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3.753,
+                51.073
+            ]
+        },
+        "properties": {
+            "name": "Gent",
+            "id": "BE000A",
+            "lens": "8mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.619,
+                39.397
+            ]
+        },
+        "properties": {
+            "name": "El Herrumblar Observatory",
+            "id": "ES000Y",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.413,
+                43.164
+            ]
+        },
+        "properties": {
+            "name": "Le Lavandou",
+            "id": "FR000U",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=FR000U"
         }
     }
 ]
