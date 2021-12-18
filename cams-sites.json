@@ -542,7 +542,7 @@
     "type": "Feature",
     "geometry": {
         "type": "Point",
-        "coordinates": [52.215, -7.013]
+        "coordinates": [7.013, 52.215]
     },
     "properties": {
         "name": "Gronau",
