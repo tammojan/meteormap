@@ -3626,5 +3626,19 @@
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=FR000U"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -85.599,
+                30.136
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0026"
+        }
     }
 ]
