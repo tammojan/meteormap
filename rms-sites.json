@@ -3640,5 +3640,33 @@
             "name": "",
             "id": "US0026"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.33,
+                52.482
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.113,
+                39.5
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES000X"
+        }
     }
 ]
