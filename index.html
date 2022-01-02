@@ -160,6 +160,7 @@
             $("#stationsFilter").keyup(updateFilter);
 
             $("#stationSearch").change(highlightStation);
+            $("#unselectedFovVisibleCheckbox").change(updateFilter);
 
             var initialDataset = urlParams.get("data");
             if (initialDataset) {
@@ -187,6 +188,10 @@
                 dailyMonthlyChange(true); // Populate dropdown and load data
             }
         });
+
+        function unselectedFovVisible() {
+            return !document.getElementById("unselectedFovVisibleCheckbox").checked;
+        }
 
         function highlightStation() {
             var stationid = document.getElementById("stationSearch").value;
@@ -413,7 +418,11 @@
 
         function deselectAllFov() {
             for (var i in fovPerStation) {
-                fovPerStation[i].setStyle({fillColor: "#F33", fillOpacity:0.1});
+                if (unselectedFovVisible()) {
+                    fovPerStation[i].setStyle({fillColor: "#F33", fillOpacity:0.1});
+                } else {
+                    fovPerStation[i].setStyle({fillColor: "#F33", fillOpacity:0});
+                }
             }
         }
 
@@ -640,7 +649,11 @@
             }
             fovPerStation = {};
             var layer = omnivore.kml.parse(kmlContents);
-            layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
+            if (unselectedFovVisible()) {
+                layer.setStyle({fillColor: "#F33", fillOpacity: .1, stroke: false});
+            } else {
+                layer.setStyle({fillColor: "#F33", fillOpacity: 0, stroke: false});
+            }
             layer.eachLayer(function (oneStationLayer) {
                 var dummyLayer = new L.FeatureGroup(); // Mimic layout of RMS FOV
                 oneStationLayer.addTo(dummyLayer);
@@ -942,5 +955,6 @@
     <span style="float:right">Search station: <input type="text" id="stationSearch"></input></float>
     </div>
     <div id="meteortable"></div>
+    <div id="advanced"><input type="checkbox" id="unselectedFovVisibleCheckbox" onchange="updateFilter()" />Hide unselected fields of view</div>
 </body>
 </html>
