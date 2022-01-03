@@ -1585,7 +1585,7 @@
         "properties": {
             "name": "Bern, Switzerland",
             "id": "CH0002",
-            "lens": "9mm",
+            "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=CH0002"
         }
     },
@@ -2914,7 +2914,7 @@
         },
         "properties": {
             "name": "Baldivis, Western Australia",
-            "id": "AU0004,AU0007,AU0008,AU0006",
+            "id": "AU0004,AU0007,AU0008,AU0006,AU0009",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU0004"
         }
@@ -3637,8 +3637,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "US0026"
+            "name": "PCFL GMN Station, Panama City, FL",
+            "id": "US0026",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US0026"
         }
     },
     {
