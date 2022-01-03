@@ -106,9 +106,10 @@ stationnames = {}
 stationlens = {}
 for row in rows[:-1]:
     texts = [child.text for child in row.children]
-    station_id = texts[3]
-    station_name = texts[5]
-    station_lens = texts[7]
+    station_id = texts[5]
+    station_name = texts[7]
+    station_lens = texts[9]
+    print(station_id, station_name, station_lens)
     if station_id in exact_location:
         stationnames[station_id] = station_name
         stationlens[station_id] = station_lens
