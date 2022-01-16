@@ -3575,8 +3575,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "AU000J"
+            "name": "Murchison, Victoria",
+            "id": "AU000J",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU000J"
         }
     },
     {
@@ -3667,8 +3669,80 @@
             ]
         },
         "properties": {
+            "name": "Requena City, Valencia",
+            "id": "ES000X",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES000X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.959,
+                53.683
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "ES000X"
+            "id": "UK004N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.592,
+                51.969
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0050"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.571,
+                53.19
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.279,
+                57.202
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.476,
+                51.683
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005N"
         }
     }
 ]
