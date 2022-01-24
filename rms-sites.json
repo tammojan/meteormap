@@ -2232,7 +2232,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK002Q"
+            "id": "UK002Q,UK0031"
         }
     },
     {
@@ -3000,7 +3000,7 @@
         },
         "properties": {
             "name": "Perth Observatory, Western Australia",
-            "id": "AU000A,AU000E,AU000G,AU000H",
+            "id": "AU000A,AU000E,AU000G,AU000H,AU000C,AU000D,AU000F",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU000A"
         }
@@ -3656,7 +3656,7 @@
         },
         "properties": {
             "name": "",
-            "id": "DE000F"
+            "id": "DE000F,DE000H"
         }
     },
     {
@@ -3743,6 +3743,76 @@
         "properties": {
             "name": "",
             "id": "UK005N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.388,
+                51.366
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0027"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.218,
+                52.654
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0041"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.028,
+                52.038
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.985,
+                53.677
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -84.604,
+                33.35
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0019"
         }
     }
 ]

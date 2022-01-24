@@ -83,6 +83,7 @@ def random_offset(lon, lat):
 
 
 for station_id in new_station_ids:
+  try:
     if not station_id in approx_location:
         if exact_location[station_id] in exact_location_inv:
             print(
@@ -97,7 +98,10 @@ for station_id in new_station_ids:
             }
             json_stations.append(new_station)
             exact_location_inv[exact_location[station_id]] = station_id
-
+  except Exception as e:
+      print(f"Problem with station {station_id}:")
+      print(e)
+      continue
 # Update names from istrastream
 url = 'http://istrastream.com/rms-gmn/'
 soup = BeautifulSoup(requests.get(url).content, 'html.parser')
@@ -109,7 +113,6 @@ for row in rows[:-1]:
     station_id = texts[5]
     station_name = texts[7]
     station_lens = texts[9]
-    print(station_id, station_name, station_lens)
     if station_id in exact_location:
         stationnames[station_id] = station_name
         stationlens[station_id] = station_lens
