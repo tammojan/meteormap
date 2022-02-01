@@ -3814,5 +3814,89 @@
             "name": "",
             "id": "US0019"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                152.945,
+                -27.224
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -5.628,
+                50.157
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK004R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.176,
+                57.04
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK004U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.324,
+                52.016
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0056"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.205,
+                58.639
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0057"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.275,
+                53.797
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005K"
+        }
     }
 ]
