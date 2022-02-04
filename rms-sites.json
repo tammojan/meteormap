@@ -3898,5 +3898,49 @@
             "name": "",
             "id": "UK005K"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.129,
+                51.53
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK000X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.181,
+                51.23
+            ]
+        },
+        "properties": {
+            "name": "BLT Observatory, Bath",
+            "id": "UK002J",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK002J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.417,
+                50.464
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003K"
+        }
     }
 ]
