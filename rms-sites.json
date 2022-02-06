@@ -1929,7 +1929,7 @@
         "properties": {
             "name": "Antibes, France",
             "id": "FR000N",
-            "lens": "3.6mm",
+            "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=FR000N"
         }
     },
@@ -2811,8 +2811,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "US001P"
+            "name": "Cielito Azul Observatory, Taos County NM",
+            "id": "US001P",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US001P"
         }
     },
     {
@@ -3825,8 +3827,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "AU000M"
+            "name": "Kurwongbah, Queensland, Australia",
+            "id": "AU000M",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU000M"
         }
     },
     {
