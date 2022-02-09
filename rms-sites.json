@@ -3946,5 +3946,47 @@
             "name": "",
             "id": "UK003K"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                17.411,
+                48.029
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "SK0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.802,
+                50.358
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0051"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.481,
+                53.346
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005M"
+        }
     }
 ]
