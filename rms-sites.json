@@ -3988,5 +3988,33 @@
             "name": "",
             "id": "UK005M"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.163,
+                51.409
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.48,
+                52.64
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005S"
+        }
     }
 ]
