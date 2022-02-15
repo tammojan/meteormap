@@ -3957,8 +3957,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "SK0003"
+            "name": "Samorin",
+            "id": "SK0003",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=SK0003"
         }
     },
     {
@@ -4015,6 +4017,66 @@
         "properties": {
             "name": "",
             "id": "UK005S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.238,
+                50.203
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.346,
+                20.596
+            ]
+        },
+        "properties": {
+            "name": "St-Gelais, Santiago de Querétaro",
+            "id": "MX0001",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.331,
+                20.592
+            ]
+        },
+        "properties": {
+            "name": "St-Gelais, Santiago de Querétaro",
+            "id": "MX0002",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.945,
+                41.051
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002A"
         }
     }
 ]
