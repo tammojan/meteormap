@@ -3106,7 +3106,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK004D"
+            "id": "UK004D,UK004E"
         }
     },
     {
@@ -3857,8 +3857,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK004U"
+            "name": "Newtonhill, Scotland",
+            "id": "UK004U",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK004U"
         }
     },
     {
@@ -3987,8 +3989,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK005M"
+            "name": "Sheffield",
+            "id": "UK005M",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK005M"
         }
     },
     {
