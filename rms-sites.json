@@ -4096,5 +4096,53 @@
             "name": "",
             "id": "UK005U"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -114.031,
+                50.775
+            ]
+        },
+        "properties": {
+            "name": "Wilson Coulee Observatory, Calgary, Alberta",
+            "id": "CA001F,CA001G",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -114.061,
+                50.906
+            ]
+        },
+        "properties": {
+            "name": "Calgary, Alberta",
+            "id": "CA001H,CA001J",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.418,
+                20.53
+            ]
+        },
+        "properties": {
+            "name": "Jorge Augusto Acosta Bermúdez, Santiago de Querétaro",
+            "id": "MX0004",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0004"
+        }
     }
 ]
