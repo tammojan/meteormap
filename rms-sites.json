@@ -833,8 +833,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "IE0004"
+            "name": "Astroshot Observatory, Kildare",
+            "id": "IE0004",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IE0004"
         }
     },
     {
@@ -4033,8 +4035,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "BE000C"
+            "name": "Humain",
+            "id": "BE000C",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000C"
         }
     },
     {
@@ -4157,6 +4161,20 @@
         "properties": {
             "name": "",
             "id": "ES0010"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.953,
+                52.36
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0067"
         }
     }
 ]
