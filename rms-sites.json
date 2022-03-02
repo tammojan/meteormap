@@ -4159,8 +4159,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "ES0010"
+            "name": "La Pedrera, Requena, Valencia",
+            "id": "ES0010",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES0010"
         }
     },
     {
@@ -4175,6 +4177,62 @@
         "properties": {
             "name": "",
             "id": "UK0067"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.404,
+                53.168
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0046"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.568,
+                51.211
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0048"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.605,
+                53.664
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -95.105,
+                38.809
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002J"
         }
     }
 ]
