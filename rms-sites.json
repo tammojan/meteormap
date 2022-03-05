@@ -169,7 +169,7 @@
             ]
         },
         "properties": {
-            "name": "Langenfeld, Germany",
+            "name": "Langenfeld",
             "id": "DE0001",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=DE0001"
@@ -185,8 +185,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "DE0002"
+            "name": "Cochem",
+            "id": "DE0002",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE0002"
         }
     },
     {
@@ -833,9 +835,9 @@
             ]
         },
         "properties": {
-            "name": "Astroshot Observatory, Kildare",
+            "name": "Narraghmore Observatory, Kildare",
             "id": "IE0004",
-            "lens": "4mm",
+            "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IE0004"
         }
     },
@@ -1601,7 +1603,7 @@
             ]
         },
         "properties": {
-            "name": "Holdorf, Germany",
+            "name": "Holdorf",
             "id": "DE000B",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=DE000B"
@@ -4083,8 +4085,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "US002A"
+            "name": "Montauk, New York",
+            "id": "US002A",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US002A"
         }
     },
     {
@@ -4233,6 +4237,38 @@
         "properties": {
             "name": "",
             "id": "US002J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.47,
+                20.542
+            ]
+        },
+        "properties": {
+            "name": "Angélica Y Edson,  Santiago de Querétaro",
+            "id": "MX0005",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                15.818,
+                53.214
+            ]
+        },
+        "properties": {
+            "name": "Dominikowo",
+            "id": "PL0005",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=PL0005"
         }
     }
 ]
