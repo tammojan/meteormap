@@ -201,8 +201,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "DE0003"
+            "name": "Steinbach Ts.",
+            "id": "DE0003",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE0003"
         }
     },
     {
@@ -4269,6 +4271,52 @@
             "id": "PL0005",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=PL0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.786,
+                50.361
+            ]
+        },
+        "properties": {
+            "name": "Lesve",
+            "id": "BE000G",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                173.281,
+                -41.262
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0008"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.368,
+                51.805
+            ]
+        },
+        "properties": {
+            "name": "Dębowa Lęka",
+            "id": "PL0006",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=PL0006"
         }
     }
 ]
