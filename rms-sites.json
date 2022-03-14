@@ -4251,7 +4251,7 @@
             ]
         },
         "properties": {
-            "name": "Angélica Y Edson,  Santiago de Querétaro",
+            "name": "Angélica Y Edson, Santiago de Querétaro",
             "id": "MX0005",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=MX0005"
@@ -4317,6 +4317,36 @@
             "id": "PL0006",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=PL0006"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -52.81,
+                47.509
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA001P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.393,
+                20.626
+            ]
+        },
+        "properties": {
+            "name": "Jose Galindo Lopez Querétaro",
+            "id": "MX0008",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0008"
         }
     }
 ]
