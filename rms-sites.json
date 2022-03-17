@@ -4299,8 +4299,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ0008"
+            "name": "Rutherford Street Observatory, Nelson",
+            "id": "NZ0008",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0008"
         }
     },
     {
@@ -4329,8 +4331,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "CA001P"
+            "name": "Mount Pearl, Newfoundland and Labrador",
+            "id": "CA001P",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001P"
         }
     },
     {
@@ -4347,6 +4351,66 @@
             "id": "MX0008",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=MX0008"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -114.295,
+                50.887
+            ]
+        },
+        "properties": {
+            "name": "Calgary",
+            "id": "CA0004",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.487,
+                51.392
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.268,
+                52.161
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0069"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.441,
+                55.924
+            ]
+        },
+        "properties": {
+            "name": "Forthimage Observatory, Edinburgh",
+            "id": "UK006E",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK006E"
         }
     }
 ]
