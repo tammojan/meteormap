@@ -819,20 +819,20 @@
                     }
                 }
                 return [
-                    {title:"Start (UTC)", field:"1"},
-                    {title:"V_avg (km/s)", hozAlign:"right", field: "60"},
-                    {title:"Duration (s)", hozAlign:"right", field: "74"},
-                    {title:"Peak (abs mag)", hozAlign:"right", field: "75"},
-                    {title:"Stations", field:"84", sorter:numStationsSorter},
-                    {title: "LonBeg", hozAlign:"right", field: "64"},
-                    {title: "LatBeg", hozAlign:"right", field: "62"},
-                    {title:"Ht_beg (km)", hozAlign:"right", field: "66"},
-                    {title: "LonEnd", hozAlign:"right", field: "70"},
-                    {title: "LatEnd", hozAlign:"right", field: "68"},
-                    {title:"Ht_end (km)", hozAlign:"right", field: "72"},
-                    {title:"Shower", field:"3", mutator:showerMutator},
-                    {title:"Radiant RA", hozAlign:"right", field: "6", sorter: "number"},
-                    {title:"Radiant DEC", hozAlign:"right", field: "8", sorter: "number"}
+                    {title:"Start (UTC)", field:"2"},
+                    {title:"V_avg (km/s)", hozAlign:"right", field: "61"},
+                    {title:"Duration (s)", hozAlign:"right", field: "75"},
+                    {title:"Peak (abs mag)", hozAlign:"right", field: "76"},
+                    {title:"Stations", field:"85", sorter:numStationsSorter},
+                    {title: "LonBeg", hozAlign:"right", field: "65"},
+                    {title: "LatBeg", hozAlign:"right", field: "63"},
+                    {title:"Ht_beg (km)", hozAlign:"right", field: "67"},
+                    {title: "LonEnd", hozAlign:"right", field: "71"},
+                    {title: "LatEnd", hozAlign:"right", field: "69"},
+                    {title:"Ht_end (km)", hozAlign:"right", field: "73"},
+                    {title:"Shower", field:"4", mutator:showerMutator},
+                    {title:"Radiant RA", hozAlign:"right", field: "7", sorter: "number"},
+                    {title:"Radiant DEC", hozAlign:"right", field: "9", sorter: "number"}
                     ]
             }
         }
@@ -861,13 +861,13 @@
                 var latEndIndex = 66;
                 stationsIndex = 82;
                 var isCams = false;
-            } else if (jsonData.data[0].length == 85) {
+            } else if (jsonData.data[0].length == 86) {
                 console.log("RMS format v2 detected");
-                var lonBegIndex = 64;
-                var latBegIndex = 62;
-                var lonEndIndex = 70;
-                var latEndIndex = 68;
-                stationsIndex = 84;
+                var lonBegIndex = 65;
+                var latBegIndex = 63;
+                var lonEndIndex = 71;
+                var latEndIndex = 69;
+                stationsIndex = 85;
                 var isCams = false;
             } else if (jsonData.data[0].length == 35 || jsonData.data[0].length == 81 || jsonData.data[0].length == 37) {
                 console.log("CAMS format detected");
