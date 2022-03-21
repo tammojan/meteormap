@@ -4412,5 +4412,21 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK006E"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.598,
+                50.082
+            ]
+        },
+        "properties": {
+            "name": "Dourbes",
+            "id": "BE000B",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000B"
+        }
     }
 ]
