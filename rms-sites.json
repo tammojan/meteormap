@@ -4428,5 +4428,35 @@
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE000B"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.219,
+                55.939
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK005Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.992,
+                50.939
+            ]
+        },
+        "properties": {
+            "name": "Catherington, Hampshire",
+            "id": "UK006D",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK006D"
+        }
     }
 ]
