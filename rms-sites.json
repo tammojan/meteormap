@@ -4458,5 +4458,21 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK006D"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.599,
+                45.893
+            ]
+        },
+        "properties": {
+            "name": "Denis Bergeron, Val-des-Bois, Québec",
+            "id": "CA001R",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001R"
+        }
     }
 ]
