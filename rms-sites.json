@@ -4474,5 +4474,33 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA001R"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.365,
+                51.53
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK004X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.87,
+                51.811
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006P"
+        }
     }
 ]
