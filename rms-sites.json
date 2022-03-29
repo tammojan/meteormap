@@ -4502,5 +4502,19 @@
             "name": "",
             "id": "UK006P"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -79.783,
+                43.573
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA001Q"
+        }
     }
 ]
