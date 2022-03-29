@@ -33,6 +33,11 @@ for station in json_stations:
     for station_id in station_ids:
         approx_location[station_id] = tuple(station["geometry"]["coordinates"])
 
+def removeInlineComments(cfgparser, delimiter):
+    """ Removes inline comments from config file. """
+    for section in cfgparser.sections():
+        [cfgparser.set(section, item[0], item[1].split(delimiter)[0].strip()) for item in cfgparser.items(section)]
+
 with pysftp.Connection(
     "gmn.uwo.ca",
     username="tjdijkema",
@@ -54,6 +59,7 @@ with pysftp.Connection(
         with sftp.open(configpath) as configfile:
             config = configparser.ConfigParser(inline_comment_prefixes=(";",))
             config.read_file(configfile)
+            removeInlineComments(config, ';')
             longitude = config["System"]["Longitude"]
             latitude = config["System"]["Latitude"]
             exact_location[station_id] = (longitude, latitude)
