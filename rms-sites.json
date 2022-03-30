@@ -744,7 +744,7 @@
         },
         "properties": {
             "name": "",
-            "id": "HR0016,HR0018"
+            "id": "HR0016,HR0017,HR0018"
         }
     },
     {
@@ -825,22 +825,6 @@
             "id": "HR001N,HR001P,HR001Q,HR001R",
             "lens": "16mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR001N"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -7.044,
-                53.146
-            ]
-        },
-        "properties": {
-            "name": "Narraghmore Observatory, Kildare",
-            "id": "IE0004",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=IE0004"
         }
     },
     {
@@ -3404,7 +3388,7 @@
         },
         "properties": {
             "name": "Monte Castelo, Santa Catarina",
-            "id": "BR000Q,BR000R,BR000S,BR000T",
+            "id": "BR000Q,BR000R,BR000S,BR000T,BR000Y",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR000Q"
         }
@@ -3695,20 +3679,6 @@
         "properties": {
             "name": "",
             "id": "UK004N"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                1.592,
-                51.969
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK0050"
         }
     },
     {
@@ -4543,6 +4513,50 @@
         "properties": {
             "name": "",
             "id": "UK006L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                21.043,
+                46.678
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "HU0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.841,
+                53.045
+            ]
+        },
+        "properties": {
+            "name": "Narraghmore Observatory, Kildare",
+            "id": "IE0004",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IE0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.596,
+                51.998
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0050"
         }
     }
 ]
