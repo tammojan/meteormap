@@ -53,16 +53,21 @@ with pysftp.Connection(
     ]
 
     for station_id in new_station_ids:
-        stationpath = os.path.join("files/extracted_data", station_id)
-        obslist = sorted(sftp.listdir(stationpath))
-        configpath = os.path.join(stationpath, obslist[-1], ".config")
-        with sftp.open(configpath) as configfile:
-            config = configparser.ConfigParser(inline_comment_prefixes=(";",))
-            config.read_file(configfile)
-            removeInlineComments(config, ';')
-            longitude = config["System"]["Longitude"]
-            latitude = config["System"]["Latitude"]
-            exact_location[station_id] = (longitude, latitude)
+        try:
+            stationpath = os.path.join("files/extracted_data", station_id)
+            obslist = sorted(sftp.listdir(stationpath))
+            configpath = os.path.join(stationpath, obslist[-1], ".config")
+            with sftp.open(configpath) as configfile:
+                config = configparser.ConfigParser(inline_comment_prefixes=(";",))
+                config.read_file(configfile)
+                removeInlineComments(config, ';')
+                longitude = config["System"]["Longitude"]
+                latitude = config["System"]["Latitude"]
+                exact_location[station_id] = (longitude, latitude)
+        except Exception as e:
+            print("Error with station", station_id)
+            print(str(e))
+            continue
 
 with open("exact_locations.pickle", "wb") as handle:
     pickle.dump(exact_location, handle, protocol=pickle.HIGHEST_PROTOCOL)

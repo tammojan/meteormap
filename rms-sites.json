@@ -4558,5 +4558,19 @@
             "name": "",
             "id": "UK0050"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -99.818,
+                20.726
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MX0003"
+        }
     }
 ]
