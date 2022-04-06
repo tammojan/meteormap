@@ -4569,8 +4569,24 @@
             ]
         },
         "properties": {
+            "name": "Planet. Dr. Jose Hernandez Moreno J. Muñoz, Cadereyta Qro.",
+            "id": "MX0003,MX000A",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.121,
+                39.935
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "MX0003"
+            "id": "ES000Z"
         }
     }
 ]
