@@ -4588,5 +4588,19 @@
             "name": "",
             "id": "ES000Z"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.704,
+                40.606
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES0011"
+        }
     }
 ]
