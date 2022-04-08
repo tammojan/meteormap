@@ -4602,5 +4602,19 @@
             "name": "",
             "id": "ES0011"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                103.909,
+                1.317
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "SG0001"
+        }
     }
 ]
