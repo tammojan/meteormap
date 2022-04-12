@@ -4629,8 +4629,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "ES0012"
+            "name": "San Antonio de Benagéber, Valencia",
+            "id": "ES0012",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES0012"
         }
     },
     {
@@ -4647,6 +4649,34 @@
             "id": "NZ0006",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ0006"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                33.492,
+                44.505
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RU000V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.33,
+                50.95
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006H"
         }
     }
 ]
