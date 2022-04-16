@@ -4678,5 +4678,35 @@
             "name": "",
             "id": "UK006H"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3.683,
+                51.253
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.298,
+                20.6
+            ]
+        },
+        "properties": {
+            "name": "Edison José Felipe Pérezgómez Álvarez. Querétaro",
+            "id": "MX0006",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0006"
+        }
     }
 ]
