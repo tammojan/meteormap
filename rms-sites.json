@@ -4708,5 +4708,19 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=MX0006"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.294,
+                20.599
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MX000B"
+        }
     }
 ]
