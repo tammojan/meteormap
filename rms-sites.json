@@ -4758,5 +4758,19 @@
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA001S"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.299,
+                52.104
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NL000L"
+        }
     }
 ]
