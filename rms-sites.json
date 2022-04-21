@@ -4483,8 +4483,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "CA001Q"
+            "name": "Mississauga, Ontario",
+            "id": "CA001Q",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001Q"
         }
     },
     {
@@ -4689,8 +4691,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "BE000E"
+            "name": "De Polderster, Assenede",
+            "id": "BE000E",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000E"
         }
     },
     {
@@ -4723,6 +4727,36 @@
             "id": "MX000B,MX000C",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=MX000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                25.582,
+                42.047
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BG0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -79.779,
+                43.568
+            ]
+        },
+        "properties": {
+            "name": "Mississauga, Ontario",
+            "id": "CA001S",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001S"
         }
     }
 ]
