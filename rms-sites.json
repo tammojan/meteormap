@@ -4718,22 +4718,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -100.294,
-                20.599
-            ]
-        },
-        "properties": {
-            "name": "Luca St-Gelais Tavera, Querétaro",
-            "id": "MX000B,MX000C",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=MX000B"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 25.582,
                 42.047
             ]
@@ -4771,6 +4755,52 @@
         "properties": {
             "name": "",
             "id": "NL000L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -110.888,
+                31.691
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "USV003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.301,
+                20.59
+            ]
+        },
+        "properties": {
+            "name": "Luca St-Gelais Tavera, Querétaro",
+            "id": "MX000B",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.468,
+                20.514
+            ]
+        },
+        "properties": {
+            "name": "Enrique Chávez Garcilazo, Querétaro",
+            "id": "MX000C",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX000C"
         }
     }
 ]
