@@ -4802,5 +4802,65 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=MX000C"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -79.74,
+                43.574
+            ]
+        },
+        "properties": {
+            "name": "Mississauga, Ontario",
+            "id": "CA001T",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                17.6,
+                45.506
+            ]
+        },
+        "properties": {
+            "name": "Jankovac - 900 m",
+            "id": "HR0025",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=HR0025"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.368,
+                39.932
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -110.764,
+                32.296
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "USV002"
+        }
     }
 ]
