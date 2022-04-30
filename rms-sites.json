@@ -295,8 +295,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "ES0009"
+            "name": "Carpe Noctem Observatory. Madrid",
+            "id": "ES0009",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES0009"
         }
     },
     {
@@ -3157,7 +3159,7 @@
             ]
         },
         "properties": {
-            "name": "Saint-Faustin-Lac-Carré, Québec",
+            "name": "Municipalité de Mont-Blanc #1",
             "id": "CA001A",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA001A"
