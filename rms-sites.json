@@ -4864,5 +4864,65 @@
             "name": "",
             "id": "USV002"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -74.537,
+                46.067
+            ]
+        },
+        "properties": {
+            "name": "Municipalité de Mont-Blanc #2, Québec",
+            "id": "CA001X",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.344,
+                45.533
+            ]
+        },
+        "properties": {
+            "name": "Observatoire Urbain, Saint-Bruno",
+            "id": "CA0022",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA0022"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.616,
+                52.826
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -110.872,
+                32.122
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US000Q"
+        }
     }
 ]
