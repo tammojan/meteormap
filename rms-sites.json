@@ -1107,8 +1107,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "RU000H"
+            "name": "Bardagon, Amur region",
+            "id": "RU000H",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=RU000H"
         }
     },
     {
@@ -3540,7 +3542,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK000C"
+            "id": "UK000C,UK002N"
         }
     },
     {
@@ -4544,7 +4546,7 @@
         },
         "properties": {
             "name": "Narraghmore Observatory, Kildare",
-            "id": "IE0004",
+            "id": "IE0004,IE000G",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IE0004"
         }
@@ -4923,6 +4925,252 @@
         "properties": {
             "name": "",
             "id": "US000Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.197,
+                46.72
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA001B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.485,
+                45.524
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA001N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -74.58,
+                46.09
+            ]
+        },
+        "properties": {
+            "name": "Lac Maskinongé, Mont-Tremblant, Québec",
+            "id": "CA002E",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA002E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.286,
+                46.521
+            ]
+        },
+        "properties": {
+            "name": "Saanenmoeser, Switzerland",
+            "id": "CH0003",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CH0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                9.562,
+                47.384
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CH0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.851,
+                -45.722
+            ]
+        },
+        "properties": {
+            "name": "Waikaia",
+            "id": "NZ0007",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0007"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                127.716,
+                50.123
+            ]
+        },
+        "properties": {
+            "name": "Peredovoye, Amur region",
+            "id": "RU000T",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=RU000T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                40.009,
+                57.217
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RU000U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.379,
+                51.387
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK002W"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.739,
+                51.406
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0037"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.452,
+                52.384
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0062"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.566,
+                50.863
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0063"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.704,
+                52.37
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.497,
+                53.26
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.651,
+                53.309
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.477,
+                52.859
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.802,
+                51.621
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006R"
         }
     }
 ]
