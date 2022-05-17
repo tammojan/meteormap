@@ -4354,7 +4354,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK005F"
+            "id": "UK004A,UK005F"
         }
     },
     {
@@ -5058,7 +5058,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK002W"
+            "id": "UK006S,UK002W"
         }
     },
     {
@@ -5171,6 +5171,94 @@
         "properties": {
             "name": "",
             "id": "UK006R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -52.819,
+                47.485
+            ]
+        },
+        "properties": {
+            "name": "Mount Pearl, Newfoundland and Labrador",
+            "id": "CA001V",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA001V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.05,
+                38.842
+            ]
+        },
+        "properties": {
+            "name": "Denia",
+            "id": "ES0013",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES0013"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.335,
+                54.764
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0052"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.643,
+                55.237
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0066"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.354,
+                54.647
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.121,
+                53.478
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006Z"
         }
     }
 ]
