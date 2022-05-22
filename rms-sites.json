@@ -5260,5 +5260,47 @@
             "name": "",
             "id": "UK006Z"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.676,
+                51.281
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                25.379,
+                41.658
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BG0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                118.298,
+                5.029
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MY0005"
+        }
     }
 ]
