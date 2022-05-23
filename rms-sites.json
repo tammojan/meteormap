@@ -5299,8 +5299,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "MY0005"
+            "name": "DSM Meteor Station, Lahad Datu, Sabah",
+            "id": "MY0005",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MY0005"
         }
     }
 ]
