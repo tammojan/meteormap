@@ -5271,8 +5271,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "BE000J"
+            "name": "Zoersel",
+            "id": "BE000J",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000J"
         }
     },
     {
