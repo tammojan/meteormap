@@ -5306,5 +5306,21 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=MY0005"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.569,
+                53.045
+            ]
+        },
+        "properties": {
+            "name": "Burlage",
+            "id": "DE000J,DE000K",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE000J"
+        }
     }
 ]
