@@ -5322,5 +5322,65 @@
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=DE000J"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.972,
+                -44.269
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0009"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.461,
+                51.696
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0078"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -89.611,
+                39.726
+            ]
+        },
+        "properties": {
+            "name": "University of Illinois Springfield Campus Observatory",
+            "id": "US002M",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US002M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -89.897,
+                39.842
+            ]
+        },
+        "properties": {
+            "name": "University of Illinois Springfield Research Observatory",
+            "id": "US002N",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US002N"
+        }
     }
 ]
