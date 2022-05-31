@@ -5382,5 +5382,33 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=US002N"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.403,
+                53.859
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -86.655,
+                34.668
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "USN002"
+        }
     }
 ]
