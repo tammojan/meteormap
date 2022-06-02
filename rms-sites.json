@@ -90,7 +90,7 @@
         },
         "properties": {
             "name": "Elginfield",
-            "id": "CA0001,CA0005,CA0006,CA0007,CA0008,CA0009,CA0012,CA0015",
+            "id": "CA0001,CA0005,CA0006,CA0007,CA0008,CA0009,CA0012,CA0015,CAWE01,CAWE02,CAWE03,CAWE04,CAWE05,CAWE06,CAWE07,CAWE08",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA0001"
         }
@@ -5333,8 +5333,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ0009"
+            "name": "Totara Valley Camera, Pleasant Point",
+            "id": "NZ0009",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0009"
         }
     },
     {
@@ -5408,7 +5410,7 @@
         },
         "properties": {
             "name": "",
-            "id": "USN002"
+            "id": "USN001,USN002,USN003,USN005"
         }
     }
 ]
