@@ -5409,8 +5409,24 @@
             ]
         },
         "properties": {
+            "name": "MSFC, AL",
+            "id": "USN001,USN002,USN003,USN005",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USN001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -47.875,
+                -15.652
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "USN001,USN002,USN003,USN005"
+            "id": "BR000Z"
         }
     }
 ]
