@@ -247,7 +247,7 @@
             ]
         },
         "properties": {
-            "name": "Forcarei, Pontevedra",
+            "name": "Salvaterra",
             "id": "ES0006",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0006"
@@ -5427,8 +5427,116 @@
             ]
         },
         "properties": {
+            "name": "Brasília, DF",
+            "id": "BR000Z",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR000Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.166,
+                45.309
+            ]
+        },
+        "properties": {
+            "name": "Municipalité de Chartierville #1, Québec",
+            "id": "CA0021",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA0021"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -72.227,
+                45.267
+            ]
+        },
+        "properties": {
+            "name": "Observatoire de la Licorne, Magog, Québec",
+            "id": "CA0023",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA0023"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.143,
+                45.286
+            ]
+        },
+        "properties": {
+            "name": "Municipalité de Chartierville #2, Québec",
+            "id": "CA0026",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA0026"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.149,
+                45.283
+            ]
+        },
+        "properties": {
+            "name": "Municipalité de Chartierville #3, Québec",
+            "id": "CA0027",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA0027"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.184,
+                48.643
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "BR000Z"
+            "id": "FR000V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.775,
+                51.161
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.722,
+                33.048
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002P"
         }
     }
 ]
