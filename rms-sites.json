@@ -5538,5 +5538,19 @@
             "name": "",
             "id": "US002P"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.094,
+                50.775
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0079"
+        }
     }
 ]
