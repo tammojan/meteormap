@@ -4698,7 +4698,7 @@
         },
         "properties": {
             "name": "De Polderster, Assenede",
-            "id": "BE000E",
+            "id": "BE000E,BE000F",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE000E"
         }
@@ -5551,6 +5551,20 @@
         "properties": {
             "name": "",
             "id": "UK0079"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.01,
+                43.614
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "FR000E"
         }
     }
 ]
