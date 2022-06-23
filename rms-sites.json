@@ -5566,5 +5566,49 @@
             "name": "",
             "id": "FR000E"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                2.691,
+                50.822
+            ]
+        },
+        "properties": {
+            "name": "Abele",
+            "id": "BE000H",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.553,
+                55.067
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0073"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -97.075,
+                33.481
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002R"
+        }
     }
 ]
