@@ -5654,5 +5654,79 @@
             "name": "",
             "id": "UK007B"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                145.005,
+                -36.571
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -40.353,
+                -20.346
+            ]
+        },
+        "properties": {
+            "name": "Cariacica",
+            "id": "BR0011",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR0011"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.537,
+                46.799
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CH0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                11.172,
+                44.352
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "IT0007"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.355,
+                55.892
+            ]
+        },
+        "properties": {
+            "name": "Ravelrig Observatory, Edinburgh",
+            "id": "UK006Y",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK006Y"
+        }
     }
 ]
