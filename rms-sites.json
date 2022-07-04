@@ -5336,7 +5336,7 @@
         },
         "properties": {
             "name": "Totara Valley Camera, Pleasant Point",
-            "id": "NZ0009",
+            "id": "NZ0009,NZ0010",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ0009"
         }
@@ -5727,6 +5727,20 @@
             "id": "UK006Y",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK006Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.604,
+                51.663
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007E"
         }
     }
 ]
