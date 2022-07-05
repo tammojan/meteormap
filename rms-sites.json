@@ -5742,5 +5742,21 @@
             "name": "",
             "id": "UK007E"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.095,
+                -31.405
+            ]
+        },
+        "properties": {
+            "name": "Wongan Hills, Western Australia",
+            "id": "AU0012,AU0013",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU0012"
+        }
     }
 ]
