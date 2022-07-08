@@ -5637,8 +5637,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK007A"
+            "name": "Norman Lockyer Observatory",
+            "id": "UK007A",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK007A"
         }
     },
     {
@@ -5651,8 +5653,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK007B"
+            "name": "Norman Lockyer Observatory",
+            "id": "UK007B",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK007B"
         }
     },
     {
