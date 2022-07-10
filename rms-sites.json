@@ -1102,22 +1102,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                37.316,
-                44.897
-            ]
-        },
-        "properties": {
-            "name": "Bardagon, Amur region",
-            "id": "RU000H",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=RU000H"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 41.948,
                 44.999
             ]
@@ -5758,9 +5742,25 @@
         },
         "properties": {
             "name": "Wongan Hills, Western Australia",
-            "id": "AU0012,AU0013",
+            "id": "AU0011,AU0012,AU0013",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU0012"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                128.114,
+                51.292
+            ]
+        },
+        "properties": {
+            "name": "Bardagon, Amur region",
+            "id": "RU000H",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=RU000H"
         }
     }
 ]
