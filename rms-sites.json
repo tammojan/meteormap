@@ -5762,5 +5762,21 @@
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=RU000H"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.262,
+                55.954
+            ]
+        },
+        "properties": {
+            "name": "Edinburgh Central",
+            "id": "UK0074",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0074"
+        }
     }
 ]
