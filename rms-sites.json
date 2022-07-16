@@ -5792,5 +5792,19 @@
             "name": "",
             "id": "UK0072"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                2.873,
+                51.191
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000D"
+        }
     }
 ]
