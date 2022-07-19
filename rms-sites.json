@@ -5803,8 +5803,40 @@
             ]
         },
         "properties": {
+            "name": "Astropolis Observatory, Oostende",
+            "id": "BE000D",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -50.039,
+                -20.672
+            ]
+        },
+        "properties": {
+            "name": "Nhandeara, São Paulo",
+            "id": "BR0013",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR0013"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                20.142,
+                -33.973
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "BE000D"
+            "id": "ZA0001,ZA0002"
         }
     }
 ]
