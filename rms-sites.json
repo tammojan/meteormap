@@ -5838,5 +5838,19 @@
             "name": "",
             "id": "ZA0001,ZA0002"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.241,
+                42.933
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BG0006"
+        }
     }
 ]
