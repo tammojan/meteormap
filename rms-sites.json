@@ -5852,5 +5852,33 @@
             "name": "",
             "id": "BG0006"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.361,
+                5.693
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MY0006"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.903,
+                51.811
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007H"
+        }
     }
 ]
