@@ -5835,8 +5835,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "ZA0001,ZA0002"
+            "name": "ASTRONOC, Bonnievale, South Africa",
+            "id": "ZA0001,ZA0002",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ZA0001"
         }
     },
     {
@@ -5863,8 +5865,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "MY0006"
+            "name": "DSM Waily Meteor Station, Tambunan, Sabah",
+            "id": "MY0006",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MY0006"
         }
     },
     {
@@ -5879,6 +5883,20 @@
         "properties": {
             "name": "",
             "id": "UK007H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.359,
+                53.392
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "IE0001"
         }
     }
 ]
