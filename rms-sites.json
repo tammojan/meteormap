@@ -5898,5 +5898,21 @@
             "name": "",
             "id": "IE0001"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -44.217,
+                -2.472
+            ]
+        },
+        "properties": {
+            "name": "São José de Ribamar, Maranhão",
+            "id": "BR0010",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR0010"
+        }
     }
 ]
