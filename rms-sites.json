@@ -2698,7 +2698,7 @@
         },
         "properties": {
             "name": "Observatoire Omega, Hagnicourt",
-            "id": "FR000R",
+            "id": "FR000R,FR000X,FR000Y",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=FR000R"
         }
