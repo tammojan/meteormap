@@ -5914,5 +5914,19 @@
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR0010"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.964,
+                46.549
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "FR000Z"
+        }
     }
 ]
