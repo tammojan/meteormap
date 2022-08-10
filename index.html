@@ -56,6 +56,7 @@
         var jsonData;
         var meteorTable;
         var stationsIndex; // Differs between CAMS and RMS
+        var showerIndex;
         var stationLayers = {};
         var fovPerStation = {}; // Has keys station name, only FOV for 100km
         var stationMarkerLayer;
@@ -168,6 +169,8 @@
 
             $("#stationsFilter").change(updateFilter);
             $("#stationsFilter").keyup(updateFilter);
+            $("#showerFilter").keyup(updateShowerFilter);
+            $("#showerFilter").change(updateShowerFilter);
 
             $("#stationSearch").change(highlightStation);
             $("#unselectedFovVisibleCheckbox").change(updateFilter);
@@ -326,6 +329,14 @@
             updateFilter();
         }
 
+        function updateShowerFilter() {
+            var showerstr = document.getElementById("showerFilter").value;
+            meteorTable.setFilter(showerFilter, {shower: showerstr});
+            document.getElementById("rowcount").innerHTML = meteorTable.getData('active').length;
+            console.log("Shower filter now at " +showerstr);
+            // TODO updatePermalink();
+        }
+
         function updateFilter() {
             var stationliststr = document.getElementById("stationsFilter").value;
             var stationlist = stationliststr.split(/[,;] */);
@@ -333,6 +344,26 @@
             document.getElementById("rowcount").innerHTML = meteorTable.getData('active').length;
             selectFov(stationlist, false);
             updatePermalink();
+        }
+
+        function showerFilter(data, filterParams){
+            var leafletId = data.leafletId;
+            var selectedFeature = meteorLayer.getLayer(leafletId);
+            if (filterParams.shower==[""]) {
+                L.DomUtil.removeClass(selectedFeature._path, 'filteredout-meteor');
+                return true;
+            } else {
+                console.log("A");
+                console.log(data[showerIndex]);
+                console.log(filterParams.shower);
+                console.log("B");
+                if (data[showerIndex] != filterParams.shower) {
+                    L.DomUtil.addClass(selectedFeature._path, 'filteredout-meteor');
+                    return false;
+                }
+                L.DomUtil.removeClass(selectedFeature._path, 'filteredout-meteor');
+                return true;
+            }
         }
 
         function customFilter(data, filterParams){
@@ -870,6 +901,7 @@
                 var lonEndIndex = 68;
                 var latEndIndex = 66;
                 stationsIndex = 82;
+                showerIndex = 4;
                 var isCams = false;
             } else if (jsonData.data[0].length == 86) {
                 console.log("RMS format v2 detected");
@@ -878,6 +910,7 @@
                 var lonEndIndex = 71;
                 var latEndIndex = 69;
                 stationsIndex = 85;
+                showerIndex = 4;
                 var isCams = false;
             } else if (jsonData.data[0].length == 35 || jsonData.data[0].length == 81 || jsonData.data[0].length == 37) {
                 console.log("CAMS format detected");
@@ -965,6 +998,7 @@
     <span style="float:right">Search station: <input type="text" id="stationSearch"></input></float>
     </div>
     <div id="meteortable"></div>
-    <div id="advanced"><input type="checkbox" id="unselectedFovVisibleCheckbox" onchange="updateFilter()" />Hide unselected fields of view</div>
+    <div id="advanced"><input type="checkbox" id="unselectedFovVisibleCheckbox" onchange="updateFilter()" />Hide unselected fields of view </div>
+    <label for="showerfilter">Filter showers</label>: <input type="text" size="3" id="showerFilter" name="showerFilter"></input>
 </body>
 </html>
