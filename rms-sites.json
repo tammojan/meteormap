@@ -3084,7 +3084,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK004D,UK004E,UK004F"
+            "id": "UK004D,UK004E,UK004F,UK004G"
         }
     },
     {
@@ -5927,6 +5927,232 @@
         "properties": {
             "name": "",
             "id": "FR000Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.275,
+                42.785
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES0015"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                17.091,
+                46.611
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "HU0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.844,
+                53.038
+            ]
+        },
+        "properties": {
+            "name": "Narraghmore Observatory, Kildare",
+            "id": "IE000H",
+            "lens": "8mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IE000H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.207,
+                -45.053
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000A,NZ000V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.409,
+                -45.241
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.968,
+                -45.092
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.119,
+                -45.681
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.954,
+                -45.058
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.504,
+                -45.864
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.518,
+                55.833
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK002L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.003,
+                55.952
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0055"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.452,
+                52.884
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.623,
+                53.14
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0070"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.469,
+                51.7
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -110.16,
+                34.916
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "USL019,USL01B,USL01D,USL01E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -110.149,
+                34.918
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "USL01A"
         }
     }
 ]
