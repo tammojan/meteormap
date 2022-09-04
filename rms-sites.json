@@ -6137,8 +6137,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "USL019,USL01B,USL01D,USL01E"
+            "name": "Holbrook, AZ",
+            "id": "USL019,USL01A,USL01B,USL01C,USL01D,USL01E",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL019"
         }
     },
     {
@@ -6146,13 +6148,13 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -110.149,
-                34.918
+                9.555,
+                53.86
             ]
         },
         "properties": {
             "name": "",
-            "id": "USL01A"
+            "id": "DE000M"
         }
     }
 ]
