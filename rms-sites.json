@@ -6156,5 +6156,33 @@
             "name": "",
             "id": "DE000M"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.206,
+                51.494
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK003P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.441,
+                40.582
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002D"
+        }
     }
 ]
