@@ -6184,5 +6184,21 @@
             "name": "",
             "id": "US002D"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                25.535,
+                62.331
+            ]
+        },
+        "properties": {
+            "name": "Jyväskylä",
+            "id": "FI0002,FI0003",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=FI0002"
+        }
     }
 ]
