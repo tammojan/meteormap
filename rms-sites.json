@@ -6153,8 +6153,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "DE000M"
+            "name": "Sternwarte Muchelndorf, Grevenkop",
+            "id": "DE000M",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE000M"
         }
     },
     {
@@ -6198,7 +6200,7 @@
             "name": "Jyväskylä",
             "id": "FI0001,FI0002,FI0003",
             "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=FI0002"
+            "link": "http://istrastream.com/rms-gmn/?id=FI0001"
         }
     }
 ]
