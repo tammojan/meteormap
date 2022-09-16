@@ -933,9 +933,9 @@
             ]
         },
         "properties": {
-            "name": "Oosterschelde, NW",
+            "name": "Kattendijke, E",
             "id": "NL0001,NL0009",
-            "lens": "3.6mm",
+            "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=NL0001"
         }
     },
@@ -5939,8 +5939,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "ES0015"
+            "name": "Aguilar de Campoo, Palencia",
+            "id": "ES0015",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=ES0015"
         }
     },
     {
@@ -6201,6 +6203,92 @@
             "id": "FI0001,FI0002,FI0003",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=FI0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                21.389,
+                40.112
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "GR0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                127.44,
+                38.128
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                129.285,
+                36.824
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                127.758,
+                37.935
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3.954,
+                51.511
+            ]
+        },
+        "properties": {
+            "name": "Kattendijke, SE",
+            "id": "NL000K",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NL000K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.354,
+                51.069
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK001E"
         }
     }
 ]
