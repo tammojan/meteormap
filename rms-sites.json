@@ -2082,22 +2082,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                173.278,
-                -41.281
-            ]
-        },
-        "properties": {
-            "name": "Rutherford Street Observatory, Nelson",
-            "id": "NZ0001",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0001"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 9.65,
                 54.716
             ]
@@ -2391,22 +2375,6 @@
         "properties": {
             "name": "",
             "id": "US001R"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                173.0,
-                -41.12
-            ]
-        },
-        "properties": {
-            "name": "Tasman Skies, Motueka",
-            "id": "NZ0002",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0002"
         }
     },
     {
@@ -3034,22 +3002,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.463,
-                -41.229
-            ]
-        },
-        "properties": {
-            "name": "Atutahi Observatory, Martinborough",
-            "id": "NZ0004",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0004"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 62.476,
                 55.34
             ]
@@ -3197,22 +3149,6 @@
             "id": "MY0001",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=MY0001"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                168.318,
-                -46.432
-            ]
-        },
-        "properties": {
-            "name": "Invercargill",
-            "id": "NZ0003",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0003"
         }
     },
     {
@@ -4252,22 +4188,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                173.281,
-                -41.262
-            ]
-        },
-        "properties": {
-            "name": "Rutherford Street Observatory, Nelson",
-            "id": "NZ0008",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0008"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 16.368,
                 51.805
             ]
@@ -4632,22 +4552,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.287,
-                -39.328
-            ]
-        },
-        "properties": {
-            "name": "Stratford",
-            "id": "NZ0006",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0006"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 33.492,
                 44.505
             ]
@@ -4992,22 +4896,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                168.851,
-                -45.722
-            ]
-        },
-        "properties": {
-            "name": "Waikaia",
-            "id": "NZ0007",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0007"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 127.716,
                 50.123
             ]
@@ -5307,22 +5195,6 @@
             "id": "DE000J,DE000K",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=DE000J"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                170.972,
-                -44.269
-            ]
-        },
-        "properties": {
-            "name": "Totara Valley Camera, Pleasant Point",
-            "id": "NZ0009,NZ0010",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0009"
         }
     },
     {
@@ -5980,90 +5852,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                170.207,
-                -45.053
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "NZ000A,NZ000V"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                169.409,
-                -45.241
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "NZ000B"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                170.968,
-                -45.092
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "NZ000D"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                169.119,
-                -45.681
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "NZ000E"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                170.954,
-                -45.058
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "NZ000F"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                170.504,
-                -45.864
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "NZ000M"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -4.518,
                 55.833
             ]
@@ -6303,6 +6091,218 @@
         "properties": {
             "name": "",
             "id": "UK007V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                173.259,
+                -41.287
+            ]
+        },
+        "properties": {
+            "name": "Rutherford Street Observatory, Nelson",
+            "id": "NZ0001",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.996,
+                -41.123
+            ]
+        },
+        "properties": {
+            "name": "Tasman Skies, Motueka",
+            "id": "NZ0002",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.294,
+                -46.433
+            ]
+        },
+        "properties": {
+            "name": "Invercargill",
+            "id": "NZ0003",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.479,
+                -41.242
+            ]
+        },
+        "properties": {
+            "name": "Atutahi Observatory, Martinborough",
+            "id": "NZ0004",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.277,
+                -39.342
+            ]
+        },
+        "properties": {
+            "name": "Stratford",
+            "id": "NZ0006",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0006"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.835,
+                -45.73
+            ]
+        },
+        "properties": {
+            "name": "Waikaia",
+            "id": "NZ0007",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0007"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                173.296,
+                -41.275
+            ]
+        },
+        "properties": {
+            "name": "Rutherford Street Observatory, Nelson",
+            "id": "NZ0008",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0008"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.995,
+                -44.258
+            ]
+        },
+        "properties": {
+            "name": "Totara Valley Camera, Pleasant Point",
+            "id": "NZ0009,NZ0010",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0009"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.214,
+                -45.051
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000A,NZ000V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.405,
+                -45.243
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.977,
+                -45.086
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.146,
+                -45.693
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.969,
+                -45.055
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.485,
+                -45.893
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000M"
         }
     }
 ]
