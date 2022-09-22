@@ -6245,8 +6245,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000B"
+            "name": "Dunstan High School, Alexandra",
+            "id": "NZ000B",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000B"
         }
     },
     {
@@ -6259,8 +6261,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000D"
+            "name": "Oamaru North, Oamaru",
+            "id": "NZ000D",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000D"
         }
     },
     {
@@ -6273,8 +6277,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000E"
+            "name": "Mt Aspiring College, Wanaka",
+            "id": "NZ000E",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000E"
         }
     },
     {
@@ -6287,8 +6293,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000F"
+            "name": "Ardgowan School, Oamaru",
+            "id": "NZ000F",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000F"
         }
     },
     {
@@ -6301,8 +6309,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000M"
+            "name": "Beverly-Begg Observatory, Dunedin",
+            "id": "NZ000M",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000M"
         }
     }
 ]
