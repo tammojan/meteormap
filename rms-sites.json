@@ -4557,8 +4557,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "RU000V"
+            "name": "Sevastopol, Fiolent",
+            "id": "RU000V",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=RU000V"
         }
     },
     {
@@ -6313,6 +6315,36 @@
             "id": "NZ000M",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ000M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.846,
+                -32.096
+            ]
+        },
+        "properties": {
+            "name": "Leeming, Western Australia",
+            "id": "AU0010",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU0010"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -8.604,
+                37.177
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "PT0002"
         }
     }
 ]
