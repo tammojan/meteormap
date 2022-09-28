@@ -6346,5 +6346,19 @@
             "name": "",
             "id": "PT0002"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.236,
+                50.862
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007L"
+        }
     }
 ]
