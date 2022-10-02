@@ -6371,8 +6371,24 @@
             ]
         },
         "properties": {
+            "name": "Trent University, Peterborough, Ontario",
+            "id": "CA002F",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA002F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.6,
+                -43.307
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "CA002F"
+            "id": "NZ0012"
         }
     }
 ]
