@@ -6357,8 +6357,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ0012"
+            "name": "Rangiora",
+            "id": "NZ0012",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0012"
         }
     },
     {
@@ -6389,6 +6391,38 @@
             "id": "NZ000E",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ000E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.801,
+                -32.362
+            ]
+        },
+        "properties": {
+            "name": "Bindoon, Western Australia",
+            "id": "AU000U,AU000W,AU000X,AU000Y,AU000Z",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU000U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.281,
+                49.673
+            ]
+        },
+        "properties": {
+            "name": "Roodt-sur-Syre",
+            "id": "LU0001",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=LU0001"
         }
     }
 ]
