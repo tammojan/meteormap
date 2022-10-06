@@ -5474,22 +5474,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                116.145,
-                -32.004
-            ]
-        },
-        "properties": {
-            "name": "Perth Observatory, Western Australia",
-            "id": "AU000K",
-            "lens": "25mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU000K"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -3.21,
                 50.7
             ]
@@ -6404,7 +6388,7 @@
         },
         "properties": {
             "name": "Bindoon, Western Australia",
-            "id": "AU000U,AU000W,AU000X,AU000Y,AU000Z",
+            "id": "AU000U,AU000V,AU000W,AU000X,AU000Y,AU000Z",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU000U"
         }
@@ -6423,6 +6407,22 @@
             "id": "LU0001",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=LU0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.152,
+                -31.999
+            ]
+        },
+        "properties": {
+            "name": "Perth Observatory, Western Australia",
+            "id": "AU000K",
+            "lens": "25mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU000K"
         }
     }
 ]
