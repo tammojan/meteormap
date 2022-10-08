@@ -6424,5 +6424,47 @@
             "lens": "25mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU000K"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.558,
+                -43.588
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0013"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.563,
+                57.172
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.311,
+                52.013
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007W"
+        }
     }
 ]
