@@ -41,12 +41,17 @@ def removeInlineComments(cfgparser, delimiter):
 with pysftp.Connection(
     "gmn.uwo.ca",
     username="tjdijkema",
-    private_key="/Users/dijkema/.ssh/id_dsa",
+    private_key="/Users/dijkema/.ssh/id_rsa_rms",
     cnopts=cnopts,
 ) as sftp:
     all_station_ids = [
         station for station in sftp.listdir("files/extracted_data") if len(station) == 6
     ]
+
+    if len(all_station_ids) == 0:
+        raise RuntimeError("No data found at all, something's wrong with the server")
+
+    print(len(all_station_ids), "stations on the server")
 
     new_station_ids = [
         station_id for station_id in all_station_ids if station_id not in exact_location
