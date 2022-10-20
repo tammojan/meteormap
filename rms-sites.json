@@ -6468,5 +6468,35 @@
             "name": "",
             "id": "UK007W"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.556,
+                49.166
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ0008"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.302,
+                20.597
+            ]
+        },
+        "properties": {
+            "name": "Phillip Wilhelm Maximilian Grammerstorf, Querétaro",
+            "id": "MX0009",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0009"
+        }
     }
 ]
