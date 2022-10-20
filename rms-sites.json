@@ -2948,7 +2948,7 @@
         },
         "properties": {
             "name": "Perth Observatory, Western Australia",
-            "id": "AU000A,AU000E,AU000G,AU000H,AU000C,AU000D,AU000F",
+            "id": "AU000A,AU000E,AU000G,AU000H,AU000C,AU000D,AU000F,AU000K",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU000A"
         }
@@ -6409,22 +6409,6 @@
             "id": "LU0001",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=LU0001"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                116.152,
-                -31.999
-            ]
-        },
-        "properties": {
-            "name": "Perth Observatory, Western Australia",
-            "id": "AU000K",
-            "lens": "25mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU000K"
         }
     },
     {
