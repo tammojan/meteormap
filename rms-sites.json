@@ -934,7 +934,7 @@
         },
         "properties": {
             "name": "Kattendijke SE",
-            "id": "NL0001,NL0009",
+            "id": "NL0001,NL0009,NL000K,NL000M",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=NL0001"
         }
@@ -6035,22 +6035,6 @@
         "properties": {
             "name": "",
             "id": "KR0005,KR0009"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                3.954,
-                51.511
-            ]
-        },
-        "properties": {
-            "name": "Kattendijke E",
-            "id": "NL000K",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NL000K"
         }
     },
     {
