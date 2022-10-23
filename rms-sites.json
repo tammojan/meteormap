@@ -6466,5 +6466,21 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=MX0009"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                176.225,
+                -38.139
+            ]
+        },
+        "properties": {
+            "name": "Sunnybrook, Rotorua",
+            "id": "NZ0014",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0014"
+        }
     }
 ]
