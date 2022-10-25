@@ -6482,5 +6482,49 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ0014"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                149.775,
+                -33.0
+            ]
+        },
+        "properties": {
+            "name": "Ilford, NSW, Australia",
+            "id": "AU000T",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU000T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.639,
+                47.276
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CH0006"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.216,
+                52.65
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007Y"
+        }
     }
 ]
