@@ -6526,5 +6526,177 @@
             "name": "",
             "id": "UK007Y"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -49.784,
+                -23.013
+            ]
+        },
+        "properties": {
+            "name": "Canitar, SP",
+            "id": "BR0015,BR0016",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BR0015"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -114.16,
+                50.935
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA001Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.014,
+                51.175
+            ]
+        },
+        "properties": {
+            "name": "Solingen, NRW, Germany",
+            "id": "DE000Q",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE000Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                10.34,
+                55.543
+            ]
+        },
+        "properties": {
+            "name": "Otterup",
+            "id": "DK0001",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DK0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                25.769,
+                62.193
+            ]
+        },
+        "properties": {
+            "name": "Jyväskylä",
+            "id": "FI0004",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=FI0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                127.428,
+                34.534
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.478,
+                -45.876
+            ]
+        },
+        "properties": {
+            "name": "Kaikorai Valley College, Dunedin",
+            "id": "NZ000K",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.541,
+                -45.867
+            ]
+        },
+        "properties": {
+            "name": "Logan Park High School, Dunedin",
+            "id": "NZ000L",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.403,
+                -46.397
+            ]
+        },
+        "properties": {
+            "name": "James Hargest College, Invercargill",
+            "id": "NZ000N",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.402,
+                -45.22
+            ]
+        },
+        "properties": {
+            "name": "Letts Gully, Alexandra",
+            "id": "NZ0011",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0011"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -109.961,
+                34.134
+            ]
+        },
+        "properties": {
+            "name": "White Mountain, AZ",
+            "id": "USL013,USL014,USL015,USL016,USL017",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=USL013"
+        }
     }
 ]
