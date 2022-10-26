@@ -5557,8 +5557,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "IT0007"
+            "name": "A.A.B. Felsina Observatory, Monte San Pietro, Bologna",
+            "id": "IT0007",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IT0007"
         }
     },
     {
@@ -6697,6 +6699,22 @@
             "id": "USL013,USL014,USL015,USL016,USL017",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=USL013"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.12,
+                -46.898
+            ]
+        },
+        "properties": {
+            "name": "Halfmoon Bay School, Oban, Stewart Island",
+            "id": "NZ000Q",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000Q"
         }
     }
 ]
