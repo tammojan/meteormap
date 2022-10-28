@@ -6716,5 +6716,33 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ000Q"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.589,
+                57.164
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.287,
+                56.398
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0080"
+        }
     }
 ]
