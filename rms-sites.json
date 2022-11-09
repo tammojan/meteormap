@@ -6744,5 +6744,19 @@
             "name": "",
             "id": "UK0080"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                167.746,
+                -45.408
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000T"
+        }
     }
 ]
