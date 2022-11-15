@@ -1261,8 +1261,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK000J,UK000U"
+            "name": "Leeds (SE), West Yorkshire",
+            "id": "UK000J,UK000U",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK000J"
         }
     },
     {
@@ -6813,6 +6815,36 @@
         "properties": {
             "name": "",
             "id": "UK005L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.666,
+                -43.576
+            ]
+        },
+        "properties": {
+            "name": "Christchurch",
+            "id": "NZ000H",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.263,
+                56.388
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0081"
         }
     }
 ]
