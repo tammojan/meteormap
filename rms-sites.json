@@ -1737,8 +1737,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK001H"
+            "name": "Leeds (NNW), West Yorkshire",
+            "id": "UK001H",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK001H"
         }
     },
     {
@@ -2135,8 +2137,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK002P"
+            "name": "Leeds (NW), West Yorkshire",
+            "id": "UK002P",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK002P"
         }
     },
     {
@@ -2361,8 +2365,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK0036"
+            "name": "Leeds (NNW), West Yorkshire",
+            "id": "UK0036",
+            "lens": "16mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0036"
         }
     },
     {
@@ -6827,7 +6833,7 @@
             ]
         },
         "properties": {
-            "name": "Christchurch",
+            "name": "Cashmere, Christchurch",
             "id": "NZ000H",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ000H"
@@ -6845,6 +6851,20 @@
         "properties": {
             "name": "",
             "id": "UK0081"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.202,
+                57.407
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0082"
         }
     }
 ]
