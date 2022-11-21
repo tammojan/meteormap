@@ -6763,8 +6763,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000T"
+            "name": "Fiordland College, Te Anau",
+            "id": "NZ000T",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000T"
         }
     },
     {
@@ -6863,8 +6865,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK0082"
+            "name": "Portree, Isle of Skye, Scotland",
+            "id": "UK0082",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0082"
         }
     }
 ]
