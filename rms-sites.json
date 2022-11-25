@@ -6030,7 +6030,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR0003"
+            "id": "KR0003,KR0006,KR0007,KR0008"
         }
     },
     {
@@ -6626,7 +6626,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR0004"
+            "id": "KR0004,KR000E,KR0013"
         }
     },
     {
@@ -6869,6 +6869,48 @@
             "id": "UK0082",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK0082"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                139.297,
+                35.31
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "JP0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                129.227,
+                35.637
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR001E,KR001F,KR001G,KR001H,KR001J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.055,
+                54.53
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006K"
         }
     }
 ]
