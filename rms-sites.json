@@ -6626,7 +6626,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR0004,KR000E,KR0013"
+            "id": "KR0004,KR000E,KR0013,KR000B,KR000C"
         }
     },
     {
@@ -6911,6 +6911,34 @@
         "properties": {
             "name": "",
             "id": "UK006K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                127.217,
+                36.45
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR0014,KR0015,KR0016,KR0017,KR0018"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -87.598,
+                41.196
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002Q"
         }
     }
 ]
