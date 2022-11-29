@@ -6940,5 +6940,21 @@
             "name": "",
             "id": "US002Q"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                17.666,
+                48.207
+            ]
+        },
+        "properties": {
+            "name": "Sladkovicovo",
+            "id": "SK0004",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=SK0004"
+        }
     }
 ]
