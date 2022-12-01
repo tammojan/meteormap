@@ -6956,5 +6956,19 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=SK0004"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.702,
+                -36.741
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0016"
+        }
     }
 ]
