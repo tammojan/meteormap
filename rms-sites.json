@@ -6970,5 +6970,19 @@
             "name": "",
             "id": "NZ0016"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -100.361,
+                20.611
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MX0007"
+        }
     }
 ]
