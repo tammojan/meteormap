@@ -2255,8 +2255,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK0030"
+            "name": "Cardiff, Wales",
+            "id": "UK0030",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0030"
         }
     },
     {
@@ -5101,8 +5103,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK0052"
+            "name": "Randalstown, E",
+            "id": "UK0052",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK0052"
         }
     },
     {
@@ -6981,8 +6985,24 @@
             ]
         },
         "properties": {
+            "name": "Valdez Aguilar Montenegro Padilla, Quérétaro",
+            "id": "MX0007",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MX0007"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.606,
+                52.852
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "MX0007"
+            "id": "UK0083"
         }
     }
 ]
