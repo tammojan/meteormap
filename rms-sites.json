@@ -2351,7 +2351,7 @@
             ]
         },
         "properties": {
-            "name": "Boston, Lincs",
+            "name": "Billingborough",
             "id": "UK0032,UK0026",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK0032"
@@ -6971,8 +6971,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ0016"
+            "name": "Albany, Auckland",
+            "id": "NZ0016",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0016"
         }
     },
     {
@@ -7003,6 +7005,22 @@
         "properties": {
             "name": "",
             "id": "UK0083"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.242,
+                50.208
+            ]
+        },
+        "properties": {
+            "name": "Humain",
+            "id": "BE000M",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000M"
         }
     }
 ]
