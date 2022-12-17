@@ -5769,8 +5769,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "IE0001"
+            "name": "DIAS Dunsink Observatory, D15 XR2R",
+            "id": "IE0001",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=IE0001"
         }
     },
     {
@@ -7021,6 +7023,20 @@
             "id": "BE000M",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE000M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.705,
+                55.935
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008A"
         }
     }
 ]
