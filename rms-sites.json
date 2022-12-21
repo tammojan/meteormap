@@ -6943,8 +6943,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "US002Q"
+            "name": "Private Home, Grant Park, IL., USA",
+            "id": "US002Q",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US002Q"
         }
     },
     {
@@ -7035,8 +7037,42 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK008A"
+            "name": "UK008A",
+            "id": "UK008A",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK008A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                176.227,
+                -37.657
+            ]
+        },
+        "properties": {
+            "name": "Mount Maunganui College, Tauranga",
+            "id": "NZ001H",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                176.208,
+                -38.139
+            ]
+        },
+        "properties": {
+            "name": "Geyserland Observatory, Pukehangi, Rotorua",
+            "id": "NZ001P",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001P"
         }
     }
 ]
