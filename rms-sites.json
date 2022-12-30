@@ -5615,7 +5615,7 @@
             ]
         },
         "properties": {
-            "name": "Wongan Hills, Western Australia",
+            "name": "Baldivis",
             "id": "AU0011,AU0012,AU0013",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=AU0011"
@@ -7073,6 +7073,36 @@
             "id": "NZ001P",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ001P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3.707,
+                51.007
+            ]
+        },
+        "properties": {
+            "name": "Ghent University, Ghent",
+            "id": "BE000K",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=BE000K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.345,
+                50.901
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008B"
         }
     }
 ]
