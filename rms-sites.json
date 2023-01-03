@@ -1548,7 +1548,7 @@
         },
         "properties": {
             "name": "Carlisle, MA, USA",
-            "id": "US001G",
+            "id": "US001G,US0031",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=US001G"
         }
@@ -7103,6 +7103,22 @@
         "properties": {
             "name": "",
             "id": "UK008B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.86,
+                -41.109
+            ]
+        },
+        "properties": {
+            "name": "KPO Observatory, Porirua",
+            "id": "NZ001N",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001N"
         }
     }
 ]
