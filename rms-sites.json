@@ -7120,5 +7120,61 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ001N"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -80.764,
+                43.25
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CAWT01,CAWT02,CAWT03,CAWT04,CAWT05,CAWT06,CAWT07,CAWT08"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.429,
+                49.49
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE000R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.371,
+                51.387
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.35,
+                54.653
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0088"
+        }
     }
 ]
