@@ -2091,7 +2091,7 @@
             ]
         },
         "properties": {
-            "name": "Flatzby, Germany",
+            "name": "Flatzby",
             "id": "DE000C",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=DE000C"
@@ -6583,7 +6583,7 @@
             ]
         },
         "properties": {
-            "name": "Solingen, NRW, Germany",
+            "name": "Solingen, NRW",
             "id": "DE000Q",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=DE000Q"
@@ -7145,8 +7145,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "DE000R"
+            "name": "Ludwigshafen am Rhein, RP",
+            "id": "DE000R",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE000R"
         }
     },
     {
