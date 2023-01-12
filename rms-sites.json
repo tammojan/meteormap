@@ -7178,5 +7178,19 @@
             "name": "",
             "id": "UK0088"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.418,
+                52.33
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0087"
+        }
     }
 ]
