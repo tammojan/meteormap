@@ -6354,36 +6354,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                170.185,
-                -45.037
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "NZ000A,NZ000V"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                169.151,
-                -45.692
-            ]
-        },
-        "properties": {
-            "name": "Mt Aspiring College, Wanaka",
-            "id": "NZ000E",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ000E"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 115.801,
                 -32.362
             ]
@@ -7295,6 +7265,48 @@
         "properties": {
             "name": "",
             "id": "US0033"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.192,
+                -45.029
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.154,
+                -44.696
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.204,
+                -45.034
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000V"
         }
     }
 ]

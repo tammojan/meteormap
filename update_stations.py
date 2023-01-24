@@ -24,6 +24,7 @@ approx_location = {}  # map station id to approximate lon-lat
 try:
     with open("exact_locations.pickle", "rb") as handle:
         exact_location = pickle.load(handle)
+    print(f"{len(exact_location)} stations in exact")
 except FileNotFoundError:
     exact_location = {}
 
