@@ -2028,7 +2028,7 @@
         },
         "properties": {
             "name": "Searby ESE, Lincolnshire",
-            "id": "UK002K,UK002Z,UK004B",
+            "id": "UK002K,UK002Z,UK004B,UK008F",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK002K"
         }
@@ -7203,8 +7203,98 @@
             ]
         },
         "properties": {
+            "name": "CAAS #1 Ascot Corner, Québec",
+            "id": "CA002J",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA002J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                11.506,
+                48.52
+            ]
+        },
+        "properties": {
             "name": "",
-            "id": "CA002J"
+            "id": "DE000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.202,
+                -37.779
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ001L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.783,
+                -41.242
+            ]
+        },
+        "properties": {
+            "name": "Crows Nest Observatory, Ngaio, Wellington",
+            "id": "NZ001Q",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                177.872,
+                -38.64
+            ]
+        },
+        "properties": {
+            "name": "Patutahi, Gisborne",
+            "id": "NZ001R",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.042,
+                50.946
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -77.285,
+                39.173
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0033"
         }
     }
 ]
