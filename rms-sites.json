@@ -7203,8 +7203,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ001L"
+            "name": "Hamilton Astronomical Society",
+            "id": "NZ001L",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001L"
         }
     },
     {
