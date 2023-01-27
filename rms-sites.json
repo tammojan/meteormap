@@ -7310,5 +7310,21 @@
             "name": "",
             "id": "NZ000V"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.31,
+                -41.797
+            ]
+        },
+        "properties": {
+            "name": "Murchison Area School, Murchison",
+            "id": "NZ001E",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001E"
+        }
     }
 ]
