@@ -4314,7 +4314,7 @@
         },
         "properties": {
             "name": "Dourbes",
-            "id": "BE000B",
+            "id": "BE000B,BE000L",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE000B"
         }
@@ -7279,8 +7279,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000A"
+            "name": "Cromwell College 1, Cromwell",
+            "id": "NZ000A",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000A"
         }
     },
     {
@@ -7307,8 +7309,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000V"
+            "name": "Cromwell College 2, Cromwell",
+            "id": "NZ000V",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000V"
         }
     },
     {
@@ -7339,6 +7343,52 @@
         "properties": {
             "name": "",
             "id": "UK0086"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -68.415,
+                48.442
+            ]
+        },
+        "properties": {
+            "name": "Saint-Anaclet-de-Lessard, Québec",
+            "id": "CA002L",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA002L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.104,
+                -45.136
+            ]
+        },
+        "properties": {
+            "name": "Maniototo Area School, Ranfurly",
+            "id": "NZ000S",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -95.707,
+                29.749
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002Z"
         }
     }
 ]
