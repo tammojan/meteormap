@@ -2676,7 +2676,7 @@
         },
         "properties": {
             "name": "Observatoire Omega, Hagnicourt",
-            "id": "FR000R,FR000X,FR000Y",
+            "id": "FR000R,FR000X,FR000Y,FR0011,FR0012,FR0013",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=FR000R"
         }
@@ -7251,8 +7251,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "UK008D"
+            "name": "Clanfield Observatory",
+            "id": "UK008D",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=UK008D"
         }
     },
     {
@@ -7389,6 +7391,20 @@
         "properties": {
             "name": "",
             "id": "US002Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                144.797,
+                -37.249
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000Q"
         }
     }
 ]
