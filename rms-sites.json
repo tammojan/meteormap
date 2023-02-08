@@ -7406,5 +7406,33 @@
             "name": "",
             "id": "AU000Q"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.915,
+                5.759
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MY0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -85.453,
+                34.901
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0034"
+        }
     }
 ]
