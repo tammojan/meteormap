@@ -7434,5 +7434,19 @@
             "name": "",
             "id": "US0034"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.768,
+                53.232
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE000S"
+        }
     }
 ]
