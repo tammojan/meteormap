@@ -7447,8 +7447,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "DE000S"
+            "name": "Osterholz-Scharmbeck, NDS",
+            "id": "DE000S",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE000S"
         }
     }
 ]
