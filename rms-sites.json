@@ -7466,5 +7466,21 @@
             "name": "",
             "id": "CA002H"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.54,
+                -43.158
+            ]
+        },
+        "properties": {
+            "name": "South Westland Area School",
+            "id": "NZ001C",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001C"
+        }
     }
 ]
