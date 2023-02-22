@@ -7510,5 +7510,33 @@
             "name": "",
             "id": "US002E"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                128.506,
+                37.2
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR0019,KR001A,KR001B,KR001C,KR001D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                126.809,
+                35.21
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR001K,KR001L,KR001M,KR001N,KR001P"
+        }
     }
 ]
