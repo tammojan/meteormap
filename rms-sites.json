@@ -7463,8 +7463,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "CA002H"
+            "name": "St-Lambert, Quebec",
+            "id": "CA002H",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA002H"
         }
     },
     {
