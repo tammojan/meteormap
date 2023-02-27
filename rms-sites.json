@@ -1086,38 +1086,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                41.966,
-                44.391
-            ]
-        },
-        "properties": {
-            "name": "Cherkessk, Russia, South",
-            "id": "RU000B,RU000C",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=RU000B"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                41.948,
-                44.999
-            ]
-        },
-        "properties": {
-            "name": "South, Stavropol, Russia",
-            "id": "RU000K,RU000L",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=RU000K"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 42.643,
                 43.736
             ]
