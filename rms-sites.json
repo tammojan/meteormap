@@ -3123,7 +3123,7 @@
             ]
         },
         "properties": {
-            "name": "Daknam Meteor Station, Putatan, Sabah",
+            "name": "SS Daknam Meteor Station, Putatan, Sabah",
             "id": "MY0001",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=MY0001"
@@ -7507,6 +7507,66 @@
         "properties": {
             "name": "",
             "id": "KR001K,KR001L,KR001M,KR001N,KR001P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                17.709,
+                49.276
+            ]
+        },
+        "properties": {
+            "name": "Stipa, Zlin",
+            "id": "CZ0007",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CZ0007"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.896,
+                -37.214
+            ]
+        },
+        "properties": {
+            "name": "Pukekohe High School, Pukekohe",
+            "id": "NZ001J",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.149,
+                50.402
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.448,
+                50.906
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008T"
         }
     }
 ]
