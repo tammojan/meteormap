@@ -217,8 +217,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "DE0004,DE0005,DE0006,DE0007,DE0008,DE0009"
+            "name": "Wiesbaden",
+            "id": "DE0004,DE0005,DE0006,DE0007,DE0008,DE0009",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=DE0004"
         }
     },
     {
@@ -7567,6 +7569,180 @@
         "properties": {
             "name": "",
             "id": "UK008T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.012,
+                45.638
+            ]
+        },
+        "properties": {
+            "name": "Observatoire Cléo, St-Hyacinthe, Québec",
+            "id": "CA002K",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA002K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.06,
+                5.88
+            ]
+        },
+        "properties": {
+            "name": "SS Daknam Meteor Station, Putatan, Sabah",
+            "id": "MY000A",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MY000A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.063,
+                5.896
+            ]
+        },
+        "properties": {
+            "name": "SS Daknam Meteor Station, Putatan, Sabah",
+            "id": "MY000B",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=MY000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.987,
+                -44.984
+            ]
+        },
+        "properties": {
+            "name": "Papakaio School, Oamaru",
+            "id": "NZ000G",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.049,
+                -36.799
+            ]
+        },
+        "properties": {
+            "name": "Waiheke Island, Auckland",
+            "id": "NZ000Z",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.013,
+                -40.876
+            ]
+        },
+        "properties": {
+            "name": "Waikanae",
+            "id": "NZ0022",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0022"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.803,
+                -39.007
+            ]
+        },
+        "properties": {
+            "name": "Turangi",
+            "id": "NZ0023",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0023"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                42.005,
+                44.372
+            ]
+        },
+        "properties": {
+            "name": "Cherkessk, Russia, South",
+            "id": "RU000B",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=RU000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                41.931,
+                44.99
+            ]
+        },
+        "properties": {
+            "name": "South, Stavropol, Russia",
+            "id": "RU000K",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=RU000K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                41.938,
+                44.994
+            ]
+        },
+        "properties": {
+            "name": "South, Stavropol, Russia",
+            "id": "RU000L",
+            "lens": "3.6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=RU000L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                25.544,
+                -33.989
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ZA000A"
         }
     }
 ]
