@@ -7696,5 +7696,19 @@
             "name": "",
             "id": "ZA000A"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.468,
+                51.731
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0092"
+        }
     }
 ]
