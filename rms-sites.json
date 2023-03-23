@@ -7710,5 +7710,19 @@
             "name": "",
             "id": "UK0092"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.665,
+                52.119
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NL000N"
+        }
     }
 ]
