@@ -7724,5 +7724,37 @@
             "name": "",
             "id": "NL000N"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.705,
+                -44.983
+            ]
+        },
+        "properties": {
+            "name": "Arthurs Point, Queenstown",
+            "id": "NZ0015",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0015"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.241,
+                -43.493
+            ]
+        },
+        "properties": {
+            "name": "West Melton, Canterbury Astronomical Society",
+            "id": "NZ002F",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ002F"
+        }
     }
 ]
