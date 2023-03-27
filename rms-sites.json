@@ -7767,8 +7767,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "US003G"
+            "name": "Santa Fe, New Mexico",
+            "id": "US003G",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=US003G"
         }
     }
 ]
