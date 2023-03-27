@@ -7428,22 +7428,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -75.51,
-                45.497
-            ]
-        },
-        "properties": {
-            "name": "St-Lambert, Quebec",
-            "id": "CA002H",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=CA002H"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 170.54,
                 -43.158
             ]
@@ -7771,6 +7755,22 @@
             "id": "US003G",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=US003G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.512,
+                45.477
+            ]
+        },
+        "properties": {
+            "name": "St-Lambert, Quebec",
+            "id": "CA002H",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA002H"
         }
     }
 ]
