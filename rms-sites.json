@@ -7705,8 +7705,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NL000N"
+            "name": "Alphen aan den Rijn, Zuid-Holland",
+            "id": "NL000N",
+            "lens": "8mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NL000N"
         }
     },
     {
@@ -7771,6 +7773,22 @@
             "id": "CA002H",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA002H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.583,
+                45.52
+            ]
+        },
+        "properties": {
+            "name": "Montreal",
+            "id": "CA002G",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=CA002G"
         }
     }
 ]
