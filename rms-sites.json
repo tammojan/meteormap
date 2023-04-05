@@ -3260,7 +3260,7 @@
         },
         "properties": {
             "name": "Juiz de Fora, Minas Gerais, Brazil",
-            "id": "BR000K,BR000U,BR000W",
+            "id": "BR000K,BR000U,BR000W,BR000V",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR000K"
         }
@@ -7238,7 +7238,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US0033"
+            "id": "US0033,US0035,US0036,US0037,US0038,US0039"
         }
     },
     {
@@ -7268,7 +7268,7 @@
         },
         "properties": {
             "name": "",
-            "id": "NZ000E"
+            "id": "NZ000E,NZ001Z"
         }
     },
     {
@@ -7789,6 +7789,100 @@
             "id": "CA002G",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA002G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.826,
+                -32.354
+            ]
+        },
+        "properties": {
+            "name": "Baldivis, Western Australia",
+            "id": "AU001A,AU001B,AU001C,AU001D,AU001E,AU001F",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU001A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.491,
+                -45.868
+            ]
+        },
+        "properties": {
+            "name": "Otago Girls High School, Dunedin",
+            "id": "NZ000J",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.509,
+                -45.879
+            ]
+        },
+        "properties": {
+            "name": "Otago Boys High School, Dunedin",
+            "id": "NZ000U",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ000U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.251,
+                -38.852
+            ]
+        },
+        "properties": {
+            "name": "Taumarunui High School",
+            "id": "NZ001K",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.545,
+                -45.888
+            ]
+        },
+        "properties": {
+            "name": "Shiel Hill, Dunedin",
+            "id": "NZ0020",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ0020"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.296,
+                57.641
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008R"
         }
     }
 ]
