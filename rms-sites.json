@@ -7267,8 +7267,10 @@
             ]
         },
         "properties": {
-            "name": "",
-            "id": "NZ000E,NZ001Z"
+            "name": "Mount Aspiring College, Wanaka",
+            "id": "NZ000E,NZ001Z",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ001Z"
         }
     },
     {
@@ -7404,7 +7406,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US0034"
+            "id": "US0034,US003L"
         }
     },
     {
