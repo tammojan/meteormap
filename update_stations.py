@@ -34,6 +34,7 @@ for station in json_stations:
     for station_id in station_ids:
         approx_location[station_id] = tuple(station["geometry"]["coordinates"])
 
+ignored_stations = ["RU000B", "RU000C", "RU000K", "RU000L", "NZ000E"]
 def removeInlineComments(cfgparser, delimiter):
     """ Removes inline comments from config file. """
     for section in cfgparser.sections():
@@ -59,6 +60,8 @@ with pysftp.Connection(
     ]
 
     for station_id in new_station_ids:
+        if station_id in ignored_stations:
+            continue
         try:
             stationpath = os.path.join("files/extracted_data", station_id)
             obslist = sorted(sftp.listdir(stationpath))
@@ -100,6 +103,8 @@ def random_offset(lon, lat):
 
 
 for station_id in new_station_ids:
+  if station_id in ignored_stations:
+    continue
   try:
     if not station_id in approx_location:
         if exact_location[station_id] in exact_location_inv:
