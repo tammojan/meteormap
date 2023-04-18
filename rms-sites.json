@@ -6696,7 +6696,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK0080"
+            "id": "UK0080,UK009C"
         }
     },
     {
@@ -7913,6 +7913,20 @@
         "properties": {
             "name": "",
             "id": "GR0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.865,
+                45.155
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA002R"
         }
     }
 ]
