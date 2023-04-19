@@ -7798,22 +7798,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                115.826,
-                -32.354
-            ]
-        },
-        "properties": {
-            "name": "Baldivis, Western Australia",
-            "id": "AU001A,AU001B,AU001C,AU001D,AU001E,AU001F",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU001A"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 170.491,
                 -45.868
             ]
@@ -7927,6 +7911,38 @@
         "properties": {
             "name": "",
             "id": "CA002R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.761,
+                -33.421
+            ]
+        },
+        "properties": {
+            "name": "Baldivis, Western Australia",
+            "id": "AU001A,AU001B,AU001C,AU001D,AU001E,AU001F",
+            "lens": "6mm",
+            "link": "http://istrastream.com/rms-gmn/?id=AU001A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.947,
+                -45.106
+            ]
+        },
+        "properties": {
+            "name": "South Hill, Oamaru",
+            "id": "NZ002G",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ002G"
         }
     }
 ]
