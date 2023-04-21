@@ -7944,5 +7944,21 @@
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ002G"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.385,
+                -45.217
+            ]
+        },
+        "properties": {
+            "name": "Letts Gully Observatory 2, Alexandra",
+            "id": "NZ002E",
+            "lens": "4mm",
+            "link": "http://istrastream.com/rms-gmn/?id=NZ002E"
+        }
     }
 ]
