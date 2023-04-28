@@ -7988,5 +7988,33 @@
             "name": "",
             "id": "UK009G"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.454,
+                -41.223
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000W"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.067,
+                54.545
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008U"
+        }
     }
 ]
