@@ -8016,5 +8016,33 @@
             "name": "",
             "id": "UK008U"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                153.002,
+                -27.67
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -86.167,
+                41.699
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US003K"
+        }
     }
 ]
