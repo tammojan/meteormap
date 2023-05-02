@@ -8044,5 +8044,61 @@
             "name": "",
             "id": "US003K"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.536,
+                46.029
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "HR0027"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.002,
+                50.925
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.227,
+                60.449
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK009B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.803,
+                -32.346
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001X"
+        }
     }
 ]
