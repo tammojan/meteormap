@@ -8098,7 +8098,21 @@
         },
         "properties": {
             "name": "",
-            "id": "AU001X"
+            "id": "AU001U,AU001V,AU001W,AU001X,AU001Y,AU001Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.341,
+                51.07
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008X"
         }
     }
 ]
