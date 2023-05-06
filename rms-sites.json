@@ -2972,7 +2972,7 @@
         },
         "properties": {
             "name": "Valencia del Ventoso, Badajoz",
-            "id": "ES000U,ES0016",
+            "id": "ES000U,ES0016,ES0019,ES001A",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000U"
         }
@@ -4448,7 +4448,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK0050"
+            "id": "UK0050,UK008W"
         }
     },
     {
@@ -8113,6 +8113,34 @@
         "properties": {
             "name": "",
             "id": "UK008X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.645,
+                48.846
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.636,
+                53.908
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK006J"
         }
     }
 ]
