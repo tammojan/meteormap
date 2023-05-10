@@ -3872,7 +3872,7 @@
         },
         "properties": {
             "name": "Sheffield",
-            "id": "UK005M",
+            "id": "UK005M,UK008G",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK005M"
         }
@@ -8141,6 +8141,34 @@
         "properties": {
             "name": "",
             "id": "UK006J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.607,
+                -43.297
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ001X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.617,
+                53.84
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0090"
         }
     }
 ]
