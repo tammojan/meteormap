@@ -8170,5 +8170,19 @@
             "name": "",
             "id": "UK0090"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -118.89,
+                34.81
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US003F"
+        }
     }
 ]
