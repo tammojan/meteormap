@@ -4448,7 +4448,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK0050,UK008W"
+            "id": "UK0050,UK008W,UK009A"
         }
     },
     {
@@ -5510,7 +5510,7 @@
         },
         "properties": {
             "name": "Cariacica",
-            "id": "BR0011",
+            "id": "BR0011,BR0019",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR0011"
         }
@@ -8197,6 +8197,132 @@
         "properties": {
             "name": "",
             "id": "UK009K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -43.958,
+                -19.807
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR0014"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -38.654,
+                -3.89
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR001E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                35.205,
+                31.775
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "IL0008"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                139.647,
+                35.521
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "JP0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -110.946,
+                29.115
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MX000D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                101.675,
+                3.086
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MY0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.272,
+                52.909
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0075,UK007M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.386,
+                53.543
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0098"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.012,
+                50.778
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK009D"
         }
     }
 ]
