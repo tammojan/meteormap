@@ -6110,7 +6110,7 @@
         },
         "properties": {
             "name": "Atutahi Observatory, Martinborough",
-            "id": "NZ0004",
+            "id": "NZ0004,NZ0018",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ0004"
         }
@@ -6174,7 +6174,7 @@
         },
         "properties": {
             "name": "Totara Valley Camera, Pleasant Point",
-            "id": "NZ0009,NZ0010",
+            "id": "NZ0009,NZ0010,NZ0019",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ0009"
         }
@@ -8323,6 +8323,76 @@
         "properties": {
             "name": "",
             "id": "UK009D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -80.574,
+                43.476
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA002M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -113.178,
+                51.151
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA002N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -16.3,
+                28.487
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.445,
+                53.668
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK004L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.749,
+                55.435
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0061"
         }
     }
 ]
