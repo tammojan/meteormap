@@ -4448,7 +4448,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK0050,UK008W,UK009A"
+            "id": "UK0050,UK008W,UK009A,UK0099"
         }
     },
     {
@@ -8393,6 +8393,62 @@
         "properties": {
             "name": "",
             "id": "UK0061"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.791,
+                -32.359
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001P,AU001Q,AU001R,AU001S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -46.965,
+                -22.904
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR001F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.158,
+                52.274
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0089"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -121.477,
+                45.722
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002K"
         }
     }
 ]
