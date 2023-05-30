@@ -8450,5 +8450,47 @@
             "name": "",
             "id": "US002K"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.526,
+                51.957
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK0060"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.756,
+                53.055
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK009J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.132,
+                50.394
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK009S"
+        }
     }
 ]
