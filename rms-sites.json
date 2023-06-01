@@ -2630,7 +2630,7 @@
         },
         "properties": {
             "name": "AAS Ager, Lleida",
-            "id": "ES000T,ES0005",
+            "id": "ES000T,ES0005,ES0001",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES000T"
         }
@@ -8491,6 +8491,34 @@
         "properties": {
             "name": "",
             "id": "UK009S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.77,
+                -41.299
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.769,
+                57.852
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK009Q"
         }
     }
 ]
