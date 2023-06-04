@@ -8520,5 +8520,61 @@
             "name": "",
             "id": "UK009Q"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -51.089,
+                -29.662
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR001G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                171.189,
+                -42.467
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ001B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.641,
+                -36.847
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ001G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.385,
+                51.679
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK009P"
+        }
     }
 ]
