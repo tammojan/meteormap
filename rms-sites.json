@@ -8576,5 +8576,19 @@
             "name": "",
             "id": "UK009P"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -78.287,
+                39.467
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US003M,US003N,US003P,US003Q,US003R"
+        }
     }
 ]
