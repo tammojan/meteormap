@@ -872,7 +872,7 @@
         },
         "properties": {
             "name": "Wise observatory",
-            "id": "IL0002,IL0003",
+            "id": "IL0002,IL0003,IL0009",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IL0002"
         }
@@ -8603,6 +8603,20 @@
         "properties": {
             "name": "",
             "id": "UK009M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -50.032,
+                -20.686
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR001H"
         }
     }
 ]
