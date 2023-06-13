@@ -8618,5 +8618,47 @@
             "name": "",
             "id": "BR001H"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.054,
+                50.468
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ0009,CZ0008,CZ000C,CZ000D,CZ000E,CZ000G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                173.941,
+                -39.121
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0024"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.812,
+                51.766
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK009X"
+        }
     }
 ]
