@@ -8744,5 +8744,33 @@
             "name": "",
             "id": "UK00A2"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.963,
+                51.738
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00A5"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -117.622,
+                33.545
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US003J"
+        }
     }
 ]
