@@ -8196,7 +8196,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK009K"
+            "id": "UK009K,UK009L"
         }
     },
     {
@@ -8771,6 +8771,34 @@
         "properties": {
             "name": "",
             "id": "US003J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -46.482,
+                -18.609
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR001J,BR001K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.14,
+                53.582
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00A0"
         }
     }
 ]
