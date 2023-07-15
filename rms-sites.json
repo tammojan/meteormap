@@ -8800,5 +8800,19 @@
             "name": "",
             "id": "UK00A0"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -49.302,
+                -16.697
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR001C"
+        }
     }
 ]
