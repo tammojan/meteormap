@@ -8406,7 +8406,7 @@
         },
         "properties": {
             "name": "",
-            "id": "AU001P,AU001Q,AU001R,AU001S,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F"
+            "id": "AU001P,AU001Q,AU001R,AU001S,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F,AU0028,AU0029"
         }
     },
     {
@@ -8813,6 +8813,34 @@
         "properties": {
             "name": "",
             "id": "BR001C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.131,
+                45.973
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "SI0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.132,
+                51.237
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK009E"
         }
     }
 ]
