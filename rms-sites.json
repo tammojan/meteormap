@@ -6238,7 +6238,7 @@
         },
         "properties": {
             "name": "Beverly-Begg Observatory, Dunedin",
-            "id": "NZ000M",
+            "id": "NZ000M,NZ002L",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ000M"
         }
@@ -8841,6 +8841,34 @@
         "properties": {
             "name": "",
             "id": "UK009E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.031,
+                50.485
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ000A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.002,
+                45.718
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "SI0004"
         }
     }
 ]
