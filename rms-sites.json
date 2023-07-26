@@ -2662,7 +2662,7 @@
         },
         "properties": {
             "name": "Montefano",
-            "id": "IT0004",
+            "id": "IT0004,IT0008",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=IT0004"
         }
@@ -2678,7 +2678,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK003N"
+            "id": "UK003N,UK0084"
         }
     },
     {
@@ -8750,20 +8750,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                1.963,
-                51.738
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "UK00A5"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -117.622,
                 33.545
             ]
@@ -8869,6 +8855,20 @@
         "properties": {
             "name": "",
             "id": "SI0004"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.963,
+                51.734
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00A5"
         }
     }
 ]
