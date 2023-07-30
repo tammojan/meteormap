@@ -6754,7 +6754,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR000Y,KR000Z,KR0010,KR0011,KR0012"
+            "id": "KR000Y,KR000Z,KR0010,KR0011,KR0012,KR001U,KR001V,KR001W"
         }
     },
     {
@@ -8883,6 +8883,34 @@
         "properties": {
             "name": "",
             "id": "NZ002L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                126.938,
+                37.547
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR001Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.087,
+                -38.108
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ002P"
         }
     }
 ]
