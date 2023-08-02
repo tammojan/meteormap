@@ -2252,22 +2252,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                116.077,
-                -31.973
-            ]
-        },
-        "properties": {
-            "name": "Perth, Western Australia",
-            "id": "AU0002",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU0002"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 17.109,
                 42.95
             ]
@@ -2792,22 +2776,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                116.992,
-                -31.636
-            ]
-        },
-        "properties": {
-            "name": "Meckering, Western Australia",
-            "id": "AU0003",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU0003"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -0.363,
                 51.451
             ]
@@ -2829,22 +2797,6 @@
         "properties": {
             "name": "",
             "id": "UK003C"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                115.823,
-                -32.333
-            ]
-        },
-        "properties": {
-            "name": "Baldivis, Western Australia",
-            "id": "AU0004,AU0007,AU0008,AU0006,AU0009,AU000L",
-            "lens": "16mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU0004"
         }
     },
     {
@@ -2915,22 +2867,6 @@
         "properties": {
             "name": "",
             "id": "UK0045"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                116.133,
-                -32.012
-            ]
-        },
-        "properties": {
-            "name": "Perth Observatory, Western Australia",
-            "id": "AU000A,AU000E,AU000G,AU000H,AU000C,AU000D,AU000F,AU000K",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU000A"
         }
     },
     {
@@ -5580,22 +5516,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                116.095,
-                -31.405
-            ]
-        },
-        "properties": {
-            "name": "Baldivis",
-            "id": "AU0011,AU0012,AU0013",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU0011"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 128.114,
                 51.292
             ]
@@ -6248,22 +6168,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                115.846,
-                -32.096
-            ]
-        },
-        "properties": {
-            "name": "Leeming, Western Australia",
-            "id": "AU0010",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU0010"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -8.604,
                 37.177
             ]
@@ -6317,22 +6221,6 @@
             "id": "NZ0012",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=NZ0012"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                115.801,
-                -32.362
-            ]
-        },
-        "properties": {
-            "name": "Bindoon, Western Australia",
-            "id": "AU000U,AU000V,AU000W,AU000X,AU000Y,AU000Z",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU000U"
         }
     },
     {
@@ -7918,22 +7806,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                116.761,
-                -33.421
-            ]
-        },
-        "properties": {
-            "name": "Baldivis, Western Australia",
-            "id": "AU001A,AU001B,AU001C,AU001D,AU001E,AU001F",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=AU001A"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 170.947,
                 -45.106
             ]
@@ -8085,20 +7957,6 @@
         "properties": {
             "name": "",
             "id": "UK009B"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                115.803,
-                -32.346
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "AU001U,AU001V,AU001W,AU001X,AU001Y,AU001Z"
         }
     },
     {
@@ -8393,20 +8251,6 @@
         "properties": {
             "name": "",
             "id": "UK0061"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                115.791,
-                -32.359
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "AU001P,AU001Q,AU001R,AU001S,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F,AU0028,AU0029"
         }
     },
     {
@@ -8967,6 +8811,146 @@
         "properties": {
             "name": "",
             "id": "UK00AD"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.049,
+                -31.986
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.972,
+                -31.643
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.819,
+                -32.366
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0004,AU0006,AU0007,AU0008,AU0009,AU000L,AU0011,AU0012,AU001P,AU001Q,AU001R,AU001S,AU0028,AU0029,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.139,
+                -31.998
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000A,AU000C,AU000D,AU000E,AU000F,AU000G,AU000H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.121,
+                -32.006
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.083,
+                -31.372
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU000U,AU000V,AU000W,AU000X,AU000Y,AU000Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.852,
+                -32.087
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0010"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.094,
+                -31.403
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0013"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.761,
+                -33.42
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001A,AU001B,AU001C,AU001D,AU001E,AU001F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.484,
+                -31.607
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001U,AU001V,AU001W,AU001X,AU001Y,AU001Z"
         }
     }
 ]
