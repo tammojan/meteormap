@@ -52,22 +52,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -47.249,
-                -22.813
-            ]
-        },
-        "properties": {
-            "name": "Sumaré, SP, Brasil",
-            "id": "BR0001",
-            "lens": "6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=BR0001"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -46.585,
                 -21.808
             ]
@@ -8979,6 +8963,48 @@
         "properties": {
             "name": "",
             "id": "KR0027,KR0028,KR0029,KR002A,KR002C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -47.03,
+                -22.859
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.373,
+                -46.402
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.14,
+                51.173
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK007R"
         }
     }
 ]
