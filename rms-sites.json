@@ -8952,5 +8952,33 @@
             "name": "",
             "id": "AU001U,AU001V,AU001W,AU001X,AU001Y,AU001Z"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.481,
+                45.434
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA0020"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                126.938,
+                34.648
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR0027,KR0028,KR0029,KR002A,KR002C"
+        }
     }
 ]
