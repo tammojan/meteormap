@@ -9006,5 +9006,103 @@
             "name": "",
             "id": "UK007R"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                126.613,
+                35.667
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR001X,KR001Y,KR001Z,KR0020,KR0021"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                127.774,
+                36.023
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR0022,KR0023,KR0024,KR0025,KR0026"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.984,
+                -41.124
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ001Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                176.218,
+                -38.115
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ002K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.962,
+                -41.146
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0035"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                127.695,
+                50.41
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RU000Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.741,
+                51.257
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00AG"
+        }
     }
 ]
