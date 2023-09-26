@@ -8836,7 +8836,7 @@
         },
         "properties": {
             "name": "",
-            "id": "AU0004,AU0006,AU0007,AU0008,AU0009,AU000L,AU0011,AU0012,AU001P,AU001Q,AU001R,AU001S,AU0028,AU0029,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F"
+            "id": "AU0004,AU0006,AU0007,AU0008,AU0009,AU000L,AU0011,AU0012,AU0028,AU0029,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F"
         }
     },
     {
@@ -9691,6 +9691,20 @@
         "properties": {
             "name": "",
             "id": "US0040"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                117.288,
+                -31.807
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001P,AU001Q,AU001R,AU001S"
         }
     }
 ]
