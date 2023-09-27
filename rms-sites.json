@@ -5882,7 +5882,7 @@
         },
         "properties": {
             "name": "",
-            "id": "GR0002"
+            "id": "GR0002,GR0004"
         }
     },
     {
@@ -7628,7 +7628,7 @@
         },
         "properties": {
             "name": "Santa Fe, New Mexico",
-            "id": "US003G",
+            "id": "US003G,US003T",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=US003G"
         }
@@ -8248,7 +8248,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BR001F"
+            "id": "BR001F,BR001M"
         }
     },
     {
@@ -9340,7 +9340,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR002E"
+            "id": "KR002E,KR002F,KR002G,KR002H,KR002J,KR002K,KR002L"
         }
     },
     {
@@ -9354,7 +9354,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR002M"
+            "id": "KR002M,KR002N,KR002P,KR002Q,KR002R,KR002S,KR002T"
         }
     },
     {
@@ -9368,7 +9368,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR002U"
+            "id": "KR002U,KR002V,KR002W,KR002X,KR002Y,KR002Z,KR0030"
         }
     },
     {
@@ -9396,7 +9396,7 @@
         },
         "properties": {
             "name": "",
-            "id": "NZ0027,NZ0028,NZ0028"
+            "id": "NZ0027,NZ0028,NZ0029"
         }
     },
     {
@@ -9508,7 +9508,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US003A"
+            "id": "US003A,US003B,US003C"
         }
     },
     {
@@ -9564,7 +9564,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR0036"
+            "id": "KR0036,KR0037,KR0038,KR0039,KR003A"
         }
     },
     {
@@ -9578,7 +9578,7 @@
         },
         "properties": {
             "name": "",
-            "id": "KR003B"
+            "id": "KR003B,KR003C,KR003D,KR003E,KR003F,KR003G,KR003H"
         }
     },
     {
@@ -9705,6 +9705,34 @@
         "properties": {
             "name": "",
             "id": "AU001P,AU001Q,AU001R,AU001S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.086,
+                -43.485
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0039"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.316,
+                50.923
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00AU"
         }
     }
 ]
