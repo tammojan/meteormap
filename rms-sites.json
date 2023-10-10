@@ -9452,7 +9452,7 @@
         },
         "properties": {
             "name": "",
-            "id": "NZ0036,NZ0037"
+            "id": "NZ0036,NZ0037,NZ003N"
         }
     },
     {
@@ -9480,7 +9480,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK009T"
+            "id": "UK009T,UK009U"
         }
     },
     {
@@ -9733,6 +9733,90 @@
         "properties": {
             "name": "",
             "id": "UK00AU"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.866,
+                -32.013
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.911,
+                49.868
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ000J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                24.41,
+                47.086
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RO0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                24.416,
+                47.081
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RO0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.084,
+                53.351
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00AQ"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.616,
+                52.436
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00B2"
         }
     }
 ]
