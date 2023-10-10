@@ -8836,7 +8836,7 @@
         },
         "properties": {
             "name": "",
-            "id": "AU0004,AU0006,AU0007,AU0008,AU0009,AU000L,AU0011,AU0012,AU0028,AU0029,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F"
+            "id": "AU0004,AU0006,AU0007,AU0008,AU0009,AU000L,AU0011,AU0012"
         }
     },
     {
@@ -9817,6 +9817,20 @@
         "properties": {
             "name": "",
             "id": "UK00B2"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.061,
+                -34.389
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0028,AU0029,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F"
         }
     }
 ]
