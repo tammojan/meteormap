@@ -10,7 +10,7 @@
         },
         "properties": {
             "name": "Grapfontaine",
-            "id": "BE0001,BE0005",
+            "id": "BE0001,BE0005,BE000Q",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE0001"
         }
@@ -9831,6 +9831,146 @@
         "properties": {
             "name": "",
             "id": "AU0028,AU0029,AU002A,AU002B,AU002C,AU002D,AU002E,AU002F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                150.221,
+                -30.992
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.817,
+                -32.246
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0020"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.804,
+                -32.356
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0021"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.394,
+                49.818
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.531,
+                52.995
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NL000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.253,
+                -46.459
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0025"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                50.694,
+                61.618
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RU000X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.539,
+                53.438
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00AT"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.314,
+                50.946
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00B0"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.328,
+                50.947
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00B1"
         }
     }
 ]
