@@ -9972,5 +9972,61 @@
             "name": "",
             "id": "UK00B1"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.275,
+                -45.969
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ002T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.804,
+                -41.24
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0038"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                176.021,
+                -38.688
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                24.538,
+                46.635
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RO0002"
+        }
     }
 ]
