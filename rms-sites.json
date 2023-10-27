@@ -9326,7 +9326,7 @@
         },
         "properties": {
             "name": "",
-            "id": "CA002V"
+            "id": "CA002V,CA0031,CA0032"
         }
     },
     {
@@ -10027,6 +10027,104 @@
         "properties": {
             "name": "",
             "id": "RO0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                149.248,
+                -31.271
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                129.084,
+                37.545
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR003J,KR003K,KR003L,KR003M,KR003N,KR003P,KR003Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                128.105,
+                38.244
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "KR003R,KR003S,KR003T,KR003U,KR003V,KR003W,KR003X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.132,
+                -35.341
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ002Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.601,
+                -43.297
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0032"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.751,
+                -36.757
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.102,
+                51.338
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00AF"
         }
     }
 ]
