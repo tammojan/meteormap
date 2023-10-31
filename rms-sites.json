@@ -10126,5 +10126,19 @@
             "name": "",
             "id": "UK00AF"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.726,
+                42.244
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES000Q"
+        }
     }
 ]
