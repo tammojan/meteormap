@@ -10140,5 +10140,117 @@
             "name": "",
             "id": "ES000Q"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                150.207,
+                -30.987
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001N"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                150.189,
+                -30.995
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                15.887,
+                49.218
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ000K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                17.032,
+                49.069
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ000L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                176.334,
+                -38.16
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.203,
+                58.634
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00A7"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.474,
+                52.469
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00B6"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.068,
+                40.11
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0042"
+        }
     }
 ]
