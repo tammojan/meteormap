@@ -9264,20 +9264,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -96.711,
-                33.045
-            ]
-        },
-        "properties": {
-            "name": "",
-            "id": "US002X"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -97.084,
                 33.461
             ]
@@ -10321,6 +10307,20 @@
         "properties": {
             "name": "",
             "id": "NZ002Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.158,
+                34.186
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US002X"
         }
     }
 ]
