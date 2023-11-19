@@ -10322,5 +10322,89 @@
             "name": "",
             "id": "US002X"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -99.826,
+                20.701
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "MX000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.301,
+                -35.75
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003Q"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.197,
+                45.964
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "SI0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.578,
+                52.437
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00AL"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.994,
+                52.896
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00AN"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                22.401,
+                -33.946
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ZA000C"
+        }
     }
 ]
