@@ -10490,5 +10490,19 @@
             "name": "",
             "id": "PL0007"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.931,
+                -38.659
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003K"
+        }
     }
 ]
