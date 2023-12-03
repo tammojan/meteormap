@@ -10504,5 +10504,47 @@
             "name": "",
             "id": "NZ003K"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                113.694,
+                -24.862
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0031"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                176.311,
+                -37.977
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0017"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.519,
+                40.983
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US003Y"
+        }
     }
 ]
