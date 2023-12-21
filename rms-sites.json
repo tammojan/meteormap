@@ -10664,6 +10664,20 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
+                -176.0,
+                -43.95
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZXX3L"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
                 183.476,
                 -43.95
             ]
