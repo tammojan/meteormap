@@ -5992,22 +5992,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                168.294,
-                -46.433
-            ]
-        },
-        "properties": {
-            "name": "Invercargill",
-            "id": "NZ0003",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0003"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 175.479,
                 -41.242
             ]
@@ -6189,22 +6173,6 @@
             "id": "CA002F",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=CA002F"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                172.6,
-                -43.307
-            ]
-        },
-        "properties": {
-            "name": "Rangiora",
-            "id": "NZ0012",
-            "lens": "4mm",
-            "link": "http://istrastream.com/rms-gmn/?id=NZ0012"
         }
     },
     {
@@ -10867,6 +10835,90 @@
         "properties": {
             "name": "",
             "id": "UK00BE"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                117.157,
+                -33.849
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU003C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -110.939,
+                49.883
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CA002P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.313,
+                -46.431
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0003"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.226,
+                -43.309
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0012"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                171.427,
+                -43.64
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.609,
+                51.508
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK008K"
         }
     }
 ]
