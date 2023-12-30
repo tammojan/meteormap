@@ -7838,7 +7838,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK008U"
+            "id": "UK008U,UK00B8"
         }
     },
     {
@@ -10905,6 +10905,20 @@
         "properties": {
             "name": "",
             "id": "UK008K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.636,
+                51.171
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00BA"
         }
     }
 ]
