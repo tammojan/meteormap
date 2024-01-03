@@ -1560,22 +1560,6 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -1.743,
-                53.079
-            ]
-        },
-        "properties": {
-            "name": "Tissington",
-            "id": "UK000Y,UK000Z,UK003T,UK003U",
-            "lens": "3.6mm",
-            "link": "http://istrastream.com/rms-gmn/?id=UK000Y"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
                 -106.749,
                 34.633
             ]
@@ -10961,6 +10945,20 @@
         "properties": {
             "name": "",
             "id": "UK00BD"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.757,
+                53.049
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK000Y,UK000Z,UK003T,UK003U"
         }
     }
 ]
