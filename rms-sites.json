@@ -10920,5 +10920,47 @@
             "name": "",
             "id": "UK00BA"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.119,
+                -43.59
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003Z"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.369,
+                -43.318
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0045"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.066,
+                51.564
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00BD"
+        }
     }
 ]
