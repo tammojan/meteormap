@@ -10974,5 +10974,33 @@
             "name": "",
             "id": "UK00BH"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.157,
+                50.387
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00BB"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.321,
+                40.65
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US004D"
+        }
     }
 ]
