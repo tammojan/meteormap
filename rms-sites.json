@@ -10524,7 +10524,7 @@
         },
         "properties": {
             "name": "",
-            "id": "AU0034"
+            "id": "AU0034,AU0042,AU0043,AU0044"
         }
     },
     {
@@ -11113,6 +11113,48 @@
         "properties": {
             "name": "",
             "id": "US0044,US0045,US0048"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.009,
+                -36.787
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0034"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.743,
+                -36.397
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0046"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.468,
+                53.691
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00BF"
         }
     }
 ]
