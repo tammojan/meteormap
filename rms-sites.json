@@ -11156,5 +11156,19 @@
             "name": "",
             "id": "UK00BF"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.681,
+                -31.654
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0038"
+        }
     }
 ]
