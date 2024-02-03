@@ -10272,7 +10272,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US002X,US002W"
+            "id": "US002X,US002W,US004B,US004C"
         }
     },
     {
@@ -11112,7 +11112,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US0044,US0045,US0048"
+            "id": "US0044,US0045,US0046,US0047,US0048"
         }
     },
     {
@@ -11197,6 +11197,20 @@
         "properties": {
             "name": "",
             "id": "UK00BQ"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.103,
+                -38.09
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0041"
         }
     }
 ]
