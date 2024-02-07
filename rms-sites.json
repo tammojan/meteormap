@@ -1908,7 +1908,7 @@
         },
         "properties": {
             "name": "",
-            "id": "UK000P,UK002W,UK002X,UK003Y"
+            "id": "UK000P,UK002W,UK002X,UK003Y,UK00BN"
         }
     },
     {
@@ -11211,6 +11211,20 @@
         "properties": {
             "name": "",
             "id": "NZ0041"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.99,
+                52.81
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE000W,DE000X"
         }
     }
 ]
