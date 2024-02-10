@@ -11226,5 +11226,33 @@
             "name": "",
             "id": "DE000W,DE000X"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                117.672,
+                -34.622
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU003E"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.931,
+                -37.562
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0042"
+        }
     }
 ]
