@@ -11254,5 +11254,33 @@
             "name": "",
             "id": "NZ0042"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.057,
+                -40.844
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0049"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.085,
+                51.5
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00BW"
+        }
     }
 ]
