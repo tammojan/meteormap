@@ -11282,5 +11282,19 @@
             "name": "",
             "id": "UK00BW"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.614,
+                45.491
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "HR002L"
+        }
     }
 ]
