@@ -8928,7 +8928,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BR0001"
+            "id": "BR0001,BR0002"
         }
     },
     {
@@ -11365,6 +11365,90 @@
         "properties": {
             "name": "",
             "id": "US004J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -158.055,
+                -9.001
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CK0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                10.158,
+                54.148
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE000V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.612,
+                43.488
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "HR002M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.779,
+                -37.858
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ004B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.249,
+                53.288
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00A3,UK00C1,UK00C2"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.479,
+                54.916
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00AZ"
         }
     }
 ]
