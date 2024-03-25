@@ -11590,5 +11590,19 @@
             "name": "",
             "id": "US004L"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                17.65,
+                48.222
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "SK0006"
+        }
     }
 ]
