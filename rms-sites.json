@@ -11604,5 +11604,47 @@
             "name": "",
             "id": "SK0006"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                150.208,
+                -30.98
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0041"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.394,
+                50.929
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000R"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.267,
+                53.215
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE000Y"
+        }
     }
 ]
