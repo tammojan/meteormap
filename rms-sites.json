@@ -11646,5 +11646,47 @@
             "name": "",
             "id": "DE000Y"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.1,
+                50.229
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "CZ000P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.9,
+                -41.12
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ002A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.691,
+                -36.591
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003W"
+        }
     }
 ]
