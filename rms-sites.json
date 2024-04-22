@@ -11688,5 +11688,103 @@
             "name": "",
             "id": "NZ003W"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.575,
+                50.083
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.607,
+                50.079
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000T"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.612,
+                50.104
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.59,
+                50.081
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000V"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.851,
+                -41.304
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ004H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.817,
+                -36.291
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ004J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                173.962,
+                -41.54
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0051"
+        }
     }
 ]
