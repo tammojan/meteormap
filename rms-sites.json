@@ -428,7 +428,7 @@
         },
         "properties": {
             "name": "Hum",
-            "id": "HR0002,HR0006,HR000E,HR0010,HR001Z,HR0021",
+            "id": "HR0002,HR0006,HR000E,HR0010,HR001Z,HR0021,HR0015",
             "lens": "8mm",
             "link": "http://istrastream.com/rms-gmn/?id=HR0002"
         }
@@ -11658,7 +11658,7 @@
         },
         "properties": {
             "name": "",
-            "id": "CZ000P"
+            "id": "CZ000P,CZ000P{"
         }
     },
     {
@@ -11785,6 +11785,34 @@
         "properties": {
             "name": "",
             "id": "NZ0051"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.761,
+                -32.478
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0046"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                168.413,
+                -44.814
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ004C"
         }
     }
 ]
