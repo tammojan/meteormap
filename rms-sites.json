@@ -11560,7 +11560,7 @@
         },
         "properties": {
             "name": "",
-            "id": "NZ004N"
+            "id": "NZ004N,NZ0059"
         }
     },
     {
@@ -12247,6 +12247,188 @@
         "properties": {
             "name": "",
             "id": "UK00CD"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                117.373,
+                -34.97
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU003A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                149.01,
+                -34.891
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU003G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.536,
+                -31.753
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU003H"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.795,
+                -32.37
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU003J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.812,
+                -32.358
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU003K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.797,
+                -36.857
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ001U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.791,
+                -36.291
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ003X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                42.661,
+                43.743
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RU0017,RU0018"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.67,
+                46.972
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RU0019"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                68.862,
+                38.57
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "TJ0001"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                69.234,
+                38.256
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "TJ0002"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.124,
+                50.728
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00CE"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -86.347,
+                36.233
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US004Z"
         }
     }
 ]
