@@ -12486,5 +12486,47 @@
             "name": "",
             "id": "US0050"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                145.587,
+                -36.547
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0045"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                24.722,
+                42.133
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BG000G"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.59,
+                53.506
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00CH"
+        }
     }
 ]
