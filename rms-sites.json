@@ -217,7 +217,7 @@
             ]
         },
         "properties": {
-            "name": "ES0002",
+            "name": "ES0002,ES001B",
             "id": "ES0002",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0002"
@@ -2476,7 +2476,7 @@
         },
         "properties": {
             "name": "Rapid City, South Dakota",
-            "id": "US001U",
+            "id": "US001U,US0051",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=US001U"
         }
@@ -6474,7 +6474,7 @@
         },
         "properties": {
             "name": "White Mountain, AZ",
-            "id": "USL013,USL014,USL015,USL016,USL017",
+            "id": "USL013,USL014,USL015,USL016,USL017,USL018",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=USL013"
         }
@@ -12527,6 +12527,20 @@
         "properties": {
             "name": "",
             "id": "UK00CH"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                115.718,
+                -31.37
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU0039"
         }
     }
 ]
