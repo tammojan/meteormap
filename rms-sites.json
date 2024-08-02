@@ -9222,7 +9222,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US002Y"
+            "id": "US002Y,US004P,US004Q"
         }
     },
     {
@@ -11028,7 +11028,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BG0009"
+            "id": "BG0009,BG000A"
         }
     },
     {
@@ -12120,7 +12120,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BG000F"
+            "id": "BG000F,BF000H,BG000J"
         }
     },
     {
@@ -12358,7 +12358,7 @@
         },
         "properties": {
             "name": "",
-            "id": "RU0017,RU0018"
+            "id": "RU0016,RU0017,RU0018"
         }
     },
     {
@@ -12541,6 +12541,34 @@
         "properties": {
             "name": "",
             "id": "AU0039"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.246,
+                52.519
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00BJ"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -72.252,
+                41.975
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0043"
         }
     }
 ]
