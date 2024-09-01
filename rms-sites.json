@@ -12696,5 +12696,61 @@
             "name": "",
             "id": "ZA0006,ZA0007"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                9.486,
+                48.749
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE0011"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.513,
+                45.93
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "IT000A,IT000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.274,
+                -35.731
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ001S"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.771,
+                50.369
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00C6"
+        }
     }
 ]
