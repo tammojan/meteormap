@@ -5850,7 +5850,7 @@
         },
         "properties": {
             "name": "Jyväskylä",
-            "id": "FI0001,FI0002,FI0003",
+            "id": "FI0001,FI0002,FI0003,FI0006,FI0007,FI0008",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=FI0001"
         }
@@ -12751,6 +12751,62 @@
         "properties": {
             "name": "",
             "id": "UK00C6"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.945,
+                50.737
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE000W"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                34.832,
+                32.103
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "IL000A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -88.012,
+                42.739
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0054"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                20.842,
+                -33.195
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ZA0008,ZA0009"
         }
     }
 ]
