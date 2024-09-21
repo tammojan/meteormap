@@ -11028,7 +11028,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BG0009,BG000A"
+            "id": "BG0009,BG000A,BG000B"
         }
     },
     {
@@ -12821,6 +12821,20 @@
         "properties": {
             "name": "",
             "id": "CA0035"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -43.804,
+                -19.899
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR001X"
         }
     }
 ]
