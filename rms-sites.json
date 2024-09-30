@@ -12624,7 +12624,7 @@
         },
         "properties": {
             "name": "",
-            "id": "CZ000Q"
+            "id": "CZ000Q,CZ000R"
         }
     },
     {
@@ -12835,6 +12835,62 @@
         "properties": {
             "name": "",
             "id": "BR001X"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                22.688,
+                43.636
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BG000K"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.778,
+                39.99
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES001F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -9.652,
+                51.558
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "IE000M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.138,
+                58.535
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00B7"
         }
     }
 ]
