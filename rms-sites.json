@@ -12934,5 +12934,19 @@
             "name": "",
             "id": "US004A"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                170.465,
+                -43.998
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ004R"
+        }
     }
 ]
