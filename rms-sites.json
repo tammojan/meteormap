@@ -5536,7 +5536,7 @@
         },
         "properties": {
             "name": "Astropolis Observatory, Oostende",
-            "id": "BE000D",
+            "id": "BE000D,BD0012,BE0013,BE0014,BE0015,BE0016,BE0017",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE000D"
         }
@@ -13717,6 +13717,146 @@
         "properties": {
             "name": "",
             "id": "ZA000D"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                143.201,
+                -22.474
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU004P"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                10.289,
+                56.215
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DK0005"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                12.328,
+                55.84
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DK000C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.864,
+                52.656
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NL0011"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.664,
+                51.975
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NL0017"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.189,
+                52.21
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NL0019"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -69.272,
+                43.987
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US005U"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                172.171,
+                -43.299
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ0047"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                169.661,
+                -45.037
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ005M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -111.613,
+                31.95
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "USV001"
         }
     }
 ]
