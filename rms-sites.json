@@ -13858,5 +13858,61 @@
             "name": "",
             "id": "USV001"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                116.991,
+                -33.828
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "AU001M"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -51.068,
+                -26.366
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BR002A"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.63,
+                -40.339
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "NZ005Y"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                21.454,
+                49.638
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "PL000B"
+        }
     }
 ]
