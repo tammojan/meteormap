@@ -218,7 +218,7 @@
         },
         "properties": {
             "name": "ES0002,ES001B",
-            "id": "ES0002",
+            "id": "ES0002,ES001B",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=ES0002"
         }
@@ -4172,7 +4172,7 @@
         },
         "properties": {
             "name": "Forthimage Observatory, Edinburgh",
-            "id": "UK006E,UK007J",
+            "id": "UK006E,UK007J,UK00CT",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=UK006E"
         }
@@ -5536,7 +5536,7 @@
         },
         "properties": {
             "name": "Astropolis Observatory, Oostende",
-            "id": "BE000D,BD0012,BE0013,BE0014,BE0015,BE0016,BE0017",
+            "id": "BE000D,BE0012,BE0013,BE0014,BE0015,BE0016,BE0017",
             "lens": "6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE000D"
         }
@@ -5552,7 +5552,7 @@
         },
         "properties": {
             "name": "ASTROCAN-Nhandeara SP",
-            "id": "BR0013",
+            "id": "BR0013,BR021",
             "lens": "4mm",
             "link": "http://istrastream.com/rms-gmn/?id=BR0013"
         }
@@ -5866,7 +5866,7 @@
         },
         "properties": {
             "name": "",
-            "id": "GR0002,GR0004"
+            "id": "GR0002,GR0004,GR0006,GR0008,GR0009"
         }
     },
     {
@@ -7532,7 +7532,7 @@
         },
         "properties": {
             "name": "Alphen aan den Rijn, Zuid-Holland",
-            "id": "NL000N",
+            "id": "NL000N,NL001A",
             "lens": "8mm",
             "link": "http://istrastream.com/rms-gmn/?id=NL000N"
         }
@@ -11028,7 +11028,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BG0009,BG000A,BG000B"
+            "id": "BG0009,BG000A,BG000B,BG0008"
         }
     },
     {
@@ -12148,7 +12148,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BR001U,BR001W"
+            "id": "BR001U,BR001W,BR0029"
         }
     },
     {
@@ -12428,7 +12428,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US004Z"
+            "id": "US004Z,US005G"
         }
     },
     {
@@ -12876,7 +12876,7 @@
         },
         "properties": {
             "name": "",
-            "id": "IE000M"
+            "id": "IE000M,IE000N"
         }
     },
     {
@@ -12904,7 +12904,7 @@
         },
         "properties": {
             "name": "",
-            "id": "DE0012"
+            "id": "DE0012,DE0014,DE0015,DE0016"
         }
     },
     {
@@ -12960,7 +12960,7 @@
         },
         "properties": {
             "name": "",
-            "id": "AQ0001"
+            "id": "AQ0001,AQ0002,AQ0003,AQ0004,AQ0005,AQ0006,AQ0007"
         }
     },
     {
@@ -13016,7 +13016,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BR001Q"
+            "id": "BR001Q,BR001R"
         }
     },
     {
@@ -13058,7 +13058,7 @@
         },
         "properties": {
             "name": "",
-            "id": "CA003A"
+            "id": "CA003A,CA003B,CA003C,CA003D"
         }
     },
     {
@@ -13072,7 +13072,7 @@
         },
         "properties": {
             "name": "",
-            "id": "CZ000U"
+            "id": "CZ000U,CZ000V"
         }
     },
     {
@@ -13198,7 +13198,7 @@
         },
         "properties": {
             "name": "",
-            "id": "HR002D"
+            "id": "HR002D,HR002E,HR002F,HR002G,HR002H,HR002J"
         }
     },
     {
@@ -13226,7 +13226,7 @@
         },
         "properties": {
             "name": "",
-            "id": "HU0004"
+            "id": "HU0004,HU0005,HU000A"
         }
     },
     {
@@ -13240,7 +13240,7 @@
         },
         "properties": {
             "name": "",
-            "id": "MY000D"
+            "id": "MY000D,MY000E"
         }
     },
     {
@@ -13324,7 +13324,7 @@
         },
         "properties": {
             "name": "",
-            "id": "NO0002"
+            "id": "NO0002,NO0003"
         }
     },
     {
@@ -13422,7 +13422,7 @@
         },
         "properties": {
             "name": "",
-            "id": "PL0008"
+            "id": "PL0008,PL0009,PL000A"
         }
     },
     {
@@ -13576,7 +13576,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US004S"
+            "id": "US004S,US004T,US004U,US004V,US004W"
         }
     },
     {
@@ -13604,7 +13604,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US005A"
+            "id": "US005A,US005B,US005C,US005D,US005E,US005F"
         }
     },
     {
@@ -13646,7 +13646,7 @@
         },
         "properties": {
             "name": "",
-            "id": "US005K"
+            "id": "US005K,US005Q"
         }
     },
     {
@@ -13744,7 +13744,7 @@
         },
         "properties": {
             "name": "",
-            "id": "DK0005"
+            "id": "DK0005,DK0007"
         }
     },
     {
@@ -13884,7 +13884,7 @@
         },
         "properties": {
             "name": "",
-            "id": "BR002A"
+            "id": "BR002A,BR002B,BR002C"
         }
     },
     {
