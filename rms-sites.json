@@ -2720,7 +2720,7 @@
         },
         "properties": {
             "name": "Observatory Astrolab Iris, Zillebeke",
-            "id": "BE0003,BE0009",
+            "id": "BE0003,BE0009,BE000X,BE000Y,BE000Z,BE0010,BE0011,BE0018,BE0019",
             "lens": "3.6mm",
             "link": "http://istrastream.com/rms-gmn/?id=BE0003"
         }
@@ -12904,7 +12904,7 @@
         },
         "properties": {
             "name": "",
-            "id": "DE0012,DE0014,DE0015,DE0016"
+            "id": "DE0012,DE0014,DE0015,DE0016,DE0017"
         }
     },
     {
@@ -13968,7 +13968,7 @@
         },
         "properties": {
             "name": "",
-            "id": "CZ000W"
+            "id": "CZ000W,CZ000X"
         }
     },
     {
