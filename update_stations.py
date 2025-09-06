@@ -4,6 +4,7 @@
 
 import pysftp
 import json
+from tqdm import tqdm
 import os
 import configparser
 import sys
@@ -59,7 +60,7 @@ with pysftp.Connection(
         station_id for station_id in all_station_ids if station_id not in exact_location
     ]
 
-    for station_id in new_station_ids:
+    for station_id in tqdm(new_station_ids):
         if station_id in ignored_stations:
             continue
         try:
