@@ -9346,7 +9346,7 @@
         },
         "properties": {
             "name": "",
-            "id": "NZ002M"
+            "id": "NZ002M,NZ006F,NZ006G,NZ006H,NZ006J,NZ006K"
         }
     },
     {
@@ -14946,7 +14946,7 @@
         },
         "properties": {
             "name": "",
-            "id": "RU001H"
+            "id": "RU001H,RU001J"
         }
     },
     {
@@ -15129,6 +15129,132 @@
         "properties": {
             "name": "",
             "id": "ZA000F"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.25,
+                50.18
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "BE001B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.222,
+                52.531
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "DE0018"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.192,
+                37.221
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ES001J"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                25.672,
+                44.955
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RO000A,RO000B"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.378,
+                45.817
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "RO000C"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.187,
+                56.294
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00DK"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.873,
+                51.388
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00DN"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.573,
+                53.146
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "UK00DQ"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                22.521,
+                -33.983
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "ZA000G"
         }
     }
 ]
