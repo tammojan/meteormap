@@ -15256,5 +15256,19 @@
             "name": "",
             "id": "ZA000G"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.742,
+                33.05
+            ]
+        },
+        "properties": {
+            "name": "",
+            "id": "US0057"
+        }
     }
 ]
