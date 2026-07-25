@@ -35,7 +35,7 @@ for station in json_stations:
     for station_id in station_ids:
         approx_location[station_id] = tuple(station["geometry"]["coordinates"])
 
-ignored_stations = ["RU000B", "RU000C", "RU000K", "RU000L", "NZ000E"]
+ignored_stations = ["RU000B", "RU000C", "RU000K", "RU000L", "NZ000E","phase1"]
 def removeInlineComments(cfgparser, delimiter):
     """ Removes inline comments from config file. """
     for section in cfgparser.sections():
@@ -109,9 +109,17 @@ for station_id in new_station_ids:
   try:
     if not station_id in approx_location:
         if exact_location[station_id] in exact_location_inv:
+            existing_station = exact_location_inv[exact_location[station_id]]
             print(
-                f"station id {station_id} matches {exact_location_inv[exact_location[station_id]]}"
+                f"station id {station_id} matches {existing_station}"
             )
+            found = False
+            for station in json_stations:
+                if existing_station in station['properties']['id'].split(','):
+                    found = True
+                    station['properties']['id'] += "," + station_id
+            if not found:
+                print(f"Logic error: should have found {existing_station}")
         else:
             new_lon, new_lat = random_offset(*exact_location[station_id])
             new_station = {
