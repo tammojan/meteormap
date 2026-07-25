@@ -35,7 +35,7 @@ for station in json_stations:
     for station_id in station_ids:
         approx_location[station_id] = tuple(station["geometry"]["coordinates"])
 
-ignored_stations = ["RU000B", "RU000C", "RU000K", "RU000L", "NZ000E","phase1"]
+ignored_stations = ["RU000B", "RU000C", "RU000K", "RU000L", "NZ000E","phase1","CA0036"]
 def removeInlineComments(cfgparser, delimiter):
     """ Removes inline comments from config file. """
     for section in cfgparser.sections():
