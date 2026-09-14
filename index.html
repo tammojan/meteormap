@@ -94,7 +94,7 @@
             const urlParams = new URLSearchParams(queryString);
 
             mymap = L.map('mapid', {maxZoom: 12}).setView([52.3, 5], 8);
-            var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_3kw9_1_67dbc65137a5ce74be73c014', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
                              '&copy; <a href="https://carto.com/attributions">CARTO</a>; ' +
                              '&copy; CC-BY 4.0 <a href="https://globalmeteornetwork.org/data/">Global Meteor Network</a>',
